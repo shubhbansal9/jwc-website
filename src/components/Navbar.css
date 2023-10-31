@@ -1,0 +1,67 @@
+/* Navbar.css */
+
+/* Styles for the horizontal navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #fff;
+    position: relative;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+  }
+  .nav-button {
+    background-color: #ABBED1; /* Set the background color to #ABBED1 */
+    color: black;
+    border: none;
+    border-radius: 5px; /* Rounded edges */
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: 1%;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Make links behave like buttons */
+  }
+  button {
+    background-color: #ABBED1; /* Set the background color to #ABBED1 */
+    color: black;
+    border: none;
+    border-radius: 5px; /* Rounded edges */
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 1%;
+  }
+  button.sign-in {
+    position: relative;
+    align-items: right;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: #A1C5E1;
+  }
+  
+  .search-bar input[type="text"] {  
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 10px; /* Add spacing between the search bar and "Sign In" button */
+  }
+  
+  .search-bar i {
+    color: #ABBED1;
+    font-size: 20px; /* Adjust the size as needed */
+  }
+  
+  button:hover {
+    background-color: #A1C5E1; /* Change button background color on hover */
+  }
+  

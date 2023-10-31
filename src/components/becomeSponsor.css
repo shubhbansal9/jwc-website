@@ -1,0 +1,41 @@
+/* SponsorSection.css */
+
+.sponsor-section {
+    text-align: center;
+    margin: 40px 0;
+    margin-top: 10%;
+  }
+  
+  .sponsor-section h2 {
+   
+    font-weight: 900;
+  font-size: xx-large;
+  font-family: "Anton", sans-serif;
+  }
+  
+  .sponsor-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .sponsor-section p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .sponsor-section .apply-button {
+    background-color: #FBC02D;
+    color:red;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .sponsor-section .apply-button:hover {
+    background-color: #444;
+  }
+  

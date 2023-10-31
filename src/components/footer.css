@@ -1,0 +1,113 @@
+/* Footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #717171;
+    text-align: center;
+  }
+  
+  .footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .footer p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  /* Adjust the styling for the footer-left, footer-middle, and footer-right elements as needed */
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 30%; /* Adjust the width as needed */
+  }
+  
+  /* Style for the footer contact information */
+  .footer-right {
+    text-align: right;
+  }
+  /* Footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .footer p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Adjust the styling for the footer-left, footer-middle, and footer-right elements as needed */
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 30%; /* Adjust the width as needed */
+  }
+  
+  /* Style for the footer contact information */
+  .footer-right {
+    text-align: right;
+  }
+  
+  /* Style for the social media handles */
+  .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  .column img {
+    max-width: 30px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  .column a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Text for social media handles */
+  .column-text {
+    margin-left: 5px; /* Adjust the margin as needed */
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  .sitemap{
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }

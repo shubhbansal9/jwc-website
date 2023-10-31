@@ -1,0 +1,40 @@
+.about {
+    margin: 5%;
+}
+.about-page {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    font-weight: 900;
+  }
+ 
+  p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .left-header {
+    text-align: left;
+    margin-top: 5%;
+  }
+  .left-header2 {
+    text-align: left;
+    margin-top: 20%;
+  }
+  h3{
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+  }
+.image-container{
+    position: absolute;
+    right: 10%;
+    margin-bottom: 10%;
+}
+  /* Additional styles for the left-aligned header and paragraph */
+  

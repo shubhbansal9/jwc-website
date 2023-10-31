@@ -1,0 +1,117 @@
+/* HomePage.css */
+
+/* Styles for the header with logos */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo-left, .logo-right {
+  height: 50%;
+}
+
+.center-text {
+  color: black;
+  font-weight: 900;
+  font-size: xx-large;
+  font-family: "Anton", sans-serif;
+}
+
+/* Styles for the horizontal navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #fff;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+button {
+  background-color: #ABBED1;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Styles for the video box */
+.video-box {
+  width: 100%; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #f0f0f0; /* Background color for the video box */
+  text-align: center;
+}
+
+.content-video {
+  width: 60%;
+  max-width: 100%; /* Ensure the video doesn't exceed the box width */
+}
+
+/* Styles for the countdown */
+.countdown {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: black;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown-item {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.countdown-item span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0074d9;
+}
+.Register-now{
+  overflow-x: hidden;
+  width: 100%;
+}
+.register-now-container {
+  width: 100%; /* Adjust the width as needed */
+  overflow: hidden;
+}
+
+.register-now {
+  display: inline-block;
+  white-space: nowrap;
+  animation: filmReel 100s linear infinite;
+  transform: translateX(0%);
+  width: 500%; /* Start off-screen to the left */
+}
+
+@keyframes filmReel {
+  0% {
+    transform: translateX(1%);
+  }
+  100% {
+    transform: translateX(-100%); /* Move the image to the right edge */
+  }
+}
