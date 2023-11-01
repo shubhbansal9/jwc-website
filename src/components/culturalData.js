@@ -1,17 +1,47 @@
 const culturalData = [
     {
-      title: 'Cultural 1',
-      description: 'Description for Cultural 1',
+      title: 'Photography Competition',
+      description: '',
       price: 'Rs200',
       image: '../assets/workshop.png', 
     },
     {
-      title: 'Cultural 2',
-      description: 'Description for Cultural 2',
+      title: 'Reels Competition',
+      description: '',
       price: 'Rs200',
-      image: 'workshop2.jpg', // Image file path
+      image: '../assets/workshop.png', 
     },
-    // Add more workshop objects as needed
+    {
+      title: 'Beer Pong',
+      description: '',
+      price: 'Rs200',
+      image: '../assets/workshop.png', 
+    },
+    {
+      title: 'FIFA Fever Showdown',
+      description: '',
+      price: 'Rs200',
+      image: '../assets/workshop.png', 
+    },
+    {
+      title: 'BGMI',
+      description: '',
+      price: 'Rs200',
+      image: '../assets/workshop.png', 
+    },
+    {
+      title: 'Pop quiz',
+      description: '',
+      price: 'Rs200',
+      image: '../assets/workshop.png', 
+    },
+    {
+      title: 'Treasure hunt',
+      description: '',
+      price: 'Rs200',
+      image: 'workshop2.jpg', 
+    },
+  
   ];
   export default culturalData;
   

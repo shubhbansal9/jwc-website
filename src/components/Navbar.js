@@ -19,21 +19,18 @@ function Navbar() {
           <Link to="/events" className={buttonClass}>Events</Link>
         </li>
         <li>
-          <Link to="/delegates" className={buttonClass}>International Delegates</Link>
+          <Link to="/" className={buttonClass}>International Delegates</Link>
         </li>
         <li>
-          <Link to="/accommodation" className={buttonClass}>Accommodation</Link>
+          <Link to="/" className={buttonClass}>Accommodation</Link>
         </li>
         <li>
-          <Link to="/contact" className={buttonClass}>Contact Us</Link>
+          <Link to="/" className={buttonClass}>Contact Us</Link>
         </li>
       </ul>
       
       <button className='sign-in'>Sign In</button>
-      <div className="search-bar">
-        <input type="text" placeholder="Search" />
-        <i className="fas fa-search"></i> 
-      </div>
+     
     </nav>
   );
 }

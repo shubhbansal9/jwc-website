@@ -6,7 +6,7 @@
     align-items: flex-start;
     margin-top: 40px;
     padding: 20px;
-    background-color: #717171;
+    background-color: #7970B0;
     text-align: center;
   }
   
@@ -58,7 +58,7 @@
   
   .footer p {
     font-size: 16px;
-    color: #333;
+    color: black;
     margin: 10px 0;
   }
   

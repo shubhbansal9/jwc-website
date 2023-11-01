@@ -1,0 +1,44 @@
+.int-del {
+    background: linear-gradient(to bottom, #ffffff, #386FBD);
+    /* Add any other styles for the entire page as needed */
+  }
+  
+  .delegate-card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px 0;
+  }
+  
+  .designation {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .delegate-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .delegate-info img {
+    max-width: 100px; /* Adjust the image size as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .delegate-details {
+    flex: 1;
+  }
+  
+  .delegate-details h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .delegate-details p {
+    font-size: 1em;
+    color: #666;
+  }
+  

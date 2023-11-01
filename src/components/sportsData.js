@@ -1,17 +1,35 @@
 const sportsData = [
     {
-      title: 'Sports 1',
-      description: 'Description for Sports 1',
+      title: 'Football (Boys)',
+      description: '',
       price: 'Rs200',
-      image: '../assets/workshop.png', 
+      image: '../assets/events.png', 
     },
     {
-      title: 'Sports 2',
-      description: 'Description for Sports 2',
+      title: 'Basketball (Boys & Girls)',
+      description: '',
       price: 'Rs200',
-      image: 'workshop2.jpg', // Image file path
+      image: 'workshop2.jpg', 
     },
-    // Add more workshop objects as needed
+    {
+      title: 'Volleyball (Boys & Girls)',
+      description: '',
+      price: 'Rs200',
+      image: 'workshop2.jpg', 
+    },
+    {
+      title: 'Kho-Kho (Girls)',
+      description: '',
+      price: 'Rs200',
+      image: 'workshop2.jpg', 
+    },
+    {
+      title: 'Marathon',
+      description: '',
+      price: 'Rs200',
+      image: 'workshop2.jpg', 
+    },
+    
   ];
   export default sportsData;
   
