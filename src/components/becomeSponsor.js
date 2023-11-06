@@ -1,13 +1,21 @@
 import React from 'react';
 import './becomeSponsor.css'
-import sponsImage from '../assets/spons-img.png';
+import sponsImage from '../assets/spons-img.svg';
 const SponsorSection = () => {
   return (
     <div className="sponsor-section">
       <h2>Become a Sponsor</h2>
       <img src={sponsImage} alt="Become a Sponsor" />
       <p>
-      Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam, vel varius sapien suscipit eget. Cras sollicitudin ligula at volutpat ultrices. Nunc arcu enim, rhoncus eu maximus id, malesuada eu neque. Nunc aliquet cursus tortor id pellentesque. Quisque tempus arcu sed felis tempus, vel rutrum diam egestas. Suspendisse non magna nisi. Duis quis risus mi. Morbi velit leo, pellentesque nec odio sit amet, fringilla sollicitudin nulla. Sed consectetur eu leo sed sodales. Quisque porta, ante vitae auctor pellentesque, dolor neque vestibulum urna, sit amet consectetur ex lectus vel enim. Maecenas tellus erat, interdum vel tristique ac, rhoncus id ante. Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam, vel varius sapien suscipit eget. Cras sollicitudin ligula at volutpat ultrices. Nunc arcu enim, rhoncus eu maximus id, malesuada eu neque. Nunc aliquet cursus tortor id pellentesque. Quisque tempus arcu sed felis tempus, vel rutrum diam egestas. Suspendisse non magna nisi. Duis quis risus mi. Morbi velit leo, pellentesque nec odio sit amet, fringilla sollicitudin nulla. Sed consectetur eu leo sed sodales. Quisque porta, ante vitae auctor pellentesque, dolor neque vestibulum urna, sit amet consectetur ex lectus vel enim. Maecenas tellus erat, interdum vel tristique ac, rhoncus id ante.
+      Christian medical college Ludhiana has been a pioneer in medical education for more than 125 years. From 4 students back in 1894 to 100 students per batch the journey has been long and fruitful. Today using advanced teaching methods , we aspire to provide and promote medical education to students all over the country and beyond through workshops and
+medical conventions.<br></br><br></br>
+Medical Olympics 2024 was born with the idea to integrate both medical and co-curricular events under one banner to promote and nurture the minds and bodies of young upcoming doctors both in
+India and beyond.<br></br><br></br>
+Medical Olympics will include a variety of medical conferences and workshops along with sports and
+cultural events occurring across 3 days which will be a common ground for medical students to interact with each other and make connections across India and
+beyond.
+This is a unique opportunity for you to participate and sponsor a medical event increasing your brand visibility. It also gives you a chance to involve yourself in the community and help in training of the future doctors of this country. Last but not the least multiple benefits for the sponsors are listed based on the level of sponsorship
+you wish to provide.
       </p>
       <button className="apply-button">Apply Now!</button>
     </div>

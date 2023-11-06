@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #fff, #386FBD);
+  background: linear-gradient(to bottom, #02050A, #2057A6);
   margin: 0;
   padding: 0;
   font-family: 'DM Sans', sans-serif;
@@ -19,7 +19,7 @@ body {
 }
 
 .center-text {
-  color: black;
+  color: white;
   font-weight: 1000;
   font-size: xxx-large;
   
@@ -56,7 +56,7 @@ button:hover {
 }
 
 .content-video {
-  width: 60%;
+  width: 80%;
   max-width: 100%; /* Ensure the video doesn't exceed the box width */
 }
 
@@ -68,7 +68,7 @@ button:hover {
 
 h2 {
   font-size: 24px;
-  color: black;
+  color: white;
 }
 
 .countdown-timer {
@@ -100,15 +100,15 @@ h2 {
   display: inline-block;
   white-space: nowrap;
   animation: filmReel 100s linear infinite;
-  transform: translateX(0%);
+  transform: translateX(50%);
   width: 500%; /* Start off-screen to the left */
 }
 
 @keyframes filmReel {
   0% {
-    transform: translateX(1%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%); /* Move the image to the right edge */
+    transform: translateX(-50%); /* Move the image to the right edge */
   }
 }

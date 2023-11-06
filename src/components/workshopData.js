@@ -39,13 +39,19 @@ const workshopsData = [
       title: 'Scientia Sanguinis - Mastering Hematological Oncology',
       description: 'Join us for an exciting and informative journey into the captivating world of hematology. Embark on a journey as we go through the steps in bone marrow transplantation and become potential doners, learn about the pathological mutations in hematology and much more.',
       price: 'Rs200',
-      image: require('../assets/events.png'),
+      image: require('../assets/event-7.png'),
     },
     {
       title: 'Transfuse Life - Mastering the Art of Blood Transfusion',
       description: 'Heres a workshop for all the enthusiastic blood donors, that typically covers a wide range of topics related to blood transfusion, including blood grouping and cross-matching in an Immunohematology lab, donor phlebotomy, blood product preparation and storage, transfusion reactions and complications, donor selection and screening, and the appropriate use of blood products in different clinical scenarios.',
       price: 'Rs200',
       image: require('../assets/event-8.png'),
+    },
+    {
+      title: 'Safeguarding Lives - A Critical Care Workshop',
+      description: 'Welcome to a specialized training that offers a combination of hands-on landmark based central line insertion, basic life support, lectures, interactive discussions to enhance participants knowledge and skills in the field of anesthesia.',
+      price: 'Rs200',
+      image: require('../assets/event-9.png'),
     },
   ];
   export default workshopsData;

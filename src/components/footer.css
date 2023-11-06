@@ -6,7 +6,8 @@
     align-items: flex-start;
     margin-top: 40px;
     padding: 20px;
-    background-color: #7970B0;
+    color: white;
+    background-color: #573D80;
     text-align: center;
   }
   
@@ -58,7 +59,7 @@
   
   .footer p {
     font-size: 16px;
-    color: black;
+    color: white;
     margin: 10px 0;
   }
   
@@ -109,5 +110,5 @@
   .sitemap{
     display: flex;
     flex-direction: column;
-    color: black;
+    color: white;
   }

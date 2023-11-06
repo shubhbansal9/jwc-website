@@ -1,21 +1,33 @@
+@font-face {
+  font-family: 'Inter'; /* Name to use for the font */
+  src: url('../assets/fonts/Inter-Medium.ttf') format('truetype'); /* Path to the TTF font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
 .about {
     margin: 5%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 .about-page {
-    padding: 20px;
+    color: white;
   }
 
   h1 {
     font-size: 24px;
-    color: #333;
+    color: white;
     text-align: center;
     font-weight: 900;
+    font-family: 'Inter';
   }
  
   p {
-    font-size: 16px;
-    color: #666;
+    font-size: 15px;
+    color: white;
     margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
   }
   
   .left-header {
@@ -24,7 +36,7 @@
   }
   .left-header2 {
     text-align: left;
-    margin-top: 20%;
+    margin-top: 10%;
   }
   h3{
     font-family: "Anton", sans-serif;
@@ -32,9 +44,49 @@
     font-size: x-large;
   }
 .image-container{
-    position: absolute;
+    
     right: 10%;
-    margin-bottom: 10%;
+    
 }
-  /* Additional styles for the left-aligned header and paragraph */
-  
+.different-color-text{
+  color: #A6113D;
+  -webkit-text-stroke: 0.2px white; /* Adjust the width of the outline as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.chief-patron-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.chief-patron-text {
+  margin-right: 20px; /* Add spacing between the text and image */
+}
+
+.patron-image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+.dual-container {
+  display: flex;
+  justify-content: flex-end; /* To separate the two containers */
+  align-items: center;
+  gap: 5%;
+}
+
+.chairpersons-container {
+  display: flex;
+  flex-direction: row; /* Make them side by side */
+  align-items: center;
+}
+
+.chairpersons-text {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.patron-image {
+  max-width: 100%;
+}

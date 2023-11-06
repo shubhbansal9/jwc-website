@@ -37,13 +37,18 @@
       margin-bottom: 20px;
       font-weight:bold;
       text-align: left;
-      margin-left: 5%;
+      margin-left: 12%;
     }
     .workshop-cards {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
-    
+    .workshop-cards-container {
+      display: flex;
+      justify-content: flex-start; /* Align to the left */
+      flex-wrap: wrap;
+    }
     .workshop-card {
       width: 300px;
       padding: 20px;
@@ -53,6 +58,7 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
       text-align: left;
       transition: transform 0.2s;
+      max-height: 380px;
     }
     
     .workshop-card:hover {
@@ -95,4 +101,25 @@
     height: 50%;
     width: 50%;
   }
-  /* Add this CSS to your EventsPage.css */
+  .workshop-card {
+    position: relative;
+    overflow: hidden;
+    transition: height 0.3s; /* Add a transition for the height property */
+    height: auto; /* Set the initial height to 'auto' */
+  }
+  
+  .workshop-card.expanded {
+    height: auto; 
+    max-height: none;/* Set the height to 'auto' when expanded */
+  }
+
+  .workshop-buttons button {
+    background-color: #FBC02D;
+    color: red;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  

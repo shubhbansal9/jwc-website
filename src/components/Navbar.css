@@ -18,22 +18,21 @@
     margin-right: 20px;
   }
   .nav-button {
-    background-color: #F484A5; /* Set the background color to #ABBED1 */
-    color: black;
+    background-color: #A6113D; /* Set the background color to #ABBED1 */
+    color: white;
     border: none;
     border-radius: 5px; /* Rounded edges */
     padding: 10px 20px;
     text-align: center;
     cursor: pointer;
-    margin: 1%;
-    height: 50px;
+    height: 30px;
     align-items: center;
     text-decoration: none; /* Remove underline from links */
     display: flex; /* Make links behave like buttons */
   }
   button {
     background-color: #F484A5; /* Set the background color to #ABBED1 */
-    color: black;
+    color: white;
     border: none;
     border-radius: 5px; /* Rounded edges */
     padding: 10px 20px;

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'; // Import the Navbar component
 import AboutPage from './pages/About';
 import EventsPage from './pages/EventsPage';
 import InternationalDelegates from './pages/InternationalDelegates';
+import ContactUsPage from './pages/ContactUs';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/events" element={<EventsPage/>}/>
           <Route path="/int-delegates" element={<InternationalDelegates/>}/>
+          <Route path="/contact-us" element={<ContactUsPage/>}/>
         </Routes>
       </div>
     </Router>

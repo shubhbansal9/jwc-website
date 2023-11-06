@@ -25,12 +25,13 @@ function Navbar() {
           <Link to="/" className={buttonClass}>Accommodation</Link>
         </li>
         <li>
-          <Link to="/" className={buttonClass}>Contact Us</Link>
+          <Link to="/contact-us" className={buttonClass}>Contact Us</Link>
         </li>
+        
       </ul>
       
       <button className='sign-in'>Sign In</button>
-     
+      <button className='sign-in'>Register now</button>
     </nav>
   );
 }

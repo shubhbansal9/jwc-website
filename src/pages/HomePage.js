@@ -9,6 +9,7 @@ import upcomingEvents from '../components/eventData';
 import EventDetails from '../components/EventDetails';
 import SponsorSection from '../components/becomeSponsor';
 import Footer from '../components/footer';
+import vid from '../assets/videos/JWC-MEDICAL-OLYPICS-2.mp4'
 function Homepage() {
   
   return (
@@ -23,11 +24,10 @@ function Homepage() {
         <video
           autoPlay
           loop
-          muted
-          controls // Show video controls
+          muted// Show video controls
           className="content-video"
         >
-          <source src="your-video.mp4" type="video/mp4" />
+          <source src={vid} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
