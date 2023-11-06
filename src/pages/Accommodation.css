@@ -1,0 +1,70 @@
+.subtext{
+    text-align: left;
+}
+.accommodation-page {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+
+  header {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .bullet-points {
+    text-align: left;
+    margin: 20px 0;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin:5%;
+  }
+  
+  .column-right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 1%;
+    justify-content: right;
+  }
+  .column-left{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 1%;
+    justify-content: right;
+    margin-left: 40%;
+  }
+  
+  .name {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+.acc-header{
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+.acc-text{
+    margin-bottom: 5%;
+}

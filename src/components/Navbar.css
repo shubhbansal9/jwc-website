@@ -3,11 +3,9 @@
 /* Styles for the horizontal navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: white;
-    color: #fff;
     position: relative;
+    background-color: transparent;
   }
   
   .nav-list {
@@ -20,20 +18,21 @@
     margin-right: 20px;
   }
   .nav-button {
-    background-color: #ABBED1; /* Set the background color to #ABBED1 */
-    color: black;
+    background-color: #A6113D; /* Set the background color to #ABBED1 */
+    color: white;
     border: none;
     border-radius: 5px; /* Rounded edges */
     padding: 10px 20px;
     text-align: center;
     cursor: pointer;
-    margin: 1%;
+    height: 30px;
+    align-items: center;
     text-decoration: none; /* Remove underline from links */
-    display: inline-block; /* Make links behave like buttons */
+    display: flex; /* Make links behave like buttons */
   }
   button {
-    background-color: #ABBED1; /* Set the background color to #ABBED1 */
-    color: black;
+    background-color: #F484A5; /* Set the background color to #ABBED1 */
+    color: white;
     border: none;
     border-radius: 5px; /* Rounded edges */
     padding: 10px 20px;
@@ -41,7 +40,6 @@
     margin: 1%;
   }
   button.sign-in {
-    position: relative;
     align-items: right;
   }
   .search-bar {

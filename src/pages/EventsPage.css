@@ -1,71 +1,119 @@
-.price-rectangle {
-    background: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-left: 50%;
-    border: 1px solid #000;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    height: 50%;
-    margin-top: 5%;
-  }
-  
-  .price {
-    font-weight: bold;
-    color: #fff;
-    margin: 0;
+  .price-rectangle {
+      background: white;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 46%;
+      border: 1px solid #000;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      height: 50%;
+      margin-top: 5%;
+    }
+    
+    .price {
+      font-weight: bold;
+      color: #fff;
+      margin: 0;
 
+    }
+.workshop-title{
+  margin-top: 10%;
+}
+  .events-page {
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: xx-large;
+      margin-bottom: 20px;
+      font-weight:bold;
+      text-align: center;
+      margin-left: 5%;
+      
+    }
+    .workshop-headers{
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight:bold;
+      text-align: left;
+      margin-left: 12%;
+    }
+    .workshop-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .workshop-cards-container {
+      display: flex;
+      justify-content: flex-start; /* Align to the left */
+      flex-wrap: wrap;
+    }
+    .workshop-card {
+      width: 300px;
+      padding: 20px;
+      margin: 10px;
+      background: #fff; /* Card background color */
+      border-radius: 10px; /* Rounded edges */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
+      text-align: left;
+      transition: transform 0.2s;
+      max-height: 380px;
+    }
+    
+    .workshop-card:hover {
+      transform: scale(1.05); /* Enlarge the card on hover */
+    }
+    
+    .workshop-card img {
+      max-width: 100%;
+      border-radius: 10px 10px 0 0; /* Rounded edges only at the top */
+    }
+    
+    .workshop-card h2 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    
+    .workshop-card p {
+      font-size: 14px;
+      color: #777;
+    }
+    
+    .workshop-button {
+      background-color: #FBC02D;
+      color: red;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .workshop-buttons{
+      display: flex;
+    }
+  .workshop{
+      margin: 5%;
   }
-  
-.events-page {
-    text-align: center;
+
+  .image{
+    height: 50%;
+    width: 50%;
   }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-weight:bold;
-    text-align: left;
-    margin-left: 5%;
-  }
-  
-  .workshop-cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
   .workshop-card {
-    width: 300px;
-    padding: 20px;
-    margin: 10px;
-    background: #fff; /* Card background color */
-    border-radius: 10px; /* Rounded edges */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
-    text-align: left;
-    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.3s; /* Add a transition for the height property */
+    height: auto; /* Set the initial height to 'auto' */
   }
   
-  .workshop-card:hover {
-    transform: scale(1.05); /* Enlarge the card on hover */
+  .workshop-card.expanded {
+    height: auto; 
+    max-height: none;/* Set the height to 'auto' when expanded */
   }
-  
-  .workshop-card img {
-    max-width: 100%;
-    border-radius: 10px 10px 0 0; /* Rounded edges only at the top */
-  }
-  
-  .workshop-card h2 {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .workshop-card p {
-    font-size: 14px;
-    color: #777;
-  }
-  
-  .workshop-button {
+
+  .workshop-buttons button {
     background-color: #FBC02D;
     color: red;
     font-weight: bold;
@@ -73,11 +121,5 @@
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 10px;
   }
-  .workshop-buttons{
-    display: flex;
-  }
-.workshop{
-    margin: 5%;
-}
+  

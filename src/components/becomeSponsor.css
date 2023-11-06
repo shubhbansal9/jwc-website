@@ -7,7 +7,8 @@
   }
   
   .sponsor-section h2 {
-   
+   text-align: left;
+   margin-left: 9%;
     font-weight: 900;
   font-size: xx-large;
   font-family: "Anton", sans-serif;
@@ -21,8 +22,12 @@
   
   .sponsor-section p {
     font-size: 16px;
-    color: #333;
-    margin: 10px 0;
+    font-style: 'Inter';
+    color: white;
+    margin-top: 1%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: left;
   }
   
   .sponsor-section .apply-button {
@@ -33,9 +38,6 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  .sponsor-section .apply-button:hover {
-    background-color: #444;
+    margin-left: 70%;
   }
   

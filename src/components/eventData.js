@@ -1,15 +1,15 @@
 const upcomingEvents = [
     {
       title: 'Event 1',
-      imageUrl: 'event1.jpg',
+      imageUrl: require('../assets/event-image.png'),
     },
     {
       title: 'Event 2',
-      imageUrl: 'event2.jpg',
+      imageUrl: require('../assets/event-image.png'),
     },
     {
       title: 'Event 3',
-      imageUrl: 'event3.jpg',
+      imageUrl: require('../assets/event-image.png'),
     },
     // Add more events as needed
   ];

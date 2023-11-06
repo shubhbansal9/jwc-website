@@ -4,6 +4,11 @@ import cmcLogo from '../assets/cmc-logo.svg';
 import Navbar from '../components/Navbar';
 import './About.css';
 import Footer from '../components/footer';
+import aboutPage from '../assets/about-page.svg';
+import chiefPatronImg from '../assets/chief-patron.svg';
+import patronImg from '../assets/patron.svg';
+import chairImg1 from '../assets/org-chair.svg';
+import chairImg2 from '../assets/org-chair2.svg';
 function AboutPage() {
   return (
     <div className="about-page">
@@ -21,13 +26,14 @@ telemedicine consultation with the Cleveland Clinic in 2020.<br></br><br></br>
 
 CMC Ludhiana has been a recognized by NMC and has played a pivotal role in various key student-faculty developmental centres. Here, we strive with a bright
 motto - "My Work is for a King"</p>
-<h3 className="left-header">What is Medical Olympics?</h3>
+<img src={aboutPage} alt="CMC-Ludiana" />
+<h3 className="left-header">What is <span className="different-color-text">Medical Olympics</span>?</h3>
       <p>
       Inspired from a combination of aspiration of Medicos & designed like the perseverance of Olympians, Medical Olympics is an International Medical Conference with a fun & sporty touch to it.
  It will be a three day long event to be held in CMC, comprising of various workshops, Competitive Academic events, Keynote Lectures, Fun-filled Cultural events and of course few select Sports as well.
 Invites will be sent all across the Globe for Undergraduate Medical students to take part in the Conference, have some leisure time beyond the scope of our medical curriculum and learn fruitfully in an innovative module. Rest Assured, you're gonna love it.
       </p>
-      <h3 className="left-header">Message from the Chief Patron</h3>
+      <h3 className="left-header">Message from the <span className="different-color-text">Chief Patron</span></h3>
       <p>
       As we gather here to commemorate a momentous milestone, the 130th anniversary of Christian Medical College Ludhiana, it is with great pride and enthusiasm that I extend my warmest welcome to the International Undergraduate Medical Conference, JWC - Medical Olympics 2024. Our institution's enduring legacy, founded on the principles of compassion and excellence, has stood the test of time for well over a century.<br></br><br></br>
 
@@ -38,10 +44,16 @@ As we reflect on the successful hosting of the Junior World Congress in 2019, th
 I extend my heartfelt gratitude to all the participants, organizers, and partners for their invaluable contributions to this noble endeavor. May this conference serve as a catalyst for impactful change in the world of medicine and beyond.
       </p>
     
-    <div className="image-container">
-        <img src={medicalOlympicsImage} alt="patron-image" className="patron-image" />
-      </div>
-      <h3 className="left-header2">Message from the Patron</h3>
+      <div className="chief-patron-container">
+  <div className="chief-patron-text">
+  
+  Dr. Jeyaraj D Pandian<br></br>Chief Patron <br></br> JWC - Medical Olympics<br></br>
+  </div>
+  <div className="image-container">
+    <img src={chiefPatronImg} alt="patron" className="patron-image" />
+  </div>
+</div>
+      <h3 className="left-header2">Message from the <span className="different-color-text">Patron</span></h3>
       <p>
       It gives me immense pleasure to extend a warm welcome to the esteemed Junior World Congress (JWC) - Medical Olympics at Christian Medical College Ludhiana, as we proudly celebrate our 130 years of legacy in healthcare and education. <br></br><br></br>
 
@@ -51,10 +63,15 @@ This prestigious gathering of bright young minds from around the world serves as
 
 Join us in this momentous occasion as we come together to not just learn, but to inspire change and pave the way for a healthier, greener tomorrow.<br></br><br></br>
       </p>
-      <div className="image-container">
-        <img src={medicalOlympicsImage} alt="patron-image" className="patron-image" />
-      </div>
-      <h3 className="left-header2">Message from the Chairpersons</h3>
+      <div className="chief-patron-container">
+  <div className="chief-patron-text">
+  Dr. William Bhatti<br></br>Patron <br></br> JWC - Medical Olympics<br></br>
+  </div>
+  <div className="image-container">
+    <img src={patronImg} alt="patron" className="patron-image" />
+  </div>
+</div>
+      <h3 className="left-header2">Message from the <span className="different-color-text">Chairpersons</span></h3>
       <p>
       Christian Medical College Ludhiana is all set to joyously celebrate its 130 years of legacy in healing and innovation. On behalf of everyone at CMC, we would like to welcome you all to the JWC Medical Olympics 2024 , an International Undergraduate Medical Conference cum Fest that promises an unforgettable blend of knowledge, fun, and cultural enrichment. This year, we gather to explore the critical theme of "Climate Change and its impact on Health" while offering you a diverse array of experiences.<br></br><br></br>
 
@@ -62,6 +79,26 @@ Join us in this momentous occasion as we come together to not just learn, but to
 The JWC - Medical Olympics 2024 is not just an event; it's an opportunity to grow, connect,
 and celebrate. We can't wait to see you here!<br></br><br></br>
       </p>
+      <div className="dual-container">
+  <div className="chairpersons-container">
+    <div className="chairpersons-text">
+    Dr. Ebin B Thomas<br></br>
+Organizing Chairperson
+    </div>
+    <div className="image-container">
+      <img src={chairImg1} alt="patron" className="patron-image" />
+    </div>
+  </div>
+  <div className="chairpersons-container">
+    <div className="chairpersons-text">
+    Dr. Divya Handa<br></br>
+Organizing Chairperson
+    </div>
+    <div className="image-container">
+      <img src={chairImg2} alt="patron" className="patron-image" />
+    </div>
+  </div>
+</div>
     </div>
     <Footer/>
     </div>
