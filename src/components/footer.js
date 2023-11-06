@@ -13,25 +13,25 @@ const Footer = () => {
         <h3>Get in Touch</h3>
         <div className="social-media">
           <div className="row">
-            <div className="column">
+            <div className="column-footer">
               <a href="https://www.facebook.com">
                 <img src={facebookIcon} alt="Facebook" />
 
               </a>
             </div>
-            <div className="column">
+            <div className="column-footer">
               <a href="https://www.instagram.com">
                 <img src={instagramIcon} alt="Instagram" />
               </a>
             </div>
           </div>
           <div className="row">
-            <div className="column">
+            <div className="column-footer">
               <a href="https://www.twitter.com">
                 <img src={twitterIcon} alt="Twitter" />
               </a>
             </div>
-            <div className="column">
+            <div className="column-footer">
               <a href="https://www.linkedin.com">
                 <img src={linkedinIcon} alt="LinkedIn" />
               </a>

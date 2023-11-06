@@ -1,44 +1,93 @@
-.int-del {
-    background: linear-gradient(to bottom, #ffffff, #386FBD);
-    /* Add any other styles for the entire page as needed */
-  }
+@font-face {
+  font-family: 'Inter'; /* Name to use for the font */
+  src: url('../assets/fonts/Inter-Medium.ttf') format('truetype'); /* Path to the TTF font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.itinerary{
+  margin: 5%;
+  width: 75%;
+}
+.int-del-page {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px;
+}
+
+.logo-left,
+.logo-right {
+  width: 100px;
+  height: 100px;
+}
+
+.acc-header {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.acc-text {
+  text-align: left;
+  margin: 20px;
+}
+
+.subtext {
+  font-size: 16px;
+}
+
+.container-int-del {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 20px;
+  flex-direction: row;
+  align-items: center;
   
-  .delegate-card {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #fff;
-    margin: 10px 0;
-  }
-  
-  .designation {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .delegate-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .delegate-info img {
-    max-width: 100px; /* Adjust the image size as needed */
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  .delegate-details {
-    flex: 1;
-  }
-  
-  .delegate-details h2 {
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
-  
-  .delegate-details p {
-    font-size: 1em;
-    color: #666;
-  }
-  
+}
+
+.header-container {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column-leftt,
+.column-rightt {
+  width: 45%;
+  text-align: center;
+  padding: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 1px;
+  background-color: #ccc;
+}
+
+.itinerary {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+.name{
+  color: white;
+  font-family: 'Inter','sans-serif';
+}
+.bullet-points{
+  font-weight: 100;
+}

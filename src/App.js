@@ -6,6 +6,7 @@ import AboutPage from './pages/About';
 import EventsPage from './pages/EventsPage';
 import InternationalDelegates from './pages/InternationalDelegates';
 import ContactUsPage from './pages/ContactUs';
+import AccommodationPage from './pages/Accommodation';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/events" element={<EventsPage/>}/>
           <Route path="/int-delegates" element={<InternationalDelegates/>}/>
           <Route path="/contact-us" element={<ContactUsPage/>}/>
+          <Route path="/accommodation" element={<AccommodationPage/>}></Route>
         </Routes>
       </div>
     </Router>

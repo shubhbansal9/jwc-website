@@ -19,10 +19,10 @@ function Navbar() {
           <Link to="/events" className={buttonClass}>Events</Link>
         </li>
         <li>
-          <Link to="/" className={buttonClass}>International Delegates</Link>
+          <Link to="/int-delegates" className={buttonClass}>International Delegates</Link>
         </li>
         <li>
-          <Link to="/" className={buttonClass}>Accommodation</Link>
+          <Link to="/accommodation" className={buttonClass}>Accommodation</Link>
         </li>
         <li>
           <Link to="/contact-us" className={buttonClass}>Contact Us</Link>

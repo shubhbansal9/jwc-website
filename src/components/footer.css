@@ -86,24 +86,24 @@
     justify-content: space-between;
   }
   
-  .column {
+  .column-footer {
     display: flex;
     align-items: center;
     margin-right: 10px; /* Adjust the margin as needed */
   }
   
-  .column img {
-    max-width: 30px; /* Adjust the size as needed */
+  .column-footer img {
+    max-width: 30px; 
     height: auto;
   }
   
-  .column a {
+  .column-footer a {
     text-decoration: none;
     color: #333;
   }
   
   /* Text for social media handles */
-  .column-text {
+  .column-footer-text {
     margin-left: 5px; /* Adjust the margin as needed */
     font-size: 14px; /* Adjust the font size as needed */
   }
