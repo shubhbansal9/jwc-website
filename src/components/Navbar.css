@@ -2,64 +2,167 @@
 
 /* Styles for the horizontal navbar */
 .navbar {
-    display: flex;
-    align-items: center;
-    position: relative;
-    background-color: transparent;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-button {
+  background-color: #A6113D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  height: 30px;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+button {
+  background-color: #F484A5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 1%;
+}
+
+button.sign-in {
+  align-items: right;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: #A1C5E1;
+}
+
+.search-bar input[type="text"] {
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+.search-bar i {
+  color: #ABBED1;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #A1C5E1;
+}
+
+/* CSS for the app drawer icon */
+.app-drawer-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* CSS for the navigation links */
+.nav-list {
+  display: flex;
+}
+
+
+.nav-list {
+  display: flex;
+}
+
+
+/* Styles for the horizontal navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+/* Media Query for small screens */
+@media screen and (max-width: 768px) {
+  .app-drawer-icon {
+    display: block;
   }
-  
+  .navbar{
+    justify-content: flex-start;
+    margin-left: 7%;
+  }
   .nav-list {
-    list-style: none;
+    display: none;
+    position: absolute; /* Position it absolutely to prevent it from disappearing */
+    top: 60px; /* Adjust the top value based on your design */
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .nav-list.active {
     display: flex;
-    padding: 0;
+    flex-direction: column;
+    position: absolute;
+    margin: 0;
+    background-color: transparent;
+    z-index: 1000000;
+  }
+  .nav-button{
+
+  }
+  .nav-list.active li {
+    text-align: center;
+    width: 80%;
   }
   
-  .nav-list li {
-    margin-right: 20px;
-  }
-  .nav-button {
-    background-color: #A6113D; /* Set the background color to #ABBED1 */
-    color: white;
-    border: none;
-    border-radius: 5px; /* Rounded edges */
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-    height: 30px;
-    align-items: center;
-    text-decoration: none; /* Remove underline from links */
-    display: flex; /* Make links behave like buttons */
-  }
-  button {
-    background-color: #F484A5; /* Set the background color to #ABBED1 */
-    color: white;
-    border: none;
-    border-radius: 5px; /* Rounded edges */
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 1%;
+  .nav-list.active li a {
+    color: #fff;
   }
   button.sign-in {
-    align-items: right;
-  }
-  .search-bar {
-    display: flex;
-    align-items: center;
-    border: #A1C5E1;
+    display: none;  
   }
   
-  .search-bar input[type="text"] {  
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin-right: 10px; /* Add spacing between the search bar and "Sign In" button */
-  }
-  
-  .search-bar i {
-    color: #ABBED1;
-    font-size: 20px; /* Adjust the size as needed */
-  }
-  
-  button:hover {
-    background-color: #A1C5E1; /* Change button background color on hover */
-  }
-  
+}

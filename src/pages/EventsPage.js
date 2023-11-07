@@ -29,9 +29,10 @@ function EventsPage() {
         <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
       </header>
       <Navbar />
+      <div className="line"></div>
       <div className='workshop'>
       <img src={iternaryImage} alt="Medical Olympics Logo" className="image" />
-      <h1 className='workshop-headers'>Workshops</h1>
+      <h1 className='workshop-headers'>WORKSHOPS</h1>
       <div className="workshop-cards-container">
       <div className="workshop-cards">
         {workshopsData.map((workshop, index) => (
@@ -54,7 +55,7 @@ function EventsPage() {
       </div>
       </div>
       <div className='workshop'>
-      <h1 className='workshop-headers'>Academics</h1>
+      <h1 className='workshop-headers'>ACADEMICS</h1>
       <div className="workshop-cards-container">
       <div className="workshop-cards">
         {academicsData.map((workshop, index) => (
@@ -77,7 +78,7 @@ function EventsPage() {
       </div>
       </div>
       <div className='workshop'>
-      <h1 className='workshop-headers'>Culturals</h1>
+      <h1 className='workshop-headers'>CULTURALS</h1>
       <div className="workshop-cards">
         {culturalData.map((workshop, index) => (
           <div className={`workshop-card ${expandedWorkshops[index] ? 'expanded' : ''}`} key={index} onClick={() => handleWorkshopCardClick(index)}>
@@ -98,7 +99,7 @@ function EventsPage() {
       </div>
       </div>
       <div className='workshop'>
-      <h1 className='workshop-headers'>Sports</h1>
+      <h1 className='workshop-headers'>SPORTS</h1>
       <div className="workshop-cards">
         {sportsData.map((workshop, index) => (
           <div className={`workshop-card ${expandedWorkshops[index] ? 'expanded' : ''}`} key={index} onClick={() => handleWorkshopCardClick(index)}>

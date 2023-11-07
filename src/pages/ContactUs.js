@@ -42,11 +42,12 @@ function ContactUsPage() {
   return (
     <div className="contact-us-page">
       <header className="header">
-        <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
+      <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
         <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
         <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
       </header>
       <Navbar />
+      <div className="line"></div>
       <div className="team-section">
         <h1 className="team-header">Meet our team</h1>
         <p className="subheading">ORGANISING CHAIRPERSONS</p>
@@ -213,17 +214,14 @@ function ContactUsPage() {
           </div>
           </div>
           <p className="subheading">For further information please contact:</p>
-        <div className="team-members">
+        <div className="team-members-contact">
         <div className="team-member">
-        <img src={team31} alt="Team Member 1" />
            <p className='member-name'>Dr. Carol Clarance<br></br>7906865903</p>
           </div>
           <div className="team-member">
-          <img src={team32} alt="Team Member 2" />
            <p className='member-name'>Dr. Malika Gupta<br></br>8728077890</p>
           </div>
           <div className="team-member">
-          <img src={team33} alt="Team Member 2" />
            <p className='member-name'>Dr. Yukta Ephraim<br></br>7814148649</p>
           </div>
           </div>

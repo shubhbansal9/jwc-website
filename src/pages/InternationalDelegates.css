@@ -91,3 +91,42 @@
 .bullet-points{
   font-weight: 100;
 }
+.apply-button {
+  background-color: #FBC02D;
+  color:red;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+.details-right{
+  
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 1%;
+    justify-content: right;
+  }
+  .details-left{
+  
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 1%;
+    justify-content: right;
+    margin-left: 40%;
+  }
+  @media screen and (max-width: 768px) {
+    .details-left,.details-right{
+      flex-direction: column;
+      margin: 0;
+    }
+    .container{
+      flex-direction: column;
+    }
+  }

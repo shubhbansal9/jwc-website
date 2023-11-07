@@ -11,12 +11,13 @@ import itinerary from '../assets/itinerary.png'
 function InternationalDelegates() {
   return (
     <div className="int-del-page">
-    <header className="header">
+   <header className="header">
       <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
-      <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
-      <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
-    </header>
-    <Navbar />
+        <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
+        <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
+      </header>
+      <Navbar />
+      <div className="line"></div>
     <div className="accommodation-page">
       <header>
         <h1 className='acc-header'>INTERNATIONAL AFFAIRS</h1>
@@ -31,12 +32,12 @@ We assure each and every delegate that no second of your time with us shall go t
       </div>
       <div className="container">
         
-        <div className="column-left">
+        <div className="details-left">
           <div className="name">Dr. Arush E Michael
 <br></br>International Affairs Head</div>
           <img className="acc-image" src={team22} alt="Image 1" />
         </div>
-        <div className="column-right">
+        <div className="details-right">
           <div className="name">Dr. Dinah Liz Jacob<br></br>International Affairs Head</div>
           <img className="acc-image" src={team23} alt="Image 2" />
         </div>
@@ -60,19 +61,25 @@ We assure each and every delegate that no second of your time with us shall go t
           <div><br></br></div>
           </ul>
         </div></p>
+        <button className="apply-button">Apply Now!</button>
           </div>
           <div className="divider"></div>
           <div className="column-rightt">
             <div className="name">On campus</div>
             <p><div className="bullet-points">
         <ul>
-          <li>We offer an ideal downtown location in the heart of the city’s business district
+          <li>Easy and quick access to the campus.
 <br></br></li>
           <div><br></br></div>
-          <li>Location would be within a 4-5 km radius from the college<br></br></li>
+          <li>No transportation required.<br></br></li>
           <div><br></br></div>
+          <li>Good stay at low cost.</li>
+          <div><br></br></div>
+          <li>Being around CMCites and experiencing their life.<br></br></li>
+          <div><br></br></div><li>Location would be within a 4-5 km radius from the college</li>
           </ul>
         </div></p>
+        <button className="apply-button">Apply Now!</button>
           </div>
         </div>
       

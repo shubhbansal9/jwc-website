@@ -20,6 +20,7 @@ function Homepage() {
         <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
       </header>
       <Navbar />
+      <div className="line"></div>
       <div className="video-box">
         <video
           autoPlay

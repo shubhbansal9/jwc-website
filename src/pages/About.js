@@ -18,6 +18,7 @@ function AboutPage() {
         <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
       </header>
       <Navbar />
+      <div className="line"></div>
       <div className='about'>
         <h1>CHRISTIAN MEDICAL COLLEGE - LUDHIANA</h1>
       <p>The Christian Medical College & Hospital, Ludhiana is an educational and research institution of an all India character established and run by the minority Christian community. Founded in 1894, it was then the first medical school for women in Asia. In 1994, the world's first total face replant surgery was performed in the medical college by Abraham Thomas. First surgical research hub of India is also set up in the medical college in 2019 by National Institute for Health and Care research. CMC Ludhiana became the first educational
@@ -26,7 +27,9 @@ telemedicine consultation with the Cleveland Clinic in 2020.<br></br><br></br>
 
 CMC Ludhiana has been a recognized by NMC and has played a pivotal role in various key student-faculty developmental centres. Here, we strive with a bright
 motto - "My Work is for a King"</p>
-<img src={aboutPage} alt="CMC-Ludiana" />
+<div className='CMC'>
+<img className='CMC-pic' src={aboutPage} alt="CMC-Ludiana" />
+</div>
 <h3 className="left-header">What is <span className="different-color-text">Medical Olympics</span>?</h3>
       <p>
       Inspired from a combination of aspiration of Medicos & designed like the perseverance of Olympians, Medical Olympics is an International Medical Conference with a fun & sporty touch to it.

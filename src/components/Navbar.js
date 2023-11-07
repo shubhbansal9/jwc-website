@@ -1,35 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link } from 'react-router-dom';
 
 function Navbar() {
-  // Define a common CSS class for the buttons
-  const buttonClass = 'nav-button';
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
 
   return (
-    <nav className="navbar">
-      <ul className="nav-list">
+    <nav className={`navbar ${isNavOpen ? 'open' : ''}`}>
+      <div className="app-drawer-icon" onClick={toggleNav}>
+        <div className={`bar ${isNavOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isNavOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isNavOpen ? 'open' : ''}`}></div>
+      </div>
+      <ul className={`nav-list ${isNavOpen ? 'active' : ''}`}>
         <li>
-          <Link to="/" className={buttonClass}>Home</Link>
+          <Link to="/" className="nav-button">Home</Link>
         </li>
         <li>
-          <Link to="/about" className={buttonClass}>About</Link>
+          <Link to="/about" className="nav-button">About</Link>
         </li>
         <li>
-          <Link to="/events" className={buttonClass}>Events</Link>
+          <Link to="/events" className="nav-button">Events</Link>
         </li>
         <li>
-          <Link to="/int-delegates" className={buttonClass}>International Delegates</Link>
+          <Link to="/int-delegates" className="nav-button">International Delegates</Link>
         </li>
         <li>
-          <Link to="/accommodation" className={buttonClass}>Accommodation</Link>
+          <Link to="/accommodation" className="nav-button">Accommodation</Link>
         </li>
         <li>
-          <Link to="/contact-us" className={buttonClass}>Contact Us</Link>
+          <Link to="/contact-us" className="nav-button">Contact Us</Link>
         </li>
-        
       </ul>
-      
       <button className='sign-in'>Sign In</button>
       <button className='sign-in'>Register now</button>
     </nav>

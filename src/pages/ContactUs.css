@@ -49,3 +49,25 @@
     justify-content: center;
     text-align: center;
   }
+.team-members-contact{
+  justify-content: center;
+  gap: 10%;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .center-text{
+    display: none; /* Hide the header on mobile screens */
+  }
+  .header{
+    justify-content: space-between;
+  }
+  .nav-list {
+    justify-content: center; /* Center the navigation links */
+  }
+  .team-members{
+    flex-direction: column;
+  }
+  .subheading{
+    text-align: center;
+  }
+}
