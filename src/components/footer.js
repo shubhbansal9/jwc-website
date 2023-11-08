@@ -13,28 +13,42 @@ const Footer = () => {
         <h3>Get in Touch</h3>
         <div className="social-media">
           <div className="row">
+            
             <div className="column-footer">
-              <a href="https://www.facebook.com">
+              <a href="http://bit.ly/MO-facebook">
                 <img src={facebookIcon} alt="Facebook" />
-
+                
+              </a>
+              <a href="http://bit.ly/MO-facebook">
+                facebook
+                
               </a>
             </div>
             <div className="column-footer">
-              <a href="https://www.instagram.com">
+              <a href="http://bit.ly/MO-ig">
                 <img src={instagramIcon} alt="Instagram" />
               </a>
+              <a href="http://bit.ly/MOthreads">
+              instagram
+                </a>
             </div>
           </div>
           <div className="row">
             <div className="column-footer">
-              <a href="https://www.twitter.com">
+              <a href="http://bit.ly/MO-Xtwitter">
                 <img src={twitterIcon} alt="Twitter" />
               </a>
+              <a href="http://bit.ly/MO-ig">
+              x/twitter
+                </a>
             </div>
             <div className="column-footer">
-              <a href="https://www.linkedin.com">
+              <a href="http://bit.ly/MO-threads">
                 <img src={linkedinIcon} alt="LinkedIn" />
               </a>
+              <a href="http://bit.ly/MO-threads">
+              threads
+                </a>
             </div>
           </div>
           </div>

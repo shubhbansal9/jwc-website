@@ -129,4 +129,13 @@
     .container{
       flex-direction: column;
     }
+    .apply-button {
+      background-color: #FBC02D;
+      color:red;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: bold;
+    }
   }

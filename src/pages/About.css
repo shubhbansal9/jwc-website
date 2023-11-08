@@ -78,19 +78,19 @@
 }
 .dual-container {
   display: flex;
-  justify-content: flex-end; /* To separate the two containers */
+  justify-content: center; /* To separate the two containers */
   align-items: center;
   gap: 5%;
 }
 
 .chairpersons-container {
   display: flex;
-  flex-direction: row; /* Make them side by side */
+  flex-direction: column; /* Make them side by side */
   align-items: center;
 }
 
 .chairpersons-text {
-  margin-right: 20px;
+  margin-top: 6%;
   text-align: center;
 }
 

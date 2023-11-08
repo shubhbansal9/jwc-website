@@ -9,6 +9,10 @@ import chiefPatronImg from '../assets/chief-patron.svg';
 import patronImg from '../assets/patron.svg';
 import chairImg1 from '../assets/org-chair.svg';
 import chairImg2 from '../assets/org-chair2.svg';
+import vchair1 from '../assets/vchair1.png';
+import vchair2 from '../assets/vchair2.png';
+
+
 function AboutPage() {
   return (
     <div className="about-page">
@@ -50,7 +54,8 @@ I extend my heartfelt gratitude to all the participants, organizers, and partner
       <div className="chief-patron-container">
   <div className="chief-patron-text">
   
-  Dr. Jeyaraj D Pandian<br></br>Chief Patron <br></br> JWC - Medical Olympics<br></br>
+  Dr. Jeyaraj D Pandian<br></br>MD DM FRACP FRCP FESO FWSO FNAMS<br></br>Principal (Dean) and Professor of Neurology<br></br>Christian Medical College - Ludhiana<br></br>
+President Elect, World Stroke Organization
   </div>
   <div className="image-container">
     <img src={chiefPatronImg} alt="patron" className="patron-image" />
@@ -68,7 +73,8 @@ Join us in this momentous occasion as we come together to not just learn, but to
       </p>
       <div className="chief-patron-container">
   <div className="chief-patron-text">
-  Dr. William Bhatti<br></br>Patron <br></br> JWC - Medical Olympics<br></br>
+  Dr. William Bhatti<br></br>Professor and Head<br></br>
+Department of Pediatric Surgery<br></br>
   </div>
   <div className="image-container">
     <img src={patronImg} alt="patron" className="patron-image" />
@@ -83,22 +89,44 @@ The JWC - Medical Olympics 2024 is not just an event; it's an opportunity to gro
 and celebrate. We can't wait to see you here!<br></br><br></br>
       </p>
       <div className="dual-container">
-  <div className="chairpersons-container">
+      <div className="chairpersons-container">
+  <img src={chairImg1} alt="patron" className="patron-image" />
+    
+    <div className="image-container">
     <div className="chairpersons-text">
     Dr. Ebin B Thomas<br></br>
 Organizing Chairperson
     </div>
-    <div className="image-container">
-      <img src={chairImg1} alt="patron" className="patron-image" />
-    </div>
+      </div>
   </div>
   <div className="chairpersons-container">
+  <img src={chairImg2} alt="patron" className="patron-image" />
+    
+    <div className="image-container">
     <div className="chairpersons-text">
     Dr. Divya Handa<br></br>
 Organizing Chairperson
     </div>
+      </div>
+  </div>
+  <div className="chairpersons-container">
+  <img src={vchair1} alt="patron" className="patron-image" />
+    
     <div className="image-container">
-      <img src={chairImg2} alt="patron" className="patron-image" />
+    <div className="chairpersons-text">
+    David Thomas<br></br>
+Vice Organizing Chairperson
+    </div>
+      </div>
+  </div>
+  <div className="chairpersons-container">
+  <img src={vchair2} alt="patron" className="patron-image" />
+    <div className="image-container">
+    <div className="chairpersons-text">
+    Riya Mariam George<br></br>
+Vice Organizing Chairperson
+    </div>
+      
     </div>
   </div>
 </div>

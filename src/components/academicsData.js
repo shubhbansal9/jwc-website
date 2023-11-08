@@ -41,6 +41,12 @@ const academicsData = [
         price: 'Rs200',
         image: require('../assets/acad7.png'), 
       },
+      {
+        title: 'PlanetFlicks - Lights, Camera, Change!',
+        description: 'Are you ready to embark on a journey through the unexplored realms of medical significance in climate change? PlanetFlicks is a documentary competition that invites filmmakers from around the world to capture and unveil the untold stories that shape our diverse and dynamic planet.',
+        price: 'Rs200',
+        image: require('../assets/acad8.png'), 
+      },
       
   ];
   export default academicsData;

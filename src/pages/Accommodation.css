@@ -68,3 +68,9 @@
 .acc-text{
     margin-bottom: 5%;
 }
+
+@media screen and (max-width: 768px) {
+  .column-left{
+    margin-left: 0;
+  }
+}
