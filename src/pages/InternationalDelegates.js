@@ -33,13 +33,15 @@ We assure each and every delegate that no second of your time with us shall go t
       <div className="container">
         
         <div className="details-left">
+        <img className="acc-image" src={team22} alt="Image 1" />
           <div className="name">Dr. Arush E Michael
 <br></br>International Affairs Head</div>
-          <img className="acc-image" src={team22} alt="Image 1" />
+         
         </div>
         <div className="details-right">
+        <img className="acc-image" src={team23} alt="Image 2" />
           <div className="name">Dr. Dinah Liz Jacob<br></br>International Affairs Head</div>
-          <img className="acc-image" src={team23} alt="Image 2" />
+         
         </div>
       </div>
       <img className="itinerary" src={itinerary}></img>

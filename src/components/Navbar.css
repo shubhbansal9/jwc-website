@@ -124,7 +124,7 @@ button:hover {
 }
 
 /* Media Query for small screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .app-drawer-icon {
     display: block;
   }

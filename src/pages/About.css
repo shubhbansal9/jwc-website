@@ -9,8 +9,8 @@
   justify-content: center;
 }
 .CMC-pic{
-  width: 75%;
-  height: 75%;
+  width: 60%;
+  height: 60%;
 }
 .about {
     margin: 5%;
@@ -97,7 +97,7 @@
 .patron-image {
   max-width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .dual-container{
     gap: 3%;
   }

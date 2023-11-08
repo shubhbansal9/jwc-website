@@ -101,8 +101,9 @@ function ContactUsPage() {
            <p className='member-name'>Dennis Daniel</p>
           </div>
           </div>
+          <div className='parent'>
           <p className="subheading">HEADS OF SPORTS</p>
-        <div className="team-members">
+        <div className="team-members-sports">
         <div className="team-member">
         <img src={team10} alt="Team Member 1" />
            <p className='member-name'>Dr. Abhay S K</p>
@@ -118,6 +119,7 @@ function ContactUsPage() {
           <div className="team-member">
           <img src={team13} alt="Team Member 2" />
            <p className='member-name'>John Doe</p>
+          </div>
           </div>
           </div>
           <p className="subheading">HEADS OF FINANCE AND SPONSORSHIP</p>

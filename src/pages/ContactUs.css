@@ -39,10 +39,27 @@
     justify-content: center;
     align-items: center;
   }
-  
+  .team-members-sports {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15%;
+  }
+  .parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
   .team-members img {
     max-width: 200px; /* Adjust the width as needed */
     margin: 25px; /* Add spacing between team members */
+  }
+  .team-members-sports{
+    max-width: 200px; /* Adjust the width as needed */
+    margin: 25px; 
   }
   .member-name{
     display: flex;
@@ -54,7 +71,7 @@
   gap: 10%;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .center-text{
     display: none; /* Hide the header on mobile screens */
   }
@@ -64,10 +81,32 @@
   .nav-list {
     justify-content: center; /* Center the navigation links */
   }
-  .team-members{
-    flex-direction: column;
-  }
   .subheading{
     text-align: center;
+  }
+  .team-members img{
+    max-width: 100px;
+    margin: 10px;
+  }
+  .member-name{
+    font-size: x-small;
+  }
+  .team-members-sports img{
+    max-width: 100px;
+    margin: 10px;
+  }
+  .team-members-sports {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+    
+  }
+  .parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
