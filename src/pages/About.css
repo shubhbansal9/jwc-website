@@ -97,3 +97,11 @@
 .patron-image {
   max-width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .dual-container{
+    gap: 3%;
+  }
+  .chairpersons-text{
+    font-size: 2vw;
+  }
+}
