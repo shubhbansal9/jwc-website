@@ -109,6 +109,7 @@
     align-items: center;
     gap: 1%;
     justify-content: right;
+    width: 50%;
   }
   .details-left{
   
@@ -125,6 +126,7 @@
     .details-left,.details-right{
       flex-direction: column;
       margin: 0;
+      width: 50%;
     }
     .container{
       flex-direction: column;

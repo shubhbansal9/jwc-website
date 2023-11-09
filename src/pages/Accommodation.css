@@ -68,9 +68,21 @@
 .acc-text{
     margin-bottom: 5%;
 }
+.acc-image{
+  height: 50%;
+}
 
 @media screen and (max-width: 1000px) {
   .column-left{
     margin-left: 0;
+    width: 50%;
+  }
+  .container{
+    flex-direction: row;
+    margin: 0%;
+    gap: 0;
+  }
+  .name{
+    font-size: 60%;
   }
 }

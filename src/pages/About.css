@@ -70,7 +70,8 @@
 }
 
 .chief-patron-text {
-  margin-right: 20px; /* Add spacing between the text and image */
+  margin-right: 20px;
+  
 }
 
 .patron-image {
@@ -102,6 +103,15 @@
     gap: 3%;
   }
   .chairpersons-text{
-    font-size: 2vw;
+    font-size: 1.5vw;
+    white-space: nowrap;
+  }
+  .chief-patron-text{
+    font-size: 2.3vw;
+    white-space: nowrap;
+  }
+  .CMC-pic{
+    height: 100%;
+    width: 100%;
   }
 }

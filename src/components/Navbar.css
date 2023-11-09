@@ -44,6 +44,7 @@ button {
 
 button.sign-in {
   align-items: right;
+  white-space: nowrap;
 }
 
 .search-bar {
@@ -122,6 +123,10 @@ button:hover {
 .nav-list li {
   margin-right: 20px;
 }
+.signin{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 /* Media Query for small screens */
 @media screen and (max-width: 1000px) {
@@ -129,8 +134,9 @@ button:hover {
     display: block;
   }
   .navbar{
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-left: 7%;
+    margin-right: 7%;
   }
   .nav-list {
     display: none;
@@ -162,7 +168,15 @@ button:hover {
     color: #fff;
   }
   button.sign-in {
-    display: none;  
+   
   }
-  
+  .signin{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  button.sign-in {
+   white-space: nowrap;
+   font-size: 75%;
+  }
 }
