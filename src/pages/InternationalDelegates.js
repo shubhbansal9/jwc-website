@@ -66,8 +66,6 @@ We assure each and every delegate that no second of your time with us shall go t
           <li>Basic registration for JWC - Medical Olympics</li>
           <div><br></br></div>
           
-          
-          
           </ul>
         </div></p>
         <button className="apply-button">Apply Now!</button>
@@ -76,7 +74,7 @@ We assure each and every delegate that no second of your time with us shall go t
           <div className="column-rightt">
             <div className="name">ON - CAMPUS</div>
             <p><div className="bullet-points">
-        <ul>
+        <ul className='bullet'>
           <li>Easy and quick access to the campus.
 <br></br></li>
           <div><br></br></div>
