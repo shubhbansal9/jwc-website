@@ -34,13 +34,13 @@ We assure each and every delegate that no second of your time with us shall go t
         
         <div className="details-left">
         <img className="acc-image" src={team22} alt="Image 1" />
-          <div className="name">Dr. Arush E Michael
+          <div className="del-name">Dr. Arush E Michael
 <br></br>International Affairs Head</div>
          
         </div>
         <div className="details-right">
         <img className="acc-image" src={team23} alt="Image 2" />
-          <div className="name">Dr. Dinah Liz Jacob<br></br>International Affairs Head</div>
+          <div className="del-name">Dr. Dinah Liz Jacob<br></br>International Affairs Head</div>
          
         </div>
       </div>
@@ -55,20 +55,15 @@ We assure each and every delegate that no second of your time with us shall go t
           <div className="column-leftt">
             <div className="name">OFF - CAMPUS</div>
             <p><div className="bullet-points">
-        <ul>
+        <ul className='bullet'>
           <li>We offer an ideal downtown location in the heart of the city’s business district
 <br></br></li>
           <div><br></br></div>
           <li>Location would be within a 4-5 km radius from the college<br></br></li>
           <div><br></br></div>
+          <li>12 day extravaganza!</li>
           <div><br></br></div>
-          <li>Super Early - $1499<br></br></li>
-          <div><br></br></div>
-         
-          <li>Early - $1549<br></br></li>
-          <div><br></br></div>
-         
-          <li>Late - $1599<br></br></li>
+          <li>Basic registration for JWC - Medical Olympics</li>
           <div><br></br></div>
           
           
@@ -79,7 +74,7 @@ We assure each and every delegate that no second of your time with us shall go t
           </div>
           <div className="divider"></div>
           <div className="column-rightt">
-            <div className="name">ON - CAMPUS PACKAGE</div>
+            <div className="name">ON - CAMPUS</div>
             <p><div className="bullet-points">
         <ul>
           <li>Easy and quick access to the campus.
@@ -92,15 +87,10 @@ We assure each and every delegate that no second of your time with us shall go t
           <li>Being around CMCites and experiencing their life.<br></br></li>
           <div><br></br></div><li>Location would be within a 4-5 km radius from the college</li>
           <div><br></br></div>
-          <li>Super Early - $849<br></br></li>
+          <li>12 day extravaganza!</li>
           <div><br></br></div>
-     
-          <li>Early - $899<br></br></li>
-          <div><br></br></div>
-          <li>Late - $949<br></br></li>
-          <div><br></br></div>
+          <li>Basic registration for JWC - Medical Olympics</li>
           
-
 
           </ul>
           
