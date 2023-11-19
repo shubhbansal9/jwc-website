@@ -205,6 +205,10 @@ button:hover {
     justify-content: space-between;
     margin-left: 7%;
     margin-right: 2%;
+    width: 90%;
+  }
+  .header{
+    width: 90%;
   }
   .nav-list {
     display: none;
@@ -246,5 +250,8 @@ button:hover {
   button.sign-in {
    white-space: nowrap;
    font-size: 75%;
+  }
+  .profile-dropdown {
+   margin-top: 16%;
   }
 }

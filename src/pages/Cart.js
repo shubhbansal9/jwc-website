@@ -6,6 +6,7 @@ import medicalOlympicsImage from '../assets/medical-olympics.svg';
 import cmcLogo from '../assets/cmc-logo.svg';
 import Navbar from '../components/Navbar';
 import Footer from '../components/footer';
+import '../components/footer.css';
 const CartPage = () => {
   const { cartItems, removeFromCart } = useCart();
 
@@ -34,7 +35,9 @@ const CartPage = () => {
       ) : (
         <p className='cart-text'>Your cart is empty.</p>
       )}
+      <div className='cart-footer'>
     <Footer/>
+    </div>
     </div>
     
   );
