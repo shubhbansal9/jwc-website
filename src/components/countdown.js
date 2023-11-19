@@ -3,13 +3,22 @@ import "./countdown.css";
 
 const COUNTDOWN_TARGET = new Date("2024-04-04T23:59:59");
 
+const formatDoubleDigit = (value) => {
+  return value < 10 ? `0${value}` : value;
+};
+
 const getTimeLeft = () => {
   const totalTimeLeft = COUNTDOWN_TARGET - new Date();
   const days = Math.floor(totalTimeLeft / (1000 * 60 * 60 * 24));
   const hours = Math.floor((totalTimeLeft / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
   const seconds = Math.floor((totalTimeLeft / 1000) % 60);
-  return { days, hours, minutes, seconds };
+  return {
+    days: formatDoubleDigit(days),
+    hours: formatDoubleDigit(hours),
+    minutes: formatDoubleDigit(minutes),
+    seconds: formatDoubleDigit(seconds),
+  };
 };
 
 const Countdown = () => {

@@ -1,0 +1,68 @@
+.cart-text{
+    text-align: center;
+}
+.cart-header{
+    margin-left: 0;
+}
+.cart-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin: 3%;
+}
+.footer{
+    width: 100%;
+}
+/* CartPage.css */
+.cart-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;/* Set a light background color */
+  }
+  
+  .cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cart-item {
+    background-color: #fff; /* White background for the card */
+    color: #000; /* Black text color */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle 3D effect */
+    transition: transform 0.3s ease-in-out;
+  
+    /* Hover effect */
+    &:hover {
+      transform: scale(1.005); /* Increase size on hover */
+    }
+  }
+  .cart-item-details{
+    color: black;
+  }
+  .item{
+    color: black;
+  }
+  /* Add any additional styling as needed */
+  

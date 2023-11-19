@@ -40,12 +40,12 @@ function AccommodationPage() {
         <div className="column-left">
           
           <img className="acc-image" src={team17} alt="Image 1" />
-          <div className="name">Dr. Anshul Singla<br></br>Accommodation Head</div>
+          <div className="acc-name">Dr. Anshul Singla<br></br>Accommodation Head</div>
         </div>
         <div className="column-right">
           
           <img className="acc-image" src={team18} alt="Image 2" />
-          <div className="name">Dr. Ayana K Alex<br></br>Accommodation Head</div>
+          <div className="acc-name">Dr. Ayana K Alex<br></br>Accommodation Head</div>
         </div>
       </div>
     </div>

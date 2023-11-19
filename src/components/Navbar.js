@@ -13,6 +13,7 @@ function Navbar() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [userProfile, setUserProfile] = useState(null);
   const popupRef = useRef(null);
+  const [showProfileMenu, setShowProfileMenu] = useState(false);
 
  
 
@@ -71,8 +72,17 @@ function Navbar() {
 
       <div>
       {loggedIn ? (
-        <img className='profile-pic' src={userProfile.picture} alt="Profile" />
-      ) : (
+          <div className='profile-container'>
+            <img className='profile-pic' src={userProfile.picture} alt="Profile" onClick={() => setShowProfileMenu(!showProfileMenu)} />
+            {showProfileMenu && (
+              <div className='profile-dropdown' ref={popupRef}>
+                <Link to="/cart" className='nav-button'>Cart</Link>
+                <button className='nav-button'>My Bookings</button>
+                <button className='nav-button' onClick={() => setLoggedIn(false)}>Logout</button>
+              </div>
+            )}
+          </div>
+        ) : (
       <div className='signin'>
 
         <button className='sign-in' onClick={() => setShowGoogleSignIn(true)}>

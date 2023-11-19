@@ -32,7 +32,10 @@
   .footer-right {
     width: 40%; /* Adjust the width as needed */
   }
-  
+  .footer-left{
+    display: flex;
+    flex-direction: column;
+  }
   /* Style for the footer contact information */
   .footer-right {
     text-align: right;
@@ -78,7 +81,9 @@
   /* Style for the social media handles */
   .social-media {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 7%;
+    margin-top: 5%;
   }
   
   .row {
@@ -124,5 +129,8 @@
     }
     .footer p{
       font-size: 2.5vw;
+    }
+    .social-media{
+      flex-direction: column;
     }
   }

@@ -19,6 +19,7 @@ function InternationalDelegates() {
       <Navbar />
       <div className="line"></div>
     <div className="accommodation-page">
+    <img className="itinerary" src={itinerary}></img>
       <header>
         <h1 className='acc-header'>INTERNATIONAL AFFAIRS</h1>
       </header>
@@ -44,7 +45,7 @@ We assure each and every delegate that no second of your time with us shall go t
          
         </div>
       </div>
-      <img className="itinerary" src={itinerary}></img>
+      
       
     </div>
     <div className="container-int-del">

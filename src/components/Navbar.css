@@ -26,9 +26,10 @@
   padding: 10px 20px;
   text-align: center;
   cursor: pointer;
-  height: 30px;
+  height: 50%;
   align-items: center;
   text-decoration: none;
+  white-space: nowrap;
   display: flex;
 }
 
@@ -127,6 +128,11 @@ button:hover {
   background-color: #c23321;
   /* Adjust hover effects */
 }
+.profile-container{
+  display: flex;
+  justify-content: right;
+  
+}
 .profile-pic{
   border-radius: 50%;
   height: 50%;
@@ -143,7 +149,6 @@ button:hover {
 }
 .signin{
   display: grid;
-  grid-template-columns: 0fr 1fr;
 }
 .overlay {
   position: fixed;
@@ -175,6 +180,21 @@ button:hover {
   cursor: pointer;
   font-size: 16px;
 }
+.profile-dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  border-radius: 9%;
+  margin-top: 5%;
+}
+
+.profile-tile {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Other styles as needed */
 
 /* Media Query for small screens */
 @media screen and (max-width: 1000px) {
@@ -184,7 +204,7 @@ button:hover {
   .navbar{
     justify-content: space-between;
     margin-left: 7%;
-    margin-right: 7%;
+    margin-right: 2%;
   }
   .nav-list {
     display: none;

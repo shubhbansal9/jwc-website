@@ -40,4 +40,11 @@
     font-weight: bold;
     margin-left: 70%;
   }
-  
+  @media screen and (max-width: 1000px) {
+    .sponsor-section{
+      text-align: center;
+    }
+    .sponsor-section p{
+      text-align: center;
+    }
+  }

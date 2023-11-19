@@ -114,4 +114,7 @@
     height: 100%;
     width: 100%;
   }
+  .about-page{
+    text-align: center;
+  }
 }

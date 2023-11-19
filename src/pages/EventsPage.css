@@ -123,6 +123,12 @@
     padding: 10px 20px;
     cursor: pointer;
   }
-  @media screen {
-
+  @media screen and (max-width: 1000px) {
+    h2 {
+      font-size: large;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 0;
+    }
   }
