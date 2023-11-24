@@ -9,12 +9,7 @@ import Footer from '../components/footer';
 function AccommodationPage() {
   return (
     <div className="accommodation">
-     <header className="header">
-      <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
-        <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
-        <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
-      </header>
-      <Navbar />
+     
       <div className="line"></div>
     <div className="accommodation-page">
       <header>

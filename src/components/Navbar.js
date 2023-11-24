@@ -4,13 +4,16 @@ import { Link } from 'react-router-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
+import { useAuth } from './authContext';
+
+
 function Navbar() {
+  const { loggedIn, login, logout } = useAuth();
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
-  const [loggedIn, setLoggedIn] = useState(false);
   const [userProfile, setUserProfile] = useState(null);
   const popupRef = useRef(null);
   const [showProfileMenu, setShowProfileMenu] = useState(false);
@@ -18,16 +21,46 @@ function Navbar() {
  
 
   const [showGoogleSignIn, setShowGoogleSignIn] = useState(false);
-  const responseGoogle = response => {
+  const responseGoogle = async response => {
     const decoded = jwtDecode(response.credential);
+    console.log(decoded);
     setUserProfile(decoded);
-    setLoggedIn(true);
+    setShowGoogleSignIn(false);
+    login();
+    try {
+      const response = await fetch('http://localhost:3001/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username: decoded.name, email: decoded.email }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        // Registration successful
+        console.log('Registration successful');
+        login(); // Log in the user on the frontend
+      } else {
+        // Registration failed
+        console.error('Registration failed');
+        // Handle the error, show a message, etc.
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Handle the error, show a message, etc.
+    }
+
     setShowGoogleSignIn(false);
   };
 
+
+
+
   const closePopup = (e) => {
     if (popupRef.current && !popupRef.current.contains(e.target)) {
-      setShowGoogleSignIn(false);
+      setShowProfileMenu(false);
     }
   };
 
@@ -77,8 +110,9 @@ function Navbar() {
             {showProfileMenu && (
               <div className='profile-dropdown' ref={popupRef}>
                 <Link to="/cart" className='nav-button'>Cart</Link>
-                <button className='nav-button'>My Bookings</button>
-                <button className='nav-button' onClick={() => setLoggedIn(false)}>Logout</button>
+                <Link to="/cart" className='nav-button'>My Bookings</Link>
+                <Link to="" className='nav-button' onClick={() => logout()}>Logout</Link>
+
               </div>
             )}
           </div>
@@ -109,5 +143,6 @@ function Navbar() {
     </nav>
   );
 }
+
 
 export default Navbar;

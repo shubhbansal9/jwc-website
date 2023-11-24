@@ -14,10 +14,12 @@ import EventDetails from '../components/EventDetails';
 import upcomingEvents from '../components/eventData';
 import ConfirmationPopup from '../components/confirmationPopup';
 import { useCart } from '../components/cart';
+import { useAuth } from '../components/authContext';
 function EventsPage() {
   const [expandedWorkshops, setExpandedWorkshops] = useState(Array(workshopsData.length).fill(false));
   const [showPopup, setShowPopup] = useState(false);
   const { addToCart } = useCart();
+  const { loggedIn } = useAuth();
   const handleWorkshopCardClick = (index) => {
     const updatedWorkshops = [...expandedWorkshops];
     updatedWorkshops[index] = !updatedWorkshops[index];
@@ -25,9 +27,10 @@ function EventsPage() {
     
   };
   const handleRegisterClick = (workshop) => {
-    // This function is triggered when the user clicks the "Register" button
-    // You can add specific logic related to registration or any other action here
-    // For now, let's open the popup with the selected workshop details
+    if (!loggedIn) {
+      alert('Kindly login before registering.');
+      return;
+    }
     setSelectedWorkshop(workshop);
     setShowPopup(true);
   };
@@ -47,12 +50,7 @@ function EventsPage() {
 
   return (
     <div className="events-page">
-      <header className="header">
-        <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
-        <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
-        <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
-      </header>
-      <Navbar />
+      
       <div className="line"></div>
       <div className='workshop'>
         <EventDetails events={upcomingEvents} />

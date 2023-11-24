@@ -11,12 +11,7 @@ import itinerary from '../assets/itinerary.png'
 function InternationalDelegates() {
   return (
     <div className="int-del-page">
-   <header className="header">
-      <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
-        <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
-        <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
-      </header>
-      <Navbar />
+  
       <div className="line"></div>
     <div className="accommodation-page">
     <img className="itinerary" src={itinerary}></img>

@@ -9,10 +9,21 @@ import ContactUsPage from './pages/ContactUs';
 import AccommodationPage from './pages/Accommodation';
 import CartPage from './pages/Cart';
 import CartProvider from './components/cart';
+import medicalOlympicsImage from './assets/medical-olympics.svg';
+import cmcLogo from './assets/cmc-logo.svg';
+import { AuthProvider } from './components/authContext';
+import { useAuth } from './components/authContext';
 
 function App() {
   return (
     <Router>
+      <header className="header">
+      <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
+        <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
+        <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
+      </header>
+      <AuthProvider>
+      <Navbar/>
       <CartProvider>
         <div>
           <Routes>
@@ -26,6 +37,7 @@ function App() {
           </Routes>
         </div>
       </CartProvider>
+      </AuthProvider>
     </Router>
   );
 }

@@ -41,12 +41,7 @@ import Footer from '../components/footer';
 function ContactUsPage() {
   return (
     <div className="contact-us-page">
-      <header className="header">
-      <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
-        <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
-        <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
-      </header>
-      <Navbar />
+      
       <div className="line"></div>
       <div className="team-section">
         <h1 className="team-header">Meet our team</h1>

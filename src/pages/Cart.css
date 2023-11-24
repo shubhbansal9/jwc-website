@@ -43,7 +43,12 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
+  .pay-button{
+    white-space: nowrap;
+  }
+  .item-total{
+    margin-top: 40%;
+  }
   .cart-item {
     background-color: #fff; /* White background for the card */
     color: #000; /* Black text color */

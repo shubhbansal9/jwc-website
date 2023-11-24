@@ -16,12 +16,7 @@ import vchair2 from '../assets/vchair2.png';
 function AboutPage() {
   return (
     <div className="about-page">
-          <header className="header">
-      <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
-        <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
-        <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
-      </header>
-      <Navbar />
+      
       <div className="line"></div>
       <div className='about'>
         <h1>CHRISTIAN MEDICAL COLLEGE - LUDHIANA</h1>

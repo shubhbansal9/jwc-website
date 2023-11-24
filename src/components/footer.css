@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 40px;
     padding: 20px;
     color: white;
     background-color: #573D80;
@@ -46,7 +45,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 40px;
     padding: 20px;
   }
   
