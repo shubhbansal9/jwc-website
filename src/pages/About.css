@@ -4,7 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
-
+.CMC {
+  display: flex;
+  justify-content: center;
+}
+.CMC-pic{
+  width: 60%;
+  height: 60%;
+}
 .about {
     margin: 5%;
     justify-content: center;
@@ -63,7 +70,8 @@
 }
 
 .chief-patron-text {
-  margin-right: 20px; /* Add spacing between the text and image */
+  margin-right: 20px;
+  
 }
 
 .patron-image {
@@ -71,22 +79,42 @@
 }
 .dual-container {
   display: flex;
-  justify-content: flex-end; /* To separate the two containers */
+  justify-content: center; /* To separate the two containers */
   align-items: center;
   gap: 5%;
 }
 
 .chairpersons-container {
   display: flex;
-  flex-direction: row; /* Make them side by side */
+  flex-direction: column; /* Make them side by side */
   align-items: center;
 }
 
 .chairpersons-text {
-  margin-right: 20px;
+  margin-top: 6%;
   text-align: center;
 }
 
 .patron-image {
   max-width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .dual-container{
+    gap: 3%;
+  }
+  .chairpersons-text{
+    font-size: 1.5vw;
+    white-space: nowrap;
+  }
+  .chief-patron-text{
+    font-size: 2.3vw;
+    white-space: nowrap;
+  }
+  .CMC-pic{
+    height: 100%;
+    width: 100%;
+  }
+  .about-page{
+    text-align: center;
+  }
 }

@@ -25,25 +25,6 @@ body {
   
 }
 
-/* Styles for the horizontal navbar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  color: #fff;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  padding: 0;
-}
-
-.nav-list li {
-  margin-right: 20px;
-}
-
 button:hover {
   background-color: #444;
 }
@@ -51,8 +32,10 @@ button:hover {
 /* Styles for the video box */
 .video-box {
   width: 100%; /* Adjust the width as needed */
-  padding: 20px; /* Background color for the video box */
+  padding-bottom: 2%;
+  padding-top: 2%; /* Background color for the video box */
   text-align: center;
+  background-color: black;
 }
 
 .content-video {
@@ -103,6 +86,12 @@ h2 {
   transform: translateX(50%);
   width: 500%; /* Start off-screen to the left */
 }
+.line {
+  width: 88%; /* Set the width of the line to 50% of the container */
+  border-top: 2px solid #A6113D; /* Add a top border to create a line */
+  margin: 0 auto; /* Center the line horizontally */
+}
+
 
 @keyframes filmReel {
   0% {
@@ -110,5 +99,19 @@ h2 {
   }
   100% {
     transform: translateX(-50%); /* Move the image to the right edge */
+  }
+}
+@media screen and (max-width: 1000px) {
+  .center-text{
+    display: none; /* Hide the header on mobile screens */
+  }
+  .header{
+    justify-content: space-between;
+  }
+  .nav-list {
+    justify-content: center; /* Center the navigation links */
+  }
+  .register-now{
+    width: 1500%;
   }
 }

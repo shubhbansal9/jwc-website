@@ -44,4 +44,39 @@
   .event-navigation button:hover {
     background-color: #444;
   }
+  .event {
+    position: relative;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%; /* Adjust the vertical position as needed */
+    transform: translateY(-50%); /* Center vertically */
+  }
+  
+  .arrow.left {
+    left: 10px; /* Adjust the horizontal position for the left arrow */
+  }
+  
+  .arrow.right {
+    right: 10px; /* Adjust the horizontal position for the right arrow */
+  }
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #F484A5; /* Active dot color */
+  }
   

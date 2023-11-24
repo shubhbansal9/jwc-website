@@ -11,13 +11,10 @@ import itinerary from '../assets/itinerary.png'
 function InternationalDelegates() {
   return (
     <div className="int-del-page">
-    <header className="header">
-      <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
-      <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
-      <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
-    </header>
-    <Navbar />
+  
+      <div className="line"></div>
     <div className="accommodation-page">
+    <img className="itinerary" src={itinerary}></img>
       <header>
         <h1 className='acc-header'>INTERNATIONAL AFFAIRS</h1>
       </header>
@@ -31,17 +28,19 @@ We assure each and every delegate that no second of your time with us shall go t
       </div>
       <div className="container">
         
-        <div className="column-left">
-          <div className="name">Dr. Arush E Michael
+        <div className="details-left">
+        <img className="acc-image" src={team22} alt="Image 1" />
+          <div className="del-name">Dr. Arush E Michael
 <br></br>International Affairs Head</div>
-          <img className="acc-image" src={team22} alt="Image 1" />
+         
         </div>
-        <div className="column-right">
-          <div className="name">Dr. Dinah Liz Jacob<br></br>International Affairs Head</div>
-          <img className="acc-image" src={team23} alt="Image 2" />
+        <div className="details-right">
+        <img className="acc-image" src={team23} alt="Image 2" />
+          <div className="del-name">Dr. Dinah Liz Jacob<br></br>International Affairs Head</div>
+         
         </div>
       </div>
-      <img className="itinerary" src={itinerary}></img>
+      
       
     </div>
     <div className="container-int-del">
@@ -50,29 +49,47 @@ We assure each and every delegate that no second of your time with us shall go t
           </div>
           <div className="header-container">
           <div className="column-leftt">
-            <div className="name">Off-campus</div>
+            <div className="name">OFF - CAMPUS</div>
             <p><div className="bullet-points">
-        <ul>
+        <ul className='bullet'>
           <li>We offer an ideal downtown location in the heart of the city’s business district
 <br></br></li>
           <div><br></br></div>
           <li>Location would be within a 4-5 km radius from the college<br></br></li>
           <div><br></br></div>
+          <li>12 day extravaganza!</li>
+          <div><br></br></div>
+          <li>Basic registration for JWC - Medical Olympics</li>
+          <div><br></br></div>
+          
           </ul>
         </div></p>
+        <button className="apply-button">Apply Now!</button>
           </div>
           <div className="divider"></div>
           <div className="column-rightt">
-            <div className="name">On campus</div>
+            <div className="name">ON - CAMPUS</div>
             <p><div className="bullet-points">
-        <ul>
-          <li>We offer an ideal downtown location in the heart of the city’s business district
+        <ul className='bullet'>
+          <li>Easy and quick access to the campus.
 <br></br></li>
           <div><br></br></div>
-          <li>Location would be within a 4-5 km radius from the college<br></br></li>
+          <li>No transportation required.<br></br></li>
           <div><br></br></div>
+          <li>Good stay at low cost.</li>
+          <div><br></br></div>
+          <li>Being around CMCites and experiencing their life.<br></br></li>
+          <div><br></br></div><li>Location would be within a 4-5 km radius from the college</li>
+          <div><br></br></div>
+          <li>12 day extravaganza!</li>
+          <div><br></br></div>
+          <li>Basic registration for JWC - Medical Olympics</li>
+          
+
           </ul>
+          
         </div></p>
+        <button className="apply-button">Apply Now!</button>
           </div>
         </div>
       

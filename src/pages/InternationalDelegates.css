@@ -7,7 +7,7 @@
 
 .itinerary{
   margin: 5%;
-  width: 75%;
+  width: 50%;
 }
 .int-del-page {
   text-align: center;
@@ -72,6 +72,17 @@
 .name {
   font-weight: bold;
   margin-bottom: 10px;
+  color: black;
+  font-family: 'Inter','sans-serif';
+  font-size: large;
+}
+
+.del-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Inter','sans-serif';
+  margin-top: 4%;
 }
 
 .divider {
@@ -84,10 +95,88 @@
   margin: 20px auto;
   max-width: 100%;
 }
-.name{
-  color: white;
-  font-family: 'Inter','sans-serif';
-}
 .bullet-points{
   font-weight: 100;
 }
+.apply-button {
+  background-color: #FBC02D;
+  color:red;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+.details-right{
+  
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1%;
+    justify-content: right;
+    width: 50%;
+  }
+  .details-left{
+  
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1%;
+    justify-content: right;
+  }
+  .column-leftt {
+    
+    padding: 20px;
+    margin: 10px;
+
+    background: #fff; /* Card background color */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
+    
+    transition: transform 0.2s;
+    
+  }
+  .column-rightt {
+    
+    padding: 20px;
+    margin: 10px;
+
+    background: #fff; /* Card background color */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
+    
+    transition: transform 0.2s;
+    
+  }
+  .bullet{
+    margin: 0;
+    color: black;
+  }
+  @media screen and (max-width: 1000px) {
+    .details-left,.details-right{
+      flex-direction: column;
+      margin: 0;
+      width: 50%;
+      margin-left: 0;
+    }
+    .apply-button {
+      background-color: #FBC02D;
+      color:red;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .del-name {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+      font-family: 'Inter','sans-serif';
+      font-size: x-small;
+    }
+  }

@@ -9,12 +9,8 @@ import Footer from '../components/footer';
 function AccommodationPage() {
   return (
     <div className="accommodation">
-     <header className="header">
-      <img src={medicalOlympicsImage} alt="Medical Olympics Logo" className="logo-left" />
-        <div className="center-text">JWC - MEDICAL OLYMPICS 2024</div>
-        <img src={cmcLogo} alt="Medical Olympics Logo" className="logo-right" />
-      </header>
-      <Navbar />
+     
+      <div className="line"></div>
     <div className="accommodation-page">
       <header>
         <h1 className='acc-header'>ACCOMODATION</h1>
@@ -37,12 +33,14 @@ function AccommodationPage() {
       <div className="container">
         
         <div className="column-left">
-          <div className="name">Dr. Anshul Singla<br></br>Accommodation Head</div>
+          
           <img className="acc-image" src={team17} alt="Image 1" />
+          <div className="acc-name">Dr. Anshul Singla<br></br>Accommodation Head</div>
         </div>
         <div className="column-right">
-          <div className="name">Dr. Ayana K Alex<br></br>Accommodation Head</div>
+          
           <img className="acc-image" src={team18} alt="Image 2" />
+          <div className="acc-name">Dr. Ayana K Alex<br></br>Accommodation Head</div>
         </div>
       </div>
     </div>
