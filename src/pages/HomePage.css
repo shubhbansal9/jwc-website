@@ -103,7 +103,8 @@ h2 {
 }
 @media screen and (max-width: 1000px) {
   .center-text{
-    display: none; /* Hide the header on mobile screens */
+    font-size: small;
+    white-space: nowrap;
   }
   .header{
     justify-content: space-between;

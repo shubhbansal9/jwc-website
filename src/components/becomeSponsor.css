@@ -30,21 +30,19 @@
     text-align: left;
   }
   
-  .sponsor-section .apply-button {
-    background-color: #FBC02D;
-    color:red;
+  .sponsor-section .apply-now-button {
+    background-color: #A6113D;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    margin-left: 70%;
   }
-  @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .sponsor-section{
       text-align: center;
     }
     .sponsor-section p{
       text-align: center;
-    }
+    } 
   }

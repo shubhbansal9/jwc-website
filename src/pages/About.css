@@ -117,4 +117,12 @@
   .about-page{
     text-align: center;
   }
+  .left-header{
+    white-space: nowrap;
+    text-align: center;
+  }
+  .left-header2{
+    white-space: nowrap;
+    text-align: center;
+  }
 }

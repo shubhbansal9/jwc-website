@@ -72,11 +72,10 @@
   display: flex;
 }
 @media screen and (max-width: 1000px) {
-  .center-text{
-    display: none; /* Hide the header on mobile screens */
-  }
+  
   .header{
     justify-content: space-between;
+    gap: 5%;
   }
   .nav-list {
     justify-content: center; /* Center the navigation links */

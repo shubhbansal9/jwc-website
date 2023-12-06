@@ -179,4 +179,16 @@
       font-family: 'Inter','sans-serif';
       font-size: x-small;
     }
+    .itinerary{
+      width: 100%;
+    }
+    .header-container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .container-int-del{
+      margin: 0;
+      padding: 0;
+    }
   }
