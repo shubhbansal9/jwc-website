@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
          <div className="footer-right">
         <img src={cmcLogo} alt="Medical Olympics Logo" />
-        <p>Email: info@example.com</p>
+        <p>Email: medicalolympicscmcl@gmail.com</p>
       </div>
     </div>
   );
