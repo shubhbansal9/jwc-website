@@ -30,7 +30,7 @@ function Homepage() {
       <div className="register-now-container">
         <img src={registerNow} alt="Register Now" className="register-now" />
       </div>
-      <Countdown />
+      {/* <Countdown /> */}
       <EventDetails events={upcomingEvents} />
       <SponsorSection/>
       <Footer/>

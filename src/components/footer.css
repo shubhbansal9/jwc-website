@@ -126,7 +126,9 @@
       margin: 0;
     }
     .footer p{
-      font-size: 2.5vw;
+      text-align: left;
+      white-space: nowrap;
+      font-size: 2vw;
     }
     .social-media{
       flex-direction: column;
