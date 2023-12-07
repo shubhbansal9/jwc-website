@@ -132,7 +132,14 @@ const TermsPopup = ({ onClose, onAccept }) => {
 
 <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
           
-          
+<h2 className='return-header'>REFUND POLICY</h2>
+    <p>Last updated December 07, 2023</p>
+
+    <h3>REFUNDS</h3>
+    <p>All sales are final and no refund will be issued.</p>
+
+    <h3>QUESTIONS</h3>
+    <p>If you have any questions concerning our return policy, please contact us at: <a href="mailto:medicalolympicscmcl@gmail.com">medicalolympicscmcl@gmail.com</a></p>
           
           </div>
           <Link to="/" className="accept-button">Accept</Link>
