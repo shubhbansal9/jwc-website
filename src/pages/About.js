@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import './About.css';
 import Footer from '../components/footer';
 import aboutPage from '../assets/about-page.svg';
-import chiefPatronImg from '../assets/chief-patron.svg';
+import chiefPatronImg from '../assets/chief-patron.png';
 import patronImg from '../assets/patron.svg';
 import chairImg1 from '../assets/org-chair.svg';
 import chairImg2 from '../assets/org-chair2.svg';

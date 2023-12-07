@@ -4,6 +4,7 @@
     text-align: center;
     margin: 40px 0;
     margin-top: 10%;
+    margin-bottom: 5%;
   }
   
   .sponsor-section h2 {
@@ -28,21 +29,28 @@
     margin-left: 8%;
     margin-right: 8%;
     text-align: left;
+    margin-bottom: 5%;
   }
   
   .sponsor-section .apply-now-button {
     background-color: #A6113D;
-    border: none;
+    border: 1px;
+    border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    text-decoration: none;
     font-size: 18px;
+    color: white;
     font-weight: bold;
+    margin-top: 3%;
   }
 @media screen and (max-width: 1000px) {
     .sponsor-section{
       text-align: center;
+      margin-bottom: 8% ;
     }
     .sponsor-section p{
       text-align: center;
+      margin-bottom: 8% ;
     } 
   }

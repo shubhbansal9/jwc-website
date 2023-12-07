@@ -7,8 +7,19 @@ import './InternationalDelegates.css';
 import Footer from '../components/footer';
 import team22 from '../assets/team/team-22.png';
 import team23 from '../assets/team/team-23.png';
-import itinerary from '../assets/itinerary.png'
+import itinerary from '../assets/itinerary.png';
+import { useState } from 'react';
 function InternationalDelegates() {
+  const [isExpanded1, setIsExpanded1] = useState(false);
+  const [isExpanded2, setIsExpanded2] = useState(false);
+
+  const toggleExpand1 = () => {
+    setIsExpanded1(!isExpanded1);
+  };
+
+  const toggleExpand2 = () => {
+    setIsExpanded2(!isExpanded2);
+  };
   return (
     <div className="int-del-page">
   
@@ -48,7 +59,7 @@ We assure each and every delegate that no second of your time with us shall go t
             <h2>Registration</h2>
           </div>
           <div className="header-container">
-          <div className="column-leftt">
+          <div className="column-leftt" onClick={toggleExpand1}>
             <div className="name">OFF - CAMPUS</div>
             <p><div className="bullet-points">
         <ul className='bullet'>
@@ -63,11 +74,25 @@ We assure each and every delegate that no second of your time with us shall go t
           <div><br></br></div>
           
           </ul>
+          {isExpanded1 && (
+        <div className="bullet">
+          <p className='expanded'>The basic registration includes:</p>
+          <ul>
+            <li>Entry to the conference</li>
+            <li>Entry to the cultural nights including opening night</li>
+            <li>Access to all the free events</li>
+            <li>Dinner on Day 1 and Breakfast for 3 days of the conference from 4th - 6th April</li>
+            <li>Travel to all the places mentioned in the itinerary</li>
+            
+          </ul>
+          <p className='expanded'>P.S. Travel to the airport for departure not included</p>
+        </div>
+      )}
         </div></p>
-        <button className="apply-button">Apply Now!</button>
+        <a href="https://forms.gle/8R4hfdBAJDbD6DEX9" class="apply-button">Apply Now!</a>
           </div>
           <div className="divider"></div>
-          <div className="column-rightt">
+          <div className="column-rightt" onClick={toggleExpand2}>
             <div className="name">ON - CAMPUS</div>
             <p><div className="bullet-points">
         <ul className='bullet'>
@@ -87,9 +112,22 @@ We assure each and every delegate that no second of your time with us shall go t
           
 
           </ul>
-          
+          {isExpanded2 && (
+        <div className="bullet">
+          <p className='expanded'>The basic registration includes:</p>
+          <ul>
+            <li>Entry to the conference</li>
+            <li>Entry to the cultural nights including opening night</li>
+            <li>Access to all the free events</li>
+            <li>Dinner on Day 1 and Breakfast for 3 days of the conference from 4th - 6th April</li>
+            <li>Travel to all the places mentioned in the itinerary</li>
+            
+          </ul>
+          <p className='expanded'>P.S. Travel to the airport for departure not included</p>
+        </div>
+      )}
         </div></p>
-        <button className="apply-button">Apply Now!</button>
+        <a href="https://forms.gle/8R4hfdBAJDbD6DEX9" class="apply-button">Apply Now!</a>
           </div>
         </div>
       
