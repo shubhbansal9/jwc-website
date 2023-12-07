@@ -65,6 +65,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    color: white;
   }
 .team-members-contact{
   justify-content: center;
@@ -75,7 +76,7 @@
   
   .header{
     justify-content: space-between;
-    gap: 5%;
+    gap: 6%;
   }
   .nav-list {
     justify-content: center; /* Center the navigation links */

@@ -49,12 +49,14 @@
     font-size: large;
     margin-top: 10%;
     margin-left: 20%;
+    color: white;
     white-space: nowrap;
   }
   .our-spons-title{
     text-align: center;
     font-size: large;
     margin-top: 10%;
+    color: white;
   }
 
   @media screen and (max-width: 1000px) {
