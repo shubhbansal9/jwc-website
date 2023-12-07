@@ -9,7 +9,8 @@ import upcomingEvents from '../components/eventData';
 import EventDetails from '../components/EventDetails';
 import SponsorSection from '../components/becomeSponsor';
 import Footer from '../components/footer';
-import vid from '../assets/videos/JWC-MEDICAL-OLYPICS-2.mp4'
+import vid from '../assets/videos/JWC-MEDICAL-OLYPICS-2.mp4';
+import OurSponsors from '../components/OurSponsors';
 function Homepage() {
   
   return (
@@ -30,9 +31,11 @@ function Homepage() {
       <div className="register-now-container">
         <img src={registerNow} alt="Register Now" className="register-now" />
       </div>
-      {/* <Countdown /> */}
+      <Countdown />
       <EventDetails events={upcomingEvents} />
+      <OurSponsors/>
       <SponsorSection/>
+      
       <Footer/>
     </div>
   );

@@ -17,7 +17,7 @@ beyond.
 This is a unique opportunity for you to participate and sponsor a medical event increasing your brand visibility. It also gives you a chance to involve yourself in the community and help in training of the future doctors of this country. Last but not the least multiple benefits for the sponsors are listed based on the level of sponsorship
 you wish to provide.
       </p>
-      <button href="https://forms.gle/8R4hfdBAJDbD6DEX9" class="apply-now-button">Apply Now!</button>
+      <a href="https://forms.gle/8R4hfdBAJDbD6DEX9" class="apply-now-button">Apply Now!</a>
 
     </div>
   );
