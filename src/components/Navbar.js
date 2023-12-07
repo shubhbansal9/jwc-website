@@ -5,12 +5,12 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 import { useAuth } from './authContext';
-
+import TermsPopup from './TermsPopup';
 
 function Navbar() {
   const { loggedIn, login, logout } = useAuth();
   const [isNavOpen, setIsNavOpen] = useState(false);
-
+  const [showTermsPopup, setShowTermsPopup] = useState(false);
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -18,7 +18,9 @@ function Navbar() {
   const popupRef = useRef(null);
   const [showProfileMenu, setShowProfileMenu] = useState(false);
 
- 
+  const toggleTermsPopup = () => {
+    setShowTermsPopup(!showTermsPopup);
+  };
 
   const [showGoogleSignIn, setShowGoogleSignIn] = useState(false);
   const responseGoogle = async response => {
@@ -99,7 +101,7 @@ function Navbar() {
           <Link to="/contact-us" className="nav-button">Contact Us</Link>
         </li>
         <li>
-          <Link to="/contact-us" className="nav-button">Register now</Link>
+          <Link to="/terms" className="nav-button">Register now</Link>
         </li>
       </ul>
 
