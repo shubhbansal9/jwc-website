@@ -1,6 +1,6 @@
 const upcomingEvents = [
     {
-      title: 'Event 1',
+      title: '',
       imageUrl: require('../assets/upcoming-events1.png'),
     },
     {

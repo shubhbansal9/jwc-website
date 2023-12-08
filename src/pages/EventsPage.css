@@ -2,7 +2,7 @@
       background: white;
       border-radius: 5px;
       padding: 5px 10px;
-      margin-left: 46%;
+      margin-left: 40%;
       border: 1px solid #000;
       text-align: center;
       display: flex;
@@ -19,6 +19,8 @@
     }
 .workshop-title{
   margin-top: 10%;
+  color: black;
+  margin-bottom: 10%;
 }
   .events-page {
       text-align: center;
@@ -46,7 +48,7 @@
     }
     .workshop-cards-container {
       display: flex;
-      justify-content: flex-start; /* Align to the left */
+      justify-content: center; /* Align to the left */
       flex-wrap: wrap;
     }
     .workshop-card {
@@ -61,9 +63,7 @@
       max-height: 380px;
     }
     
-    .workshop-card:hover {
-      transform: scale(1.05); /* Enlarge the card on hover */
-    }
+    
     
     .workshop-card img {
       max-width: 100%;
@@ -77,7 +77,7 @@
     
     .workshop-card p {
       font-size: 14px;
-      color: #777;
+      color: #02050A;
     }
     
     .workshop-button {
@@ -103,7 +103,6 @@
     margin-bottom: 5%;
   }
   .workshop-card {
-    position: relative;
     overflow: hidden;
     transition: height 0.3s; /* Add a transition for the height property */
     height: auto; /* Set the initial height to 'auto' */
@@ -111,16 +110,19 @@
   
   .workshop-card.expanded {
     height: auto; 
-    max-height: none;/* Set the height to 'auto' when expanded */
+    max-height: none;
+    transform: scale(1.05); /* Enlarge the card on hover */
   }
 
   .workshop-buttons button {
-    background-color: #FBC02D;
-    color: red;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
+    background-color: #A6113D;
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 3%;
   }
   

@@ -1,5 +1,6 @@
 .cart-text{
     text-align: center;
+    color: white;
 }
 .cart-header{
     margin-left: 0;
@@ -22,6 +23,7 @@
   justify-content: space-between;
   margin-bottom: 10px;
   margin: 3%;
+  align-items: center;
 }
 .cart-footer{
     width: 100%;
@@ -41,6 +43,7 @@
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
   .pay-button{
@@ -48,6 +51,7 @@
   }
   .item-total{
     margin-top: 40%;
+    color: white;
   }
   .cart-item {
     background-color: #fff; /* White background for the card */
