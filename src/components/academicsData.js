@@ -8,7 +8,7 @@ const academicsData = [
     {
       title: 'Murder Mystery - A Crime Scene Investigation',
       description: 'As the time ticks out, the killer hides amongst you. Keep your eyes peeled out for clues before the next body found is you.',
-      price: 'Rs200',
+      price: 'Rs180',
       image: require('../assets/acad2.png'), 
     },
     {
@@ -26,19 +26,19 @@ const academicsData = [
       {
         title: 'Contra Puntum - Point Counter Point',
         description: 'When was the last time you had a satisfying argument that made you question your own ideas and counter yourself with the best of both worlds. Here we are with point counterpoint an opportunity to view a concept from both extremes and put forward conflicting opinions on current medical and social issues.',
-        price: 'Rs200',
+        price: 'Rs80',
         image: require('../assets/acad5.png'), 
       },
       {
         title: 'Medical Musical Chairs',
         description: 'Websters defines Musical Chairs as a game in which players march to music around a row of chairs numbering one less than the players and scramble for seats. when the music stops. We decided to add a little twist.',
-        price: 'Rs200',
+        price: 'Rs50',
         image: require('../assets/acad6.png'), 
       },
       {
         title: 'Skin it up!',
         description: 'Are you an artistic medico? How about painting on a unique canvas to test your human anatomical knowledge!!',
-        price: 'Rs200',
+        price: 'Rs80',
         image: require('../assets/acad7.png'), 
       },
       {

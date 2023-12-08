@@ -14,6 +14,7 @@ import cmcLogo from './assets/cmc-logo.svg';
 import { AuthProvider } from './components/authContext';
 import { useAuth } from './components/authContext';
 import TermsPopup from './components/TermsPopup';
+import RegisterNowPage from './pages/RegisterNow';
 function App() {
   return (
     <Router>
@@ -35,6 +36,7 @@ function App() {
             <Route path="/accommodation" element={<AccommodationPage />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/terms" element={<TermsPopup/>}/>
+            <Route path="/register" element={<RegisterNowPage/>}/>
           </Routes>
         </div>
       </CartProvider>

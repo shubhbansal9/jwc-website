@@ -70,6 +70,7 @@ Join us in this momentous occasion as we come together to not just learn, but to
   <div className="chief-patron-text">
   Dr. William Bhatti<br></br>Professor and Head<br></br>
 Department of Pediatric Surgery<br></br>
+Director, <br></br>Christian Medical College & Hospital
   </div>
   <div className="image-container">
     <img src={patronImg} alt="patron" className="patron-image" />

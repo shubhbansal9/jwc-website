@@ -15,7 +15,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 20px;
     
   }
   
@@ -81,4 +80,9 @@
   .dot.active {
     background-color: #F484A5; /* Active dot color */
   }
-  
+  @media screen  and (max-width: 1000px){
+    .event {
+      position: relative;
+      width: 100%;
+    }
+  }

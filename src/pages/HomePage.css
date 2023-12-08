@@ -103,11 +103,10 @@ h2 {
 }
 @media screen and (max-width: 1000px) {
   .center-text{
-    font-size: small;
+    font-size: 3.9vw;
     white-space: nowrap;
   }
   .header{
-    justify-content: space-between;
   }
   .nav-list {
     justify-content: center; /* Center the navigation links */

@@ -101,7 +101,7 @@ function Navbar() {
           <Link to="/contact-us" className="nav-button">Contact Us</Link>
         </li>
         <li>
-          <Link to="/terms" className="nav-button">Register now</Link>
+          <Link to="/register" className="nav-button">Register now</Link>
         </li>
       </ul>
 

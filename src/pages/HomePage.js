@@ -21,7 +21,8 @@ function Homepage() {
         <video
           autoPlay
           loop
-          muted// Show video controls
+          muted
+          controls
           className="content-video"
         >
           <source src={vid} type="video/mp4" />
