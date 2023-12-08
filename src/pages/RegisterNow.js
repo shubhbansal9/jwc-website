@@ -16,10 +16,18 @@ const RegisterNowPage = () => {
   const { loggedIn } = useAuth();
   const handleWorkshopCardClick = (index) => {
     const updatedWorkshops = [...expandedWorkshops];
+    
+    // Close the previously expanded card
+    const previouslyExpandedIndex = updatedWorkshops.findIndex((isExpanded) => isExpanded);
+    if (previouslyExpandedIndex !== -1 && previouslyExpandedIndex !== index) {
+      updatedWorkshops[previouslyExpandedIndex] = false;
+    }
+  
+    // Toggle the clicked card
     updatedWorkshops[index] = !updatedWorkshops[index];
     setExpandedWorkshops(updatedWorkshops);
-    
   };
+  const [popupOpen, setPopupOpen] = useState(false);
   const handleRegisterClick = (workshop) => {
     if (!loggedIn) {
       alert('Kindly login before registering.');
@@ -34,6 +42,7 @@ const RegisterNowPage = () => {
   const handleClosePopup = () => {
     setSelectedWorkshop(null);
     setShowPopup(false);
+    setPopupOpen(false);
   };
 
   const handleConfirmBooking = () => {
@@ -42,7 +51,8 @@ const RegisterNowPage = () => {
   };
 
   return (
-    
+    <div className={`reg-page ${showPopup ? 'popup-open' : ''}`}>
+    {showPopup && <div className='overlay'></div>}
     <div className='reg-page'>
       <div className='workshop'>
         <h1 className='workshop-headers'>REGISTRATION</h1>
@@ -61,18 +71,21 @@ const RegisterNowPage = () => {
                     <p className="price">{workshop.price}</p>
                   </div>
                 </div>
-                {showPopup && (
+                
+
+              </div>
+              
+            ))}
+      </div>
+      {showPopup && (
         <ConfirmationPopup workshopDetails={selectedWorkshop} onConfirmBooking={handleConfirmBooking} onClose={handleClosePopup}>
           {/* Customize the content of your popup here */}
           <p>ARE YOU SURE YOU WANT TO ADD THIS EVENT TO THE CART?</p>
         </ConfirmationPopup>
       )}
-
-              </div>
-            ))}
       </div>
       </div>
-      </div>
+      
     {/* <div className="card-container">
       <div className="reg-cards-container">
           <div className="reg-cards">
@@ -130,6 +143,7 @@ const RegisterNowPage = () => {
       </div> */}
       <Footer />
 
+      </div>
       </div>
  
   );

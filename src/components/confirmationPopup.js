@@ -13,7 +13,6 @@ const ConfirmationPopup = ({ workshopDetails, onConfirmBooking, onClose }) => {
           <div className='popup-header'>Are you sure you want to add this event to cart?</div>
           {/* Display workshop details */}
           <p>Title: {workshopDetails.title}</p>
-          <div className='workshop-desc'>Description: {workshopDetails.description}</div>
           <p>Price: {workshopDetails.price}</p>
         </div>
         <div className="button-container">

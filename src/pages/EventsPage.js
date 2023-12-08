@@ -22,10 +22,18 @@ function EventsPage() {
   const { loggedIn } = useAuth();
   const handleWorkshopCardClick = (index) => {
     const updatedWorkshops = [...expandedWorkshops];
+    
+    // Close the previously expanded card
+    const previouslyExpandedIndex = updatedWorkshops.findIndex((isExpanded) => isExpanded);
+    if (previouslyExpandedIndex !== -1 && previouslyExpandedIndex !== index) {
+      updatedWorkshops[previouslyExpandedIndex] = false;
+    }
+  
+    // Toggle the clicked card
     updatedWorkshops[index] = !updatedWorkshops[index];
     setExpandedWorkshops(updatedWorkshops);
-    
   };
+  
   const handleRegisterClick = (workshop) => {
     if (!loggedIn) {
       alert('Kindly login before registering.');
