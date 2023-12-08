@@ -207,9 +207,6 @@ button:hover {
     margin-right: 2%;
     width: 90%;
   }
-  .header{
-    width: 80%;
-  }
   .nav-list {
     display: none;
     position: absolute; /* Position it absolutely to prevent it from disappearing */

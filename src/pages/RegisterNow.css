@@ -86,10 +86,6 @@ text-align: center;
     transition: transform 0.2s;
   }
   
-  .reg-card:hover {
-    transform: scale(1.05); /* Enlarge the card on hover */
-  }
-  
   .reg-card img {
     max-width: 100%;
     border-radius: 10px 10px 0 0; /* Rounded edges only at the top */
@@ -136,10 +132,7 @@ text-align: center;
   height: auto; /* Set the initial height to 'auto' */
 }
 
-.reg-card.expanded {
-  height: auto; 
-  max-height: none;/* Set the height to 'auto' when expanded */
-}
+
 
 .reg-buttons button {
   background-color: #A6113D;
@@ -152,4 +145,23 @@ text-align: center;
   color: white;
   font-weight: bold;
   margin-top: 3%;
+}
+.reg-page.popup-open {
+  overflow: hidden; /* Prevent scrolling when the popup is open */
+  pointer-events: none;
+}
+.reg-page.popup-open .atc-popup {
+  pointer-events: auto;
+}
+.popup-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
 }
