@@ -76,6 +76,7 @@
   
   .header{
     justify-content: space-between;
+    margin-left: 2%;
   }
   .nav-list {
     justify-content: center; /* Center the navigation links */

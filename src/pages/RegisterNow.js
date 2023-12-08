@@ -1,12 +1,79 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './RegisterNow.css'; // Create a CSS file for styling
 import register1 from '../assets/register-basic.png';
 import register2 from '../assets/register-prem.png';
 import Footer from '../components/footer';
+import workshopsData from '../components/workshopData';
+import EventDetails from '../components/EventDetails';
+import { useCart } from '../components/cart';
+import { useAuth } from '../components/authContext';
+import ConfirmationPopup from '../components/confirmationPopup';
+import regData from '../components/regData';
 const RegisterNowPage = () => {
+  const [expandedWorkshops, setExpandedWorkshops] = useState(Array(workshopsData.length).fill(false));
+  const [showPopup, setShowPopup] = useState(false);
+  const { addToCart } = useCart();
+  const { loggedIn } = useAuth();
+  const handleWorkshopCardClick = (index) => {
+    const updatedWorkshops = [...expandedWorkshops];
+    updatedWorkshops[index] = !updatedWorkshops[index];
+    setExpandedWorkshops(updatedWorkshops);
+    
+  };
+  const handleRegisterClick = (workshop) => {
+    if (!loggedIn) {
+      alert('Kindly login before registering.');
+      return;
+    }
+    setSelectedWorkshop(workshop);
+    setShowPopup(true);
+  };
+  const [selectedWorkshop, setSelectedWorkshop] = useState(null);
+  
+
+  const handleClosePopup = () => {
+    setSelectedWorkshop(null);
+    setShowPopup(false);
+  };
+
+  const handleConfirmBooking = () => {
+    addToCart(selectedWorkshop);
+    setShowPopup(false);
+  };
+
   return (
+    
     <div className='reg-page'>
-    <div className="card-container">
+      <div className='workshop'>
+        <h1 className='workshop-headers'>REGISTRATION</h1>
+        <div className="workshop-cards-container">
+          <div className="workshop-cards">
+            {regData.map((workshop, index) => (
+              <div className={`workshop-card ${expandedWorkshops[index] ? 'expanded' : ''}`} key={index} onClick={() => handleWorkshopCardClick(index)}>
+                <img src={workshop.image} alt={workshop.title} />
+                <div className='workshop-title'>{workshop.title}</div>
+                {expandedWorkshops[index] && (
+                  <p className='workshop-description' dangerouslySetInnerHTML={{ __html: workshop.description }}/>
+                )}
+                <div className='workshop-buttons'>
+                  <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
+                  <div className="price-rectangle">
+                    <p className="price">{workshop.price}</p>
+                  </div>
+                </div>
+                {showPopup && (
+        <ConfirmationPopup workshopDetails={selectedWorkshop} onConfirmBooking={handleConfirmBooking} onClose={handleClosePopup}>
+          {/* Customize the content of your popup here */}
+          <p>ARE YOU SURE YOU WANT TO ADD THIS EVENT TO THE CART?</p>
+        </ConfirmationPopup>
+      )}
+
+              </div>
+            ))}
+      </div>
+      </div>
+      </div>
+    {/* <div className="card-container">
       <div className="reg-cards-container">
           <div className="reg-cards">
          
@@ -60,7 +127,7 @@ const RegisterNowPage = () => {
       </div>
       
       </div>
-      </div>
+      </div> */}
       <Footer />
 
       </div>

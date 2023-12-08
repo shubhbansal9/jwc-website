@@ -135,8 +135,8 @@ button:hover {
 }
 .profile-pic{
   border-radius: 50%;
-  height: 50%;
-  width: 50%;
+  height: 35%;
+  width: 35%;
 }
 .nav-list {
   list-style: none;

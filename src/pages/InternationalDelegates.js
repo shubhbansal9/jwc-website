@@ -89,7 +89,9 @@ We assure each and every delegate that no second of your time with us shall go t
         </div>
       )}
         </div></p>
-        <a href="https://forms.gle/8R4hfdBAJDbD6DEX9" class="apply-button">Apply Now!</a>
+        {/* <a href="https://forms.gle/8R4hfdBAJDbD6DEX9" class="apply-button">Apply Now!</a> */}
+        <a class="apply-button">Apply Now!</a>
+        
           </div>
           <div className="divider"></div>
           <div className="column-rightt" onClick={toggleExpand2}>
@@ -127,7 +129,9 @@ We assure each and every delegate that no second of your time with us shall go t
         </div>
       )}
         </div></p>
-        <a href="https://forms.gle/8R4hfdBAJDbD6DEX9" class="apply-button">Apply Now!</a>
+        {/* <a href="https://forms.gle/8R4hfdBAJDbD6DEX9" class="apply-button">Apply Now!</a> */}
+        <a class="apply-button">Apply Now!</a>
+        
           </div>
         </div>
       
