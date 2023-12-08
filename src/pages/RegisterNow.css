@@ -1,0 +1,149 @@
+.reg-card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the cards */
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 45%;
+    max-width: 500px;
+  }
+  
+  
+  .reg-description{
+    color: black;
+  }
+  .price-rectangle {
+    background: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 46%;
+    border: 1px solid #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    margin-top: 5%;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+
+  }
+.reg-title{
+    color: #000;
+margin-top: 5%;
+font-weight: bold;
+align-items: center;
+text-align: center;
+}
+.events-page {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: xx-large;
+    margin-bottom: 20px;
+    font-weight:bold;
+    text-align: center;
+    margin-left: 5%;
+    
+  }
+  .reg-headers{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight:bold;
+    text-align: center;
+    margin-left: 0;
+  }
+  .reg-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10%;
+    gap: 10%;
+    flex-direction: row;
+  }
+  
+  .reg-card {
+    width: 300px;
+    padding: 20px;
+    margin-top: 10%;
+    background: #fff; /* Card background color */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
+    text-align: left;
+    transition: transform 0.2s;
+  }
+  
+  .reg-card:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+  }
+  
+  .reg-card img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0; /* Rounded edges only at the top */
+  }
+  
+  .reg-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .reg-card p {
+    font-size: 14px;
+    color: black;
+  }
+  
+  .reg-button {
+    background-color: #FBC02D;
+    color: red;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .reg-buttons{
+    display: flex;
+  }
+.reg{
+    margin: 5%;
+}
+
+.image{
+  height: 50%;
+  width: 50%;
+  margin-bottom: 5%;
+}
+.reg-card {
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s; /* Add a transition for the height property */
+  height: auto; /* Set the initial height to 'auto' */
+}
+
+.reg-card.expanded {
+  height: auto; 
+  max-height: none;/* Set the height to 'auto' when expanded */
+}
+
+.reg-buttons button {
+  background-color: #FBC02D;
+  color: red;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

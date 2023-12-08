@@ -51,7 +51,7 @@
 }
 .different-color-text{
   color: #FE7EA4;
-  -webkit-text-stroke: 0.2px white; /* Adjust the width of the outline as needed */
+  -webkit-text-stroke: 0.3px white; /* Adjust the width of the outline as needed */
   background-clip: text;
   -webkit-background-clip: text;
 }

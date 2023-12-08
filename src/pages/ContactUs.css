@@ -76,7 +76,6 @@
   
   .header{
     justify-content: space-between;
-    gap: 6%;
   }
   .nav-list {
     justify-content: center; /* Center the navigation links */
