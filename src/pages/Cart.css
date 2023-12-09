@@ -6,7 +6,6 @@
     margin-left: 0;
 }
 .cart-page {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +30,6 @@
 }
 /* CartPage.css */
 .cart-page {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,6 +46,8 @@
   }
   .pay-button{
     white-space: nowrap;
+    background-color:#A6113D;
+    margin-bottom: 20%;
   }
   .item-total{
     margin-top: 40%;
@@ -73,5 +73,6 @@
   .item{
     color: black;
   }
+
   /* Add any additional styling as needed */
  
