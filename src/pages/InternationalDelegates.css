@@ -179,7 +179,8 @@
   }
   .itinerarylink{
     font-size: 140%;
-    color: white;
+    color: #A6113D;
+    
     
   }
   @media screen and (max-width: 1000px) {
@@ -228,5 +229,11 @@
     .column-rightt{
       width: 70%;
       margin-top: 10%;
+    }
+    .itinerarylink{
+      font-size: 100%;
+      color: #A6113D;
+      
+      
     }
   }

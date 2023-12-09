@@ -107,7 +107,7 @@ const RegisterNowPage = () => {
 <h1 className='terms-header'>FAQs:</h1>
 
   <p classname="faq-text" style={faqTextStyle}>
- <a style={faqTextStyle} href="https://docs.google.com/document/d/1-rfcYGfWT8M3dbDu_nkuzbMZOgmRk7nkjSqWY3uIJQg/edit" target="_blank" >Visit FAQs Document</a>
+ <a style={faqTextStyle} href="https://docs.google.com/document/d/1-rfcYGfWT8M3dbDu_nkuzbMZOgmRk7nkjSqWY3uIJQg/edit" target="_blank" >Checkout some of the FAQs</a>
  </p>
 <h1 className='terms-header'>Booking Refund/Cancellation</h1>
 
