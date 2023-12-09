@@ -74,6 +74,10 @@
   /* Style for the footer contact information */
   .footer-right {
     text-align: right;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+
   }
   
   /* Style for the social media handles */
@@ -120,8 +124,9 @@
   .terms-link{
     text-decoration: none;
     color: #F484A5;
-    font-size: small;
+    font-size: 16px;
   }
+
   @media screen and (max-width: 1000px) {
     .row{
       flex-direction: column;
@@ -144,5 +149,10 @@
     }
     .terms-link{
       font-size: x-small;
+      margin-top: 15%;
+    }
+    .logo-right{
+      height: 50%;
+      width: 50%;
     }
   }
