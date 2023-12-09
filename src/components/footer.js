@@ -19,7 +19,7 @@ const Footer = () => {
                 
               </a>
               <a href="http://bit.ly/MO-facebook">
-                facebook
+                Facebook
                 
               </a>
             </div>
@@ -28,7 +28,7 @@ const Footer = () => {
                 <img src={instagramIcon} alt="Instagram" />
               </a>
               <a href="http://bit.ly/MOthreads">
-              instagram
+              Instagram
                 </a>
             </div>
             
@@ -37,7 +37,7 @@ const Footer = () => {
                 <img src={twitterIcon} alt="Twitter" />
               </a>
               <a href="http://bit.ly/MO-ig">
-              x/twitter
+              X/Twitter
                 </a>
             </div>
             <div className="column-footer">
@@ -45,7 +45,7 @@ const Footer = () => {
                 <img src={linkedinIcon} alt="LinkedIn" />
               </a>
               <a href="http://bit.ly/MO-threads">
-              threads
+              Threads
                 </a>
             </div>
             </div>
