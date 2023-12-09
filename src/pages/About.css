@@ -50,9 +50,6 @@
 }
 .different-color-text {
   color: #FE7EA4;
-  -webkit-text-stroke: 0.3px white; /* Adjust the width of the outline as needed */
-  background-clip: initial; /* Set background-clip to initial */
-  -webkit-background-clip: initial; /* Set -webkit-background-clip to initial */
 }
 
 .chief-patron-container {
