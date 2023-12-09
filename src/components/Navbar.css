@@ -131,12 +131,17 @@ button:hover {
 .profile-container{
   display: flex;
   justify-content: right;
-  
+  gap: 3%;
+  align-items: center;
 }
 .profile-pic{
   border-radius: 50%;
   height: 35%;
   width: 35%;
+}
+.cart-icon{
+  height: 30%;
+  width: 30%;
 }
 .nav-list {
   list-style: none;
@@ -186,7 +191,7 @@ button:hover {
   flex-direction: column;
   z-index: 1000;
   border-radius: 9%;
-  margin-top: 5%;
+  margin-top: 11%;
 }
 
 .profile-tile {
