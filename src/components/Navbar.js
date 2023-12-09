@@ -5,7 +5,8 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 import { useAuth } from './authContext';
-
+import cart from '../assets/cart-icon.png';
+import { useNavigate } from 'react-router-dom';
 function Navbar() {
   const { loggedIn, login, logout } = useAuth();
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -15,7 +16,11 @@ function Navbar() {
   const [userProfile, setUserProfile] = useState(null);
   const popupRef = useRef(null);
   const [showProfileMenu, setShowProfileMenu] = useState(false);
+  const navigate = useNavigate();
 
+  const navigateToCart = () => {
+    navigate('/cart');
+  };
   const [showGoogleSignIn, setShowGoogleSignIn] = useState(false);
   const responseGoogle = async response => {
     const decoded = jwtDecode(response.credential);
@@ -102,15 +107,16 @@ function Navbar() {
       <div>
       {loggedIn ? (
           <div className='profile-container'>
+            <img className='cart-icon' src={cart} alt="Profile" onClick={() => navigateToCart('/cart') }/>
             <img className='profile-pic' src={userProfile.picture} alt="Profile" onClick={() => setShowProfileMenu(!showProfileMenu)} />
             {showProfileMenu && (
               <div className='profile-dropdown' ref={popupRef}>
-                <Link to="/cart" className='nav-button'>Cart</Link>
                 <Link to="/cart" className='nav-button'>My Bookings</Link>
                 <Link to="" className='nav-button' onClick={() => logout()}>Logout</Link>
 
               </div>
             )}
+            
           </div>
         ) : (
       <div className='signin'>

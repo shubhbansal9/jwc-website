@@ -179,6 +179,8 @@
   }
   .itinerarylink{
     font-size: 140%;
+    color: white;
+    
   }
   @media screen and (max-width: 1000px) {
     .details-left,.details-right{
