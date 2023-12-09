@@ -13,7 +13,6 @@ import medicalOlympicsImage from './assets/medical-olympics.svg';
 import cmcLogo from './assets/cmc-logo.svg';
 import { AuthProvider } from './components/authContext';
 import { useAuth } from './components/authContext';
-import TermsPopup from './components/TermsPopup';
 import RegisterNowPage from './pages/RegisterNow';
 function App() {
   return (
@@ -35,7 +34,6 @@ function App() {
             <Route path="/contact-us" element={<ContactUsPage />} />
             <Route path="/accommodation" element={<AccommodationPage />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/terms" element={<TermsPopup/>}/>
             <Route path="/register" element={<RegisterNowPage/>}/>
           </Routes>
         </div>

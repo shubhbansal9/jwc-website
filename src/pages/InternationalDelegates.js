@@ -9,6 +9,7 @@ import team22 from '../assets/team/team-22.png';
 import team23 from '../assets/team/team-23.png';
 import itinerary from '../assets/itinerary.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 function InternationalDelegates() {
   const [isExpanded1, setIsExpanded1] = useState(false);
   const [isExpanded2, setIsExpanded2] = useState(false);
@@ -26,6 +27,7 @@ function InternationalDelegates() {
       <div className="line"></div>
     <div className="accommodation-page">
     <img className="itinerary" src={itinerary}></img>
+    <Link to="https://drive.google.com/file/d/1d44n1Al9UFMhZrCiiLVP7kBWvBx-L5Sh/view?usp=drivesdk" className="itinerarylink">Itinerary Brochure</Link>
       <header>
         <h1 className='acc-header'>INTERNATIONAL AFFAIRS</h1>
       </header>

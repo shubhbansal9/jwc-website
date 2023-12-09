@@ -177,6 +177,9 @@
     margin: 0;
     color: black;
   }
+  .itinerarylink{
+    font-size: 140%;
+  }
   @media screen and (max-width: 1000px) {
     .details-left,.details-right{
       flex-direction: column;
