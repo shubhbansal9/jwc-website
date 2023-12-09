@@ -91,7 +91,7 @@ const RegisterNowPage = () => {
       )}
       </div>
       </div>
-      <h1 className='terms-header'>Terms and Conditions</h1>
+      <h1 id="terms-and-conditions" className='terms-header'>Terms and Conditions</h1>
 
 <ol className='terms-container'>
   <li className='terms-text'>Entry will not be provided into any workshop or event without Basic Registration (BR).</li>
