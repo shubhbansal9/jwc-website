@@ -117,7 +117,10 @@
     flex-direction: column;
     color: white;
   }
-
+  .terms-link{
+    text-decoration: none;
+    color: white;
+  }
   @media screen and (max-width: 1000px) {
     .row{
       flex-direction: column;
