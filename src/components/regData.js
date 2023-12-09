@@ -6,7 +6,7 @@ const regData = [
         <li><strong>Unique BR ID:</strong> Your golden key! Unlock a world of possibilities by registering for regs, Academic Sessions, Cultural Extravaganzas, and Sports Showdowns. - Unique BR ID</li>
         <li><strong>Showcase Your Talent:</strong> BR opens the door for you to submit your outstanding Abstracts and Documentaries. - Showcase Your Talent</li>
         <li><strong>Spectator Access:</strong> Be everywhere! Witness all campus events, excluding the exclusive Gala Night and Pediatric Autism Awareness Fundraiser. - Spectator Access</li>
-        <li><strong>Sunburn DJ Night:</strong> Groove into the night! BR grants you access to the electrifying Sunburn DJ Night on Day 3 of the Conference. - Sunburn DJ Night</li>
+        <li><strong>DJ Night:</strong> Groove into the night! BR grants you access to the electrifying DJ Night on Day 3 of the Conference. - DJ Night</li>
       </ul>
     `,
       price: 'Rs1000',
