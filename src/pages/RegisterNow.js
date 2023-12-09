@@ -9,6 +9,7 @@ import { useCart } from '../components/cart';
 import { useAuth } from '../components/authContext';
 import ConfirmationPopup from '../components/confirmationPopup';
 import regData from '../components/regData';
+
 const RegisterNowPage = () => {
   const [expandedWorkshops, setExpandedWorkshops] = useState(Array(workshopsData.length).fill(false));
   const [showPopup, setShowPopup] = useState(false);
@@ -37,7 +38,12 @@ const RegisterNowPage = () => {
     setShowPopup(true);
   };
   const [selectedWorkshop, setSelectedWorkshop] = useState(null);
-  
+  const faqTextStyle = {
+    textAlign: 'center',
+    color: '#A6113D',
+    textDecoration: 'none'
+
+  };
 
   const handleClosePopup = () => {
     setSelectedWorkshop(null);
@@ -85,62 +91,27 @@ const RegisterNowPage = () => {
       )}
       </div>
       </div>
-      
-    {/* <div className="card-container">
-      <div className="reg-cards-container">
-          <div className="reg-cards">
-         
-              <div className="reg-card">
-                <img src={register1} alt="" />
-                <div className='reg-title'>Secure your spot with Basic Registration (BR)</div>
-                  <p className='reg-description'><ul>
-  <li><strong>Conference Access:</strong> Your ticket to the heart of the action – the Conference! - Conference Access</li>
-  <li><strong>Unique BR ID:</strong> Your golden key! Unlock a world of possibilities by registering for regs, Academic Sessions, Cultural Extravaganzas, and Sports Showdowns. - Unique BR ID</li>
-  <li><strong>Showcase Your Talent:</strong> BR opens the door for you to submit your outstanding Abstracts and Documentaries. - Showcase Your Talent</li>
-  <li><strong>Spectator Access:</strong> Be everywhere! Witness all campus events, excluding the exclusive Gala Night and Pediatric Autism Awareness Fundraiser. - Spectator Access</li>
-  <li><strong>Sunburn DJ Night:</strong> Groove into the night! BR grants you access to the electrifying Sunburn DJ Night on Day 3 of the Conference. - Sunburn DJ Night</li>
-</ul>
-</p>
-                
-                <div className='reg-buttons'>
-                  <button className='reg-button' >
-                    Register
-                  </button>
-                  <div className="price-rectangle">
-                    <p className="price">Rs1000</p>
-                  </div>
-                </div>
-               
+      <h1 className='terms-header'>Terms and Conditions</h1>
 
-              
-              </div>
-              <div className="reg-card">
-                <img src={register2} alt="" />
-                <div className='reg-title'>Elevate your experience with a Premium Package!</div>
-                  <p className='reg-description'>
-                  <ul>
-  <li><strong>All BR Perks:</strong> Dive into the heart of the event with the Premium Package, enjoying all the benefits that Basic Registration offers.</li>
-  <li><strong>Gala Night Access (Day 1):</strong> Elevate your evening! Join the exclusive Gala Night on Day 1, a gathering of elegance and entertainment.</li>
-  <li><strong>Gala Night Dinner:</strong> Savor the moment! Your Premium Package includes an exquisite Gala Night Dinner, a feast for both the senses and the soul.</li>
-  <li><strong>Breakfast Inclusions:</strong> Fuel your mornings! Enjoy a complimentary breakfast for all three days, setting the tone for each exciting event.</li>
-  <li><strong>Meal Coupons:</strong> Your discretion, your choice! You receive meal coupons to be used as per your preferences throughout the event.</li>
-</ul>
+<ol className='terms-container'>
+  <li className='terms-text'>Entry will not be provided into any workshop or event without Basic Registration (BR).</li>
+  <li className='terms-text'>A delegate can register for Workshops or Quizzes only after completion of BR. Payments received for Workshops before completion of Basic Registration shall be considered invalid. No refund requests shall be entertained for the same.</li>
+  <li className='terms-text'>A delegate can register for only one out of the two major workshops. If payment is made for both the workshops, one of the payments shall be deemed invalid at the discretion of the Organising Committee. No refund requests shall be entertained for the same.</li>
+  <li className='terms-text'>A delegate can register for up to 2 minor workshops. If payment is made for more than 2 minor workshops, the excess payments shall be deemed invalid at the discretion of the Organising Committee. No refund requests shall be entertained for the same.</li>
+  <li className='terms-text'>The Organising Committee reserves the right to make changes to the event schedule if necessary.</li>
+  <li className='terms-text'>The delegate must always carry an ID proof (Aadhar card, DL, PAN card, or college ID) with themselves during the conference. Entry into any event/workshop shall not be provided without these.</li>
+  <li className='terms-text'>The delegate must maintain professional and civil conduct throughout the conference. Any violation of the code of conduct shall lead to immediate expulsion from the event with no refunds being issued later.</li>
+  <li className='terms-text'>In the unfortunate event of the conference or Workshop(s) being canceled due to unforeseen circumstances, only registration amounts for the Workshops and quizzes shall be refunded. BR fee is a non-refundable amount.</li>
+  <li className='terms-text'>The Organising Committee holds the right to terminate the registration of any delegate that violates the above mentioned terms.</li>
+</ol>
+<h1 className='terms-header'>FAQs:</h1>
 
-</p>
-                
-                <div className='reg-buttons'>
-                  <button className='reg-button' >
-                    Register
-                  </button>
-                  <div className="price-rectangle">
-                    <p className="price">Rs1500</p>
-                  </div>
-                </div>
-                </div>
-      </div>
-      
-      </div>
-      </div> */}
+  <p classname="faq-text" style={faqTextStyle}>
+ <a style={faqTextStyle} href="https://docs.google.com/document/d/1-rfcYGfWT8M3dbDu_nkuzbMZOgmRk7nkjSqWY3uIJQg/edit" target="_blank" >Visit FAQs Document</a>
+ </p>
+<h1 className='terms-header'>Booking Refund/Cancellation</h1>
+
+  <p className='refund-text'>The refund policy is determined by the event organizer and can vary from Event to Event. The service provider will not make any refunds nor will they be liable for any consequential loss, damage, or additional expense whatsoever. We would recommend users to read Terms & Conditions of every Event before booking the tickets or register for an event.</p>
       <Footer />
 
       </div>

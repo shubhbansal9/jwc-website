@@ -11,7 +11,8 @@
 
 .sponsor-group {
   display: flex;
-  gap: 5%;
+  justify-content: space-around;
+  margin-bottom: 10%;
 }
 
 .sponsor-first {
@@ -47,15 +48,14 @@
 }
 
 .sponsor-image-right {
-  height: 60%;
-  width: 60%;
+  height: 45%;
+  width: 45%;
 }
 
 .our-spons-title-left {
   text-align: center;
   font-size: large;
   margin-top: 10%;
-  margin-left: 20%;
   color: white;
   white-space: nowrap;
 }
