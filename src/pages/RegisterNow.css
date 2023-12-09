@@ -166,21 +166,28 @@ text-align: center;
 }
 .terms-text{
   color: white;
-
+  font-size: small;
 }
 .terms-header{
-  font-size: x-large;
-  margin-top: 5%;
+  font-size: medium;
+  margin-top: 3%;
 }
 .refund-text{
   color: white;
   margin-left: 5%;
   margin-top: 3%;
   margin-bottom: 5%;
+  font-size: small;
 }
 .terms-container{
   margin: 3%;
 }
 .faq-text{
   text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .terms-header{
+    margin-top: 10%;
+  }
+
 }

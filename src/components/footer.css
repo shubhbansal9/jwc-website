@@ -119,7 +119,8 @@
   }
   .terms-link{
     text-decoration: none;
-    color: white;
+    color: #F484A5;
+    font-size: small;
   }
   @media screen and (max-width: 1000px) {
     .row{
@@ -140,5 +141,8 @@
     .footer-right{
       display: flex;
       flex-direction: column  ;
+    }
+    .terms-link{
+      font-size: x-small;
     }
   }
