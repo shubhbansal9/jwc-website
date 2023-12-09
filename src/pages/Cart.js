@@ -35,7 +35,6 @@ const CartPage = () => {
             <li key={index} className="cart-item">
               <div className="cart-item-details">
                 <p className='item'>{item.title}</p>
-                <p className='item'>{item.description}</p>
                 <p className='item'>{item.price}</p>
               </div>
               <button onClick={() => removeFromCart(index)}>Remove</button>

@@ -1,6 +1,7 @@
 .cart-text{
     text-align: center;
     color: white;
+    margin-bottom: 30%;
 }
 .cart-header{
     margin-left: 0;
@@ -9,7 +10,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 110vh
 }
 
 .cart-items {
