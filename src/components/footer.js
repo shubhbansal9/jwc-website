@@ -41,10 +41,10 @@ const Footer = () => {
                 </a>
             </div>
             <div className="column-footer">
-              <a href="http://bit.ly/MO-threads">
+              <a href="http://bit.ly/MOthreads">
                 <img src={linkedinIcon} alt="LinkedIn" />
               </a>
-              <a href="http://bit.ly/MO-threads">
+              <a href="http://bit.ly/MOthreads">
               Threads
                 </a>
             </div>
