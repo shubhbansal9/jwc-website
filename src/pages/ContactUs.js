@@ -113,7 +113,7 @@ function ContactUsPage() {
           </div>
           <div className="team-member">
           <img src={team13} alt="Team Member 2" />
-           <p className='member-name'>John Doe</p>
+           <p className='member-name'>Dhanya Thomas</p>
           </div>
           </div>
           </div>
