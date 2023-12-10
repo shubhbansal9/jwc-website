@@ -27,7 +27,7 @@ const Footer = () => {
               <a href="http://bit.ly/MO-ig">
                 <img src={instagramIcon} alt="Instagram" />
               </a>
-              <a href="http://bit.ly/MOthreads">
+              <a href="http://bit.ly/MO-ig">
               Instagram
                 </a>
             </div>
@@ -36,7 +36,7 @@ const Footer = () => {
               <a href="http://bit.ly/MO-Xtwitter">
                 <img src={twitterIcon} alt="Twitter" />
               </a>
-              <a href="http://bit.ly/MO-ig">
+              <a href="http://bit.ly/MO-Xtwitter">
               X/Twitter
                 </a>
             </div>
