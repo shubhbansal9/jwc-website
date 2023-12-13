@@ -60,6 +60,7 @@
     justify-content: center;
     text-align: center;
     color: white;
+    
   }
 .team-members-contact{
   justify-content: center;
@@ -79,7 +80,7 @@
     margin: 10px;
   }
   .member-name{
-    font-size: x-small;
+    font-size: medium;
   }
   .team-members-sports img{
     max-width: 100px;
