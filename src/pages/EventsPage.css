@@ -183,7 +183,10 @@
       max-height: none;
       transform: scale(1.005); /* Enlarge the card on hover */
     }
-  
+    .event-itinerary{
+      height: 100%;
+      width: 100%;
+    }
 
 
   }

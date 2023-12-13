@@ -97,4 +97,10 @@
   .acc-name{
     font-size: 60%;
   }
+  .accomm-apply{
+    flex-direction: column;
+  }
+  .accommodation-link{
+    margin-left: 0;
+  }
 }
