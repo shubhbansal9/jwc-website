@@ -213,13 +213,13 @@ function ContactUsPage() {
           <p className="subheading">For further information please contact:</p>
         <div className="team-members-contact">
         <div className="team-member">
-           <p className='member-name'>Dr. Carol Clarance<br></br>7906865903</p>
+           <p className='member-name-bottom'>Dr. Carol Clarance<br></br>7906865903</p>
           </div>
           <div className="team-member">
-           <p className='member-name'>Dr. Malika Gupta<br></br>8728077890</p>
+           <p className='member-name-bottom'>Dr. Malika Gupta<br></br>8728077890</p>
           </div>
           <div className="team-member">
-           <p className='member-name'>Dr. Yukta Ephraim<br></br>7814148649</p>
+           <p className='member-name-bottom'>Dr. Yukta Ephraim<br></br>7814148649</p>
           </div>
           </div>
           <Footer/>

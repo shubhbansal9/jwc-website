@@ -62,6 +62,13 @@
     color: white;
     
   }
+  .member-name-bottom{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    
+  }
 .team-members-contact{
   justify-content: center;
   gap: 10%;
@@ -80,7 +87,7 @@
     margin: 10px;
   }
   .member-name{
-    font-size: medium;
+    font-size: x-small;
   }
   .team-members-sports img{
     max-width: 100px;
@@ -95,9 +102,16 @@
   align-items: center;
     
   }
+  .member-name-bottom{
+    font-size: small;
+    white-space: nowrap;
+  }
   .parent{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .team-members-contact{
+    gap: 6%;
   }
 }
