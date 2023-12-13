@@ -27,7 +27,7 @@ function Navbar() {
     setShowGoogleSignIn(false);
 
     try {
-      const userExistsResponse = await fetch('https://174.138.121.198:3001/api/user-exists', {
+      const userExistsResponse = await fetch('http://174.138.121.198:3001/api/user-exists', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ function Navbar() {
 
       if (!userExistsData.exists) {
         // If the user does not exist, proceed with registration
-        const registerResponse = await fetch('https://174.138.121.198:3001/api/login', {
+        const registerResponse = await fetch('http://174.138.121.198:3001/api/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ function Navbar() {
     const fetchUserLocation = async (email) => {
       let userLocation = null;
       try {
-        const response = await fetch(`https://174.138.121.198:3001/api/user-location?email=${email}`);
+        const response = await fetch(`http://174.138.121.198:3001/api/user-location?email=${email}`);
         const data = await response.json();
         userLocation = data.location;
         setUserLocation(userLocation);
@@ -92,7 +92,7 @@ function Navbar() {
     
     const updateUserLocation = async (email, location) => {
       try {
-        await fetch('https://174.138.121.198:3001/api/update-location', {
+        await fetch('http://174.138.121.198:3001/api/update-location', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
