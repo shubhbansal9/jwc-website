@@ -123,6 +123,8 @@
   .workshop-event-type{
     margin-bottom: 5%;
     color: red;
+    font-weight: 600;
+    text-align: center;
   }
   .workshop-buttons button {
     background-color: #A6113D;
