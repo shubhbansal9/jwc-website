@@ -6,6 +6,7 @@ import team17 from '../assets/team/team-17.png';
 import './Accommodation.css'; 
 import team18 from '../assets/team/team-18.png';
 import Footer from '../components/footer';
+import { Link } from 'react-router-dom';
 function AccommodationPage() {
   return (
     <div className="accommodation">
@@ -13,7 +14,7 @@ function AccommodationPage() {
       <div className="line"></div>
     <div className="accommodation-page">
       <header>
-        <h1 className='acc-header'>ACCOMODATION</h1>
+        <h1 className='acc-header'>ACCOMMODATION</h1>
       </header>
       <div className='acc-text'>
     <div className='subtext'>We the “Accommodation Department” warmly welcome you to CMC - Ludhiana on behalf of Medical Olympics. We are here to make your stay safe and comfortable at Ludhiana, our home away from home. </div>
@@ -23,11 +24,15 @@ function AccommodationPage() {
           <div><br></br></div>
           <li>Amenities: All the essential amenities will be provided in the rooms. Rooms will be equipped with mattresses, fans, tube lights, 24x7 water and electricity supply will be ensured. Cleanliness is our priority. An emergency contact number will be provided in case you experience any difficulty during your stay.<br></br></li>
           <div><br></br></div>
-          <li>Pocket Friendly: We will provide rooms on per day and per head basis. Prices will be well within affordable limits. Group stay is available. You will have options to choose from. Pre-registration forms with further details will be provided.<br></br></li>
+          <li>Pocket Friendly: We will provide rooms on per day and per head basis. Prices will be well within affordable limits. Group stay is available. <br></br></li>
           <div><br></br></div>
           <li>Value for Money: With our accommodation, you are just steps away from events, so that it saves you the hassle of travel or delay due to any other reason.</li>
         </ul>
         <div className='subtext'>All you need to bring is your college ID and BR card at all times during the event and above all, an open heart to new experiences.</div>
+        <div className='accomm-apply'>
+        <div className='subtext-apply'>If you wish to avail Accommodation, kindly fill in the Google form:</div>
+        <Link to="https://forms.gle/uwhqkP9hLtagZkkx8" className="accommodation-link">Accommodation application form</Link>
+        </div>
       </div>
       </div>
       <div className="container">

@@ -10,10 +10,11 @@ import team23 from '../assets/team/team-23.png';
 import itinerary from '../assets/itinerary.png';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../components/authContext';
 function InternationalDelegates() {
   const [isExpanded1, setIsExpanded1] = useState(false);
   const [isExpanded2, setIsExpanded2] = useState(false);
-
+  const { loggedIn, userProfile } = useAuth();
   const toggleExpand1 = () => {
     setIsExpanded1(!isExpanded1);
   };
@@ -21,6 +22,67 @@ function InternationalDelegates() {
   const toggleExpand2 = () => {
     setIsExpanded2(!isExpanded2);
   };
+  
+
+  const addToCart = async (eventId) => {
+    if(loggedIn){
+    const email = userProfile.email;
+    try {
+      const addToCartResponse = await fetch('http://64.227.156.132:3001/api/add-to-cart', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, eventId }),
+      });
+      if (addToCartResponse.ok) {
+        alert("Added to cart");
+        console.log("added to cart");
+        if(eventId===29){
+        const updateBRStatusResponse = await fetch('http://64.227.156.132:3001/api/update-br-status', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, brStatus: 3 }),
+        });
+        if (updateBRStatusResponse.ok) {
+          // Perform any further actions upon successful update
+          // For example, updating UI or showing a success message
+        } else {
+          console.error('Failed to update BR status');
+          // Handle failure to update BR status
+        }
+      }
+      else if(eventId===30){
+        const updateBRStatusResponse = await fetch('http://64.227.156.132:3001/api/update-br-status', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, brStatus: 4 }),
+        });
+        if (updateBRStatusResponse.ok) {
+          // Perform any further actions upon successful update
+          // For example, updating UI or showing a success message
+        } else {
+          console.error('Failed to update BR status');
+          // Handle failure to update BR status
+        }
+      }
+      } else {
+        console.error('Failed to add to cart');
+        // Handle failure to add to cart
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Handle other errors
+    }}
+    else{
+      alert("You must be logged in to apply!");
+    }
+  };
+  
   return (
     <div className="int-del-page">
   
@@ -91,8 +153,9 @@ We assure each and every delegate that no second of your time with us shall go t
         </div>
       )}
         </div></p>
-        {/* <a href="https://forms.gle/8R4hfdBAJDbD6DEX9" class="apply-button">Apply Now!</a> */}
-        <a class="apply-button">Apply Now!</a>
+        <a className="apply-button" onClick={() => addToCart(29)}>
+        Apply Now!
+          </a>
         
           </div>
           <div className="divider"></div>
@@ -131,8 +194,9 @@ We assure each and every delegate that no second of your time with us shall go t
         </div>
       )}
         </div></p>
-        {/* <a href="https://forms.gle/8R4hfdBAJDbD6DEX9" class="apply-button">Apply Now!</a> */}
-        <a class="apply-button">Apply Now!</a>
+        <a className="apply-button" onClick={() => addToCart(30)}>
+            Apply Now!
+          </a>
         
           </div>
         </div>

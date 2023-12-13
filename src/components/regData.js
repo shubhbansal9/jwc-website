@@ -1,5 +1,6 @@
 const regData = [
     {
+      eventId:27,
       title: 'Secure your spot with Basic Registration (BR)',
       description: `<ul>
         <li><strong>Conference Access:</strong> Your ticket to the heart of the action – the Conference! - Conference Access</li>
@@ -9,10 +10,11 @@ const regData = [
         <li><strong>DJ Night:</strong> Groove into the night! BR grants you access to the electrifying DJ Night on Day 3 of the Conference. - DJ Night</li>
       </ul>
     `,
-      price: 'Rs1000',
+      price_in: 'Rs1000',
       image: require('../assets/register-basic.png'), 
     },
     {
+      eventId:28,
       title: 'Elevate your experience with a Premium Package!',
       description: `<ul>
       <li><strong>All BR Perks:</strong> Dive into the heart of the event with the Premium Package, enjoying all the benefits that Basic Registration offers.</li>
@@ -22,7 +24,7 @@ const regData = [
       <li><strong>Meal Coupons:</strong> Your discretion, your choice! You receive meal coupons to be used as per your preferences throughout the event.</li>
     </ul>
     `,
-      price: 'Rs1500',
+      price_in: 'Rs1500',
       image: require('../assets/register-prem.png'), 
     },
     

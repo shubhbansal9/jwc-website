@@ -25,7 +25,21 @@
   ul {
     list-style-type: disc;
   }
-  
+  .subtext-apply{
+    font-size: large;
+    margin-top: 5%;
+  }
+  .accommodation-link{
+      font-size: large;
+      color: #FE7EA4;
+      margin-top: 5%;
+      margin-left: 2%;
+  }
+  .accomm-apply{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+  }
   .container {
     display: flex;
     justify-content: space-between;

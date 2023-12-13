@@ -74,6 +74,13 @@
   .item{
     color: black;
   }
-
+  .amsa-membership{
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+  }
+  .membership-number{
+    margin-top: 5%;
+  }
   /* Add any additional styling as needed */
  
