@@ -247,7 +247,7 @@ function EventsPage() {
       <div className='workshop'>
       {/* <EventDetails events={upcomingEvents} /> */}
       <img src={eventItinerary} alt="Medical Olympics Logo" className="event-itinerary" />
-      <div className='note'>Note: Only one of the members from the team requires to register for the Group events</div>
+      <div className='note'>Note: Only one of the members from the team requires to register for the GROUP EVENTS</div>
         <h1 className='workshop-headers'>WORKSHOPS</h1>
         <div className="workshop-cards-container">
           <div className="workshop-cards">
