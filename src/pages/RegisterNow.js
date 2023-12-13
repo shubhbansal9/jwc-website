@@ -60,7 +60,7 @@ const RegisterNowPage = () => {
   
     // Make a POST request to add the event to the cart
     try {
-      const response = await fetch('http://64.227.156.132:3001/api/add-to-cart', {
+      const response = await fetch('https://64.227.156.132:3001/api/add-to-cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ const RegisterNowPage = () => {
       // Check if the added event has ID 19 or 20
       if (selectedWorkshop.eventId === 27) {
         // Make a request to update BR status to 1
-        await fetch('http://64.227.156.132:3001/api/update-br-status', {
+        await fetch('https://64.227.156.132:3001/api/update-br-status', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ const RegisterNowPage = () => {
       }
       if (selectedWorkshop.eventId === 28) {
         // Make a request to update BR status to 1
-        await fetch('http://64.227.156.132:3001/api/update-br-status', {
+        await fetch('https://64.227.156.132:3001/api/update-br-status', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
