@@ -32,7 +32,7 @@ function EventsPage() {
   // Function to update user location
   const updateUserLocation = async (email, location) => {
     try {
-      await fetch('http://64.227.156.132:3001/api/update-location', {
+      await fetch('https://64.227.156.132:3001/api/update-location', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ function EventsPage() {
   // Function to fetch user location
   const fetchUserLocation = async (email) => {
     try {
-      const response = await fetch(`http://64.227.156.132:3001/api/user-location?email=${email}`);
+      const response = await fetch(`https://64.227.156.132:3001/api/user-location?email=${email}`);
       const data = await response.json();
       setUserLocation(data.location);
       console.log("location fetched: ", data.location);
@@ -99,7 +99,7 @@ function EventsPage() {
       try {
         console.log("fetching user br status");
         if (loggedIn && userProfile && userProfile.email) {
-          const response = await fetch(`http://64.227.156.132:3001/api/get-br-status/${userProfile.email}`);
+          const response = await fetch(`https://64.227.156.132:3001/api/get-br-status/${userProfile.email}`);
           const data = await response.json();
           setUserBRStatus(data.brStatus);
         }
@@ -129,7 +129,7 @@ function EventsPage() {
   const checkClashingEvents = async (eventId) => {
     try {
       if (loggedIn && userProfile && userProfile.email) {
-        const response = await fetch(`http://64.227.156.132:3001/api/user-cart/${userProfile.email}`);
+        const response = await fetch(`https://64.227.156.132:3001/api/user-cart/${userProfile.email}`);
         const cartData = await response.json();
 
 
@@ -204,7 +204,7 @@ function EventsPage() {
       }
     
       // Make a POST request to your server's endpoint to add the event to the cart
-      fetch('http://64.227.156.132:3001/api/add-to-cart', {
+      fetch('https://64.227.156.132:3001/api/add-to-cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
