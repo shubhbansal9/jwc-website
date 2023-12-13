@@ -11,10 +11,11 @@ import ConfirmationPopup from '../components/confirmationPopup';
 import regData from '../components/regData';
 
 const RegisterNowPage = () => {
+  
+  const { loggedIn, userProfile } = useAuth();
   const [expandedWorkshops, setExpandedWorkshops] = useState(Array(workshopsData.length).fill(false));
   const [showPopup, setShowPopup] = useState(false);
   const { addToCart } = useCart();
-  const { loggedIn } = useAuth();
   const handleWorkshopCardClick = (index) => {
     const updatedWorkshops = [...expandedWorkshops];
     
@@ -51,10 +52,64 @@ const RegisterNowPage = () => {
     setPopupOpen(false);
   };
 
-  const handleConfirmBooking = () => {
-    addToCart(selectedWorkshop);
-    setShowPopup(false);
+  const handleConfirmBooking = async () => {
+    if (!selectedWorkshop) {
+      console.error('No selected workshop to add to cart.');
+      return;
+    }
+  
+    // Make a POST request to add the event to the cart
+    try {
+      const response = await fetch('http://64.227.156.132:3001/api/add-to-cart', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: userProfile.email,
+          eventId: selectedWorkshop.eventId,
+        }),
+      });
+  
+      const data = await response.json();
+      console.log('Item added to cart:', data);
+  
+      // Check if the added event has ID 19 or 20
+      if (selectedWorkshop.eventId === 27) {
+        // Make a request to update BR status to 1
+        await fetch('http://64.227.156.132:3001/api/update-br-status', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email: userProfile.email,
+            brStatus: 1,
+          }),
+        });
+      }
+      if (selectedWorkshop.eventId === 28) {
+        // Make a request to update BR status to 1
+        await fetch('http://64.227.156.132:3001/api/update-br-status', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email: userProfile.email,
+            brStatus: 2,
+          }),
+        });
+      }
+      setShowPopup(false);
+    } catch (error) {
+      console.error('Error adding item to cart:', error);
+      // Handle errors appropriately
+    }
   };
+  
+  // Function to handle removal of an item from the cart
+  
 
   return (
     <div className={`reg-page ${showPopup ? 'popup-open' : ''}`}>
@@ -74,7 +129,7 @@ const RegisterNowPage = () => {
                 <div className='workshop-buttons'>
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
                   <div className="price-rectangle">
-                    <p className="price">{workshop.price}</p>
+                    <p className="price">{workshop.price_in}</p>
                   </div>
                 </div>
                 
@@ -95,15 +150,13 @@ const RegisterNowPage = () => {
 
 <ol className='terms-container'>
   <li className='terms-text'>Entry will not be provided into any workshop or event without Basic Registration (BR).</li>
-  <li className='terms-text'>A delegate can register for Workshops or Quizzes only after completion of BR. Payments received for Workshops before completion of Basic Registration shall be considered invalid. No refund requests shall be entertained for the same.</li>
-  <li className='terms-text'>A delegate can register for only one out of the two major workshops. If payment is made for both the workshops, one of the payments shall be deemed invalid at the discretion of the Organising Committee. No refund requests shall be entertained for the same.</li>
-  <li className='terms-text'>A delegate can register for up to 2 minor workshops. If payment is made for more than 2 minor workshops, the excess payments shall be deemed invalid at the discretion of the Organising Committee. No refund requests shall be entertained for the same.</li>
+  <li className='terms-text'>A delegate can register for Workshops, Academic, Cultural or Sports Events only after completion of BR/PR. Payments received for Workshops before completion of Basic/Premium Registration shall be considered invalid. No refund requests shall be entertained for the same.</li>
+  <li className='terms-text'>A delegate can register for only one of the workshops per day. if payment is made for more than one workshop, one of the payments shall be deemed valid and remaining invalid at the discretion of the Organising Committee.</li>
   <li className='terms-text'>The Organising Committee reserves the right to make changes to the event schedule if necessary.</li>
-  <li className='terms-text'>The delegate must always carry an ID proof (Aadhar card, DL, PAN card, or college ID) with themselves during the conference. Entry into any event/workshop shall not be provided without these.</li>
-  <li className='terms-text'>The delegate must maintain professional and civil conduct throughout the conference. Any violation of the code of conduct shall lead to immediate expulsion from the event with no refunds being issued later.</li>
-  <li className='terms-text'>In the unfortunate event of the conference or Workshop(s) being canceled due to unforeseen circumstances, only registration amounts for the Workshops and quizzes shall be refunded. BR fee is a non-refundable amount.</li>
-  <li className='terms-text'>The Organising Committee holds the right to terminate the registration of any delegate that violates the above mentioned terms.</li>
-</ol>
+  <li className='terms-text'>The delegate must always carry an ID proof (Aadhar card, DL, PAN card or college ID) with themselves during the conference. Entry into any event/workshop shall not be provided without these.</li>
+  <li className='terms-text'> The delegate must maintain professional and civil conduct throughout the conference. Any violation of the code of conduct shall lead to immediate expulsion from the event without refunds being issued later.  </li>
+  <li className='terms-text'>In the unfortunate event of the conference or Worksop(s) being cancelled due to unforeseen circumstances, only registration amounts for the Workshops, Academic, Cultural and Sports Events shall be refunded. BR/PR fee is a non-refundable amount.</li>
+  <li className='terms-text'>The Organising Committee holds the right to terminate the registration of any delegate that violates the above mentioned terms.</li></ol>
 <h1 className='terms-header'>FAQs:</h1>
 
   <p classname="faq-text" style={faqTextStyle}>
@@ -111,7 +164,8 @@ const RegisterNowPage = () => {
  </p>
 <h1 className='terms-header'>Booking Refund/Cancellation</h1>
 
-  <p className='refund-text'>The refund policy is determined by the event organizer and can vary from Event to Event. The service provider will not make any refunds nor will they be liable for any consequential loss, damage, or additional expense whatsoever. We would recommend users to read Terms & Conditions of every Event before booking the tickets or register for an event.</p>
+  <p className='refund-text'>
+The refund policy is determined by the event organizer and can vary from Event to Event. The service provider will not make any refunds nor will they be liable for any consequential loss, damage or additional expense whatsoever. We would recommend users to read Terms & Conditions before registration.</p>
       <Footer />
 
       </div>

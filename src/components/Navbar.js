@@ -8,16 +8,15 @@ import { useAuth } from './authContext';
 import cart from '../assets/cart-icon.png';
 import { useNavigate } from 'react-router-dom';
 function Navbar() {
-  const { loggedIn, login, logout } = useAuth();
+  const { loggedIn, login, logout, userProfile, updateUserProfile } = useAuth();
   const [isNavOpen, setIsNavOpen] = useState(false);
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
-  const [userProfile, setUserProfile] = useState(null);
   const popupRef = useRef(null);
   const [showProfileMenu, setShowProfileMenu] = useState(false);
   const navigate = useNavigate();
-
+  const userProfilePicture = userProfile ? userProfile.picture : null;
   const navigateToCart = () => {
     navigate('/cart');
   };
@@ -25,38 +24,146 @@ function Navbar() {
   const responseGoogle = async response => {
     const decoded = jwtDecode(response.credential);
     console.log(decoded);
-    setUserProfile(decoded);
     setShowGoogleSignIn(false);
-    login();
+
     try {
-      const response = await fetch('http://localhost:3001/api/login', {
+      const userExistsResponse = await fetch('http://64.227.156.132:3001/api/user-exists', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ username: decoded.name, email: decoded.email }),
+        body: JSON.stringify({ email: decoded.email }),
       });
 
-      const data = await response.json();
+      const userExistsData = await userExistsResponse.json();
 
-      if (data.success) {
-        // Registration successful
-        console.log('Registration successful');
-        login(); // Log in the user on the frontend
-      } else {
-        // Registration failed
-        console.error('Registration failed');
+      if (!userExistsData.exists) {
+        // If the user does not exist, proceed with registration
+        const registerResponse = await fetch('http://64.227.156.132:3001/api/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username: decoded.name, email: decoded.email }),
+        });
+
+        const registerData = await registerResponse.json();
+
+        if (registerData.success) {
+          // Registration successful
+          console.log('Registration successful');
+          login();
+          updateUserProfile(decoded);
+        } else {
+          // Registration failed
+          console.error('Registration failed');
+          // Handle the error, show a message, etc.
+        }
+      }
+      else{
+        login();
+        updateUserProfile(decoded);
+      }
+      } catch (error) {
+        console.error('Error:', error);
         // Handle the error, show a message, etc.
       }
-    } catch (error) {
-      console.error('Error:', error);
-      // Handle the error, show a message, etc.
-    }
 
-    setShowGoogleSignIn(false);
-  };
+      setShowGoogleSignIn(false);
+    };
 
+    const [showLocationPopup, setShowLocationPopup] = useState(false);
+    const [userLocation, setUserLocation] = useState(null);
+  
+    const fetchUserLocation = async (email) => {
+      let userLocation = null;
+      try {
+        const response = await fetch(`http://64.227.156.132:3001/api/user-location?email=${email}`);
+        const data = await response.json();
+        userLocation = data.location;
+        setUserLocation(userLocation);
+        console.log("location fetched: ", userLocation);
+      } catch (error) {
+        console.error('Error fetching user location:', error);
+      }
+      return userLocation;
+    };
+    
+    const updateUserLocation = async (email, location) => {
+      try {
+        await fetch('http://64.227.156.132:3001/api/update-location', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email: email,
+            location: location,
+          }),
+        });
+        console.log("updated location: ", location);
+      } catch (error) {
+        console.error('Error updating user location:', error);
+      }
+    };
+    const handleLocationConfirmation = (location) => {
+      setShowLocationPopup(false);
+      console.log("called");
 
+      if (loggedIn && userProfile && userProfile.email) {
+        updateUserLocation(userProfile.email, location);
+      
+        fetchUserLocation(userProfile.email).then(() => {
+          console.log('yo', location);
+          if (location === 'India') {
+            setShowLocationPopup(false);
+            navigate('/register');
+          } else if (location === 'Other') {
+            setShowLocationPopup(false);
+            navigate('/int-delegates');
+          } else {
+            setShowLocationPopup(true);
+          }
+        });
+      }
+      else{
+        console.log('yo', location);
+        if (location === 'India') {
+          setShowLocationPopup(false);
+          navigate('/register');
+        } else if (location === 'Other') {
+          setShowLocationPopup(false);
+          navigate('/int-delegates');
+        } else {
+          setShowLocationPopup(true);
+        }
+      }
+    };
+    
+  
+    const handleRegisterClick = async () => {
+      if (!loggedIn || userProfile === null || userProfile.email === null) {
+        setShowLocationPopup(true);
+      } else {
+        try {
+          const updatedLocation = await fetchUserLocation(userProfile.email);
+          console.log(updatedLocation); // Updated userLocation value
+          if (updatedLocation === 'India') {
+            setShowLocationPopup(false);
+            navigate('/register');
+          } else if (updatedLocation === 'Other') {
+            setShowLocationPopup(false);
+            navigate('/int-delegates');
+          } else {
+            setShowLocationPopup(true);
+          }
+        } catch (error) {
+          console.error('Error handling user location:', error);
+        }
+      }
+    };
+    
+    
 
 
   const closePopup = (e) => {
@@ -100,7 +207,9 @@ function Navbar() {
           <Link to="/contact-us" className="nav-button">Contact Us</Link>
         </li>
         <li>
-          <Link to="/register" className="nav-button">Register now</Link>
+           <button className='nav-button-register' onClick={handleRegisterClick}>
+            Register now
+          </button>
         </li>
       </ul>
 
@@ -108,7 +217,9 @@ function Navbar() {
       {loggedIn ? (
           <div className='profile-container'>
             <img className='cart-icon' src={cart} alt="Profile" onClick={() => navigateToCart('/cart') }/>
-            <img className='profile-pic' src={userProfile.picture} alt="Profile" onClick={() => setShowProfileMenu(!showProfileMenu)} />
+            {userProfilePicture && ( // Check if userProfilePicture exists before rendering
+            <img className='profile-pic' src={userProfilePicture} alt="Profile" onClick={() => setShowProfileMenu(!showProfileMenu)} />
+          )}
             {showProfileMenu && (
               <div className='profile-dropdown' ref={popupRef}>
                 <Link to="/cart" className='nav-button'>My Bookings</Link>
@@ -141,7 +252,19 @@ function Navbar() {
       </div>
         )}
         </div>
-      
+        {showLocationPopup && (
+        <div className="popup-container">
+          <div className="popup-content">
+            <p>Are you from India?</p>
+            <button className="popup-button" onClick={() => handleLocationConfirmation('India')}>
+              Yes
+            </button>
+            <button className="popup-button" onClick={() => handleLocationConfirmation('Other')}>
+              No
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
