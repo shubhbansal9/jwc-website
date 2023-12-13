@@ -28,7 +28,7 @@ function InternationalDelegates() {
     if(loggedIn){
     const email = userProfile.email;
     try {
-      const addToCartResponse = await fetch('http://174.138.121.198:3001/api/add-to-cart', {
+      const addToCartResponse = await fetch('https://174.138.121.198:3001/api/add-to-cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ function InternationalDelegates() {
         alert("Added to cart");
         console.log("added to cart");
         if(eventId===29){
-        const updateBRStatusResponse = await fetch('http://174.138.121.198:3001/api/update-br-status', {
+        const updateBRStatusResponse = await fetch('s/api/update-br-status', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ function InternationalDelegates() {
         }
       }
       else if(eventId===30){
-        const updateBRStatusResponse = await fetch('http://174.138.121.198:3001/api/update-br-status', {
+        const updateBRStatusResponse = await fetch('s/api/update-br-status', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
