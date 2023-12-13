@@ -16,7 +16,7 @@ const CartPage = () => {
 
   const fetchUserLocation = async (email) => {
     try {
-      const response = await fetch(`https://174.138.121.198:3001/api/user-location?email=${email}`);
+      const response = await fetch(`http://174.138.121.198:3001/api/user-location?email=${email}`);
       const data = await response.json();
       return data.location; // Assuming the response contains the user's location
     } catch (error) {
@@ -28,13 +28,13 @@ const CartPage = () => {
     const fetchEventDetails = async () => {
       try {
         if (userProfile && userProfile.email) {
-          const response = await fetch(`https://174.138.121.198:3001/api/user-cart/${userProfile.email}`);
+          const response = await fetch(`http://174.138.121.198:3001/api/user-cart/${userProfile.email}`);
           const cartData = await response.json();
 
           if (cartData.success && cartData.cart) {
             const eventIds = cartData.cart.eventsInCart;
             const eventDetailsPromises = eventIds.map(async (eventId) => {
-              const eventResponse = await fetch(`https://174.138.121.198:3001/api/events/${eventId}`);
+              const eventResponse = await fetch(`http://174.138.121.198:3001/api/events/${eventId}`);
               const eventData = await eventResponse.json();
               console.log(eventData.price_in);
               return eventData;
@@ -113,7 +113,7 @@ const CartPage = () => {
             {/* Button for removing the item */}
             <button onClick={async () => {
               try {
-                const response = await fetch(`https://174.138.121.198:3001/api/remove-from-cart/${userProfile.email}/${event.eventId}`, {
+                const response = await fetch(`http://174.138.121.198:3001/api/remove-from-cart/${userProfile.email}/${event.eventId}`, {
                   method: 'POST',
                 });
                 console.log(userProfile.email);
@@ -122,7 +122,7 @@ const CartPage = () => {
                 console.log(event.eventId);
                 if (data.success && (event.eventId === "27" || event.eventId === "28")) {
                   console.log("updating");
-                  await fetch('https://174.138.121.198:3001/api/update-br-status', {
+                  await fetch('http://174.138.121.198:3001/api/update-br-status', {
                     method: 'POST',
                     headers: {
                       'Content-Type': 'application/json',
