@@ -27,7 +27,7 @@ function Navbar() {
     setShowGoogleSignIn(false);
 
     try {
-      const userExistsResponse = await fetch('https://174.138.121.198:3001/api/user-exists', {
+      const userExistsResponse = await fetch('https://api.jwcmedicalolympics.com:3001/api/user-exists', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ function Navbar() {
 
       if (!userExistsData.exists) {
         // If the user does not exist, proceed with registration
-        const registerResponse = await fetch('https://174.138.121.198:3001/api/login', {
+        const registerResponse = await fetch('https://api.jwcmedicalolympics.com:3001/api/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

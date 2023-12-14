@@ -28,7 +28,7 @@ function InternationalDelegates() {
     if(loggedIn){
     const email = userProfile.email;
     try {
-      const addToCartResponse = await fetch('https://174.138.121.198:3001/api/add-to-cart', {
+      const addToCartResponse = await fetch('https://api.jwcmedicalolympics.com:3001/api/add-to-cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

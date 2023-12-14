@@ -32,7 +32,7 @@ function EventsPage() {
   // Function to update user location
   const updateUserLocation = async (email, location) => {
     try {
-      await fetch('https://174.138.121.198:3001/api/update-location', {
+      await fetch('api.jwcmedicalolympics.com:3001/api/update-location', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
