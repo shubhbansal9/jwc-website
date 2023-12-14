@@ -16,7 +16,7 @@ const CartPage = () => {
 
   const fetchUserLocation = async (email) => {
     try {
-      const response = await fetch(`https://174.138.121.198:3001/api/user-location?email=${email}`);
+      const response = await fetch(`https://api.jwcmedicalolympics.com:3001/api/user-location?email=${email}`);
       const data = await response.json();
       return data.location; // Assuming the response contains the user's location
     } catch (error) {
