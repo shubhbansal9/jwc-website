@@ -27,7 +27,7 @@ function Navbar() {
     setShowGoogleSignIn(false);
 
     try {
-      const userExistsResponse = await fetch('https://api.jwcmedicalolympics.com:3001/api/user-exists', {
+      const userExistsResponse = await fetch('https://api.jwcmedicalolympics.com/api/user-exists', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ function Navbar() {
 
       if (!userExistsData.exists) {
         // If the user does not exist, proceed with registration
-        const registerResponse = await fetch('https://api.jwcmedicalolympics.com:3001/api/login', {
+        const registerResponse = await fetch('https://api.jwcmedicalolympics.com/api/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ function Navbar() {
     const fetchUserLocation = async (email) => {
       let userLocation = null;
       try {
-        const response = await fetch(`s/api/user-location?email=${email}`);
+        const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-location?email=${email}`);
         const data = await response.json();
         userLocation = data.location;
         setUserLocation(userLocation);
