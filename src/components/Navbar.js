@@ -92,7 +92,7 @@ function Navbar() {
     
     const updateUserLocation = async (email, location) => {
       try {
-        await fetch('s/api/update-location', {
+        await fetch('https://api.jwcmedicalolympics.com/api/update-location', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

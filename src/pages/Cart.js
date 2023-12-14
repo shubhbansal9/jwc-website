@@ -34,7 +34,7 @@ const CartPage = () => {
           if (cartData.success && cartData.cart) {
             const eventIds = cartData.cart.eventsInCart;
             const eventDetailsPromises = eventIds.map(async (eventId) => {
-              const eventResponse = await fetch(`s/api/events/${eventId}`);
+              const eventResponse = await fetch(`https://api.jwcmedicalolympics.com/api/events/${eventId}`);
               const eventData = await eventResponse.json();
               console.log(eventData.price_in);
               return eventData;
@@ -122,7 +122,7 @@ const CartPage = () => {
                 console.log(event.eventId);
                 if (data.success && (event.eventId === "27" || event.eventId === "28")) {
                   console.log("updating");
-                  await fetch('s/api/update-br-status', {
+                  await fetch('https://api.jwcmedicalolympics.com/api/update-br-status', {
                     method: 'POST',
                     headers: {
                       'Content-Type': 'application/json',

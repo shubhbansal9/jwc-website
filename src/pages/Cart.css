@@ -82,5 +82,10 @@
   .membership-number{
     margin-top: 5%;
   }
-  /* Add any additional styling as needed */
+
+  @media screen and (max-width: 1000px) {
+    .cart-text{
+      margin-bottom: 130%;
+    }
+  }
  
