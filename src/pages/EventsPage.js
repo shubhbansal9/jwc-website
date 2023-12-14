@@ -204,7 +204,7 @@ function EventsPage() {
       }
     
       // Make a POST request to your server's endpoint to add the event to the cart
-      fetch('s/api/add-to-cart', {
+      fetch('https://api.jwcmedicalolympics.com/api/add-to-cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
