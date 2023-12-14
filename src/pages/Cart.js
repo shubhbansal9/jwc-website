@@ -16,7 +16,7 @@ const CartPage = () => {
 
   const fetchUserLocation = async (email) => {
     try {
-      const response = await fetch(`https://api.jwcmedicalolympics.com:3001/api/user-location?email=${email}`);
+      const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-location?email=${email}`);
       const data = await response.json();
       return data.location; // Assuming the response contains the user's location
     } catch (error) {
@@ -28,7 +28,7 @@ const CartPage = () => {
     const fetchEventDetails = async () => {
       try {
         if (userProfile && userProfile.email) {
-          const response = await fetch(`s/api/user-cart/${userProfile.email}`);
+          const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-cart/${userProfile.email}`);
           const cartData = await response.json();
 
           if (cartData.success && cartData.cart) {
@@ -113,7 +113,7 @@ const CartPage = () => {
             {/* Button for removing the item */}
             <button onClick={async () => {
               try {
-                const response = await fetch(`s/api/remove-from-cart/${userProfile.email}/${event.eventId}`, {
+                const response = await fetch(`https://api.jwcmedicalolympics.com/api/remove-from-cart/${userProfile.email}/${event.eventId}`, {
                   method: 'POST',
                 });
                 console.log(userProfile.email);
