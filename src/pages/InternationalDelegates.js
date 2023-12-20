@@ -22,12 +22,28 @@ function InternationalDelegates() {
   const toggleExpand2 = () => {
     setIsExpanded2(!isExpanded2);
   };
-  
+  const fetchUserLocation = async (email) => {
+    let userLocation = null;
+    try {
+      const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-location?email=${email}`);
+      const data = await response.json();
+      userLocation = data.location;
+      console.log("location fetched: ", userLocation);
+    } catch (error) {
+      console.error('Error fetching user location:', error);
+    }
+    return userLocation;
+  };
 
   const addToCart = async (eventId) => {
     if(loggedIn){
     const email = userProfile.email;
     try {
+      const userLocation = await fetchUserLocation(email);
+        if (userLocation === 'India') {
+          alert('Sorry, you cannot register for this event from India.');
+          return; // Prevent further execution
+        }
       const addToCartResponse = await fetch('https://api.jwcmedicalolympics.com/api/add-to-cart', {
         method: 'POST',
         headers: {
@@ -63,8 +79,6 @@ function InternationalDelegates() {
           body: JSON.stringify({ email, brStatus: 4 }),
         });
         if (updateBRStatusResponse.ok) {
-          // Perform any further actions upon successful update
-          // For example, updating UI or showing a success message
         } else {
           console.error('Failed to update BR status');
           // Handle failure to update BR status

@@ -24,7 +24,9 @@ body {
   text-align: center;
   
 }
-
+.countdown-container{
+  justify-content: center;
+}
 button:hover {
   background-color: #444;
 }
