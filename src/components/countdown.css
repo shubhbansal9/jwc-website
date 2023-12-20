@@ -1,92 +1,66 @@
-.countdown .content {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin: auto;
-	gap: 12px;
-}
-.countdown h2 {
-	margin-bottom: -2%;
-	font-weight: 900;
-    font-size: xx-large;
-    font-family: "Anton", sans-serif;
-}
+/* countdown.css */
 
-.countdown .box {
-	width: calc(100% / 4);
+/* Global Styles */
+:root {
+	--blue: hsl(237, 18%, 59%);
+	--red: hsl(345, 95%, 68%);
+	--white: hsl(0, 0%, 100%);
+	--dark-blue-1: hsl(236, 21%, 26%);
+	--dark-blue-2: hsl(235, 16%, 14%);
+	--dark-blue-3: hsl(234, 17%, 12%);
+	--bp-large: 59.375em;
+  }
+  
+  .global-style *,
+  *::after,
+  *::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+  }
+  
+  
+  
+  
+  /* Styles for Container */
+  .container-countdown {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 150px;
-	max-width: 150px;
-}
-
-.countdown .value {
-	font-size: 30px;
-	font-weight: 600;
-	background-color: #A6113D;;
-	color: white;
+	gap: 1rem;
+	margin-bottom: 7%;
+  }
+  
+  /* Styles for Heading */
+  .heading {
+	color: var(--white);
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 1.6rem;
+	text-align: center;
+  }
+  
+  /* Styles for Main */
+  .main {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	border-radius: 8px;
-	animation: flip 1s linear infinite;
-	position: relative;
-	box-shadow: -2px 0px 5px 1px #232423ad;
-}
-
-@media screen and (min-width: 550px) {
-	.countdown .content {
-		gap: 30px;
-	}
-	.countdown .value {
-		font-size: 50px;
-		width: 120px;
-		height: 120px;
-	}
-	.countdown .box {
-		height: 200px;
-		max-width: 200px;
-	}
-}
-
-@media screen and (min-width: 790px) {
-	.countdown .value {
-		font-size: 300%;
-		height: 100px;
-		width: 200px;
-	}
-	.countdown .box {
-		max-width: 200px;
-		height: 250px;
-	}
-}
-
-.countdown .value::before {
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	z-index: 2;
-	background-color: #313131b0;
-	box-shadow: 0px 0px 5px 0px #2e2f2ed6;
-}
-.countdown .value::after {
-	content: "";
-	position: absolute;
-	z-index: 2;
-	left: -7px;
-	width: 10px;
-	height: 20px;
-	background-color: #969696;
-	box-shadow: inset -1px 1px 5px 1px #0e0e0ead;
-}
-
-.countdown .label {
-	font-size: 20px;
-	font-weight: 100;
-	letter-spacing: 4px;
-	margin-top: 10px;
+	gap: 2rem;
+	width: 40%;
+  }
+  .heading-countdown{
 	color: white;
-}
+  }
+
+  @media screen and (max-width: 37.5em) {
+	.main{
+		gap: 1rem;
+	}
+	.container-countdown{
+		gap: 1rem;
+		margin-bottom: 10%;
+	}
+  }
+  
+  /* ... Additional styles for Card, etc. */
+  

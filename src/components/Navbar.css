@@ -43,6 +43,7 @@
   text-decoration: none;
   white-space: nowrap;
   display: flex;
+  font-size: initial;
   height: 100%;
 }
 .popup-container {

@@ -1,73 +1,34 @@
-import React, { useState, useEffect } from "react";
-import "./countdown.css";
+import React, { useEffect, useState } from 'react';
+import styled, { createGlobalStyle } from 'styled-components';
+import { intervalToDuration, addSeconds, differenceInMilliseconds } from 'date-fns'; // Import necessary functions
 
-const COUNTDOWN_TARGET = new Date("2024-04-04T23:59:59");
-
-const formatDoubleDigit = (value) => {
-  return value < 10 ? `0${value}` : value;
-};
-
-const getTimeLeft = () => {
-  const totalTimeLeft = COUNTDOWN_TARGET - new Date();
-  const days = Math.floor(totalTimeLeft / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((totalTimeLeft / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
-  const seconds = Math.floor((totalTimeLeft / 1000) % 60);
-  return {
-    days: formatDoubleDigit(days),
-    hours: formatDoubleDigit(hours),
-    minutes: formatDoubleDigit(minutes),
-    seconds: formatDoubleDigit(seconds),
-  };
-};
+import Card from './card';
+import './countdown.css';
 
 const Countdown = () => {
-  const [timeLeft, setTimeLeft] = useState(() => getTimeLeft());
+  const [currentTime, setCurrentTime] = useState(new Date());
+  const targetDate = new Date('2024-04-05T00:00:00'); // April 5, 2024, 12:00 AM
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      const newTimeLeft = getTimeLeft();
-      // Check if seconds or minutes have changed
-      if (newTimeLeft.seconds !== timeLeft.seconds) {
-        setTimeLeft(newTimeLeft);
-      } else if (newTimeLeft.minutes !== timeLeft.minutes) {
-        setTimeLeft(newTimeLeft);
-      }
+    const intervalId = setInterval(() => {
+      setCurrentTime(time => addSeconds(time, 1));
     }, 1000);
+    return () => clearInterval(intervalId);
+  }, []);
 
-    return () => {
-      clearInterval(timer);
-    };
-  }, [timeLeft]);
+  const difference = differenceInMilliseconds(targetDate, currentTime);
+  const { months, days, hours, minutes, seconds } = intervalToDuration({ start: 0, end: difference });
 
   return (
-    <div className="countdown">
-      <h2>COUNTDOWN</h2>
-      <div className="content">
-        <div className="box">
-          <div className="value">
-            <span>{timeLeft.days}</span>
-          </div>
-          <span className="label">Days</span>
-        </div>
-        <div className="box">
-          <div className="value">
-            <span>{timeLeft.hours}</span>
-          </div>
-          <span className="label">Hours</span>
-        </div>
-        <div className="box flip-horizontal">
-          <div className="value">
-            <span>{timeLeft.minutes}</span>
-          </div>
-          <span className="label">Minutes</span>
-        </div>
-        <div className="box flip-horizontal">
-          <div className="value">
-            <span>{timeLeft.seconds}</span>
-          </div>
-          <span className="label">Seconds</span>
-        </div>
+    <div className="container-countdown">
+      <div className="global-style" />
+      <h2 className='heading-countdown'>COUNTDOWN</h2>
+      <div className="main">
+        <Card currentNumber={months} nextNumber={months - 1} title="months" />
+        <Card currentNumber={days} nextNumber={days - 1} title="days" />
+        <Card currentNumber={hours} nextNumber={hours - 1} title="hours" />
+        <Card currentNumber={minutes} nextNumber={minutes - 1} title="minutes" />
+        <Card currentNumber={seconds} nextNumber={seconds - 1} title="seconds" />
       </div>
     </div>
   );
