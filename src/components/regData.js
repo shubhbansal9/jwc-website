@@ -3,11 +3,11 @@ const regData = [
       eventId:27,
       title: 'Secure your spot with Basic Registration (BR)',
       description: `<ul>
-        <li><strong>Conference Access:</strong> Your ticket to the heart of the action – the Conference! - Conference Access</li>
-        <li><strong>Unique BR ID:</strong> Your golden key! Unlock a world of possibilities by registering for regs, Academic Sessions, Cultural Extravaganzas, and Sports Showdowns. - Unique BR ID</li>
-        <li><strong>Showcase Your Talent:</strong> BR opens the door for you to submit your outstanding Abstracts and Documentaries. - Showcase Your Talent</li>
-        <li><strong>Spectator Access:</strong> Be everywhere! Witness all campus events, excluding the exclusive Gala Night and Pediatric Autism Awareness Fundraiser. - Spectator Access</li>
-        <li><strong>DJ Night:</strong> Groove into the night! BR grants you access to the electrifying DJ Night on Day 3 of the Conference. - DJ Night</li>
+        <li><strong>Conference Access:</strong> Your ticket to the heart of the action – the Conference!</li>
+        <li><strong>Unique BR ID:</strong> Your golden key! Unlock a world of possibilities by registering for regs, Academic Sessions, Cultural Extravaganzas, and Sports Showdowns.</li>
+        <li><strong>Showcase Your Talent:</strong> BR opens the door for you to submit your outstanding Abstracts and Documentaries post respective registration.</li>
+        <li><strong>Spectator Access:</strong> Be everywhere! Witness all campus events, excluding the exclusive Gala Night and Pediatric Autism Awareness Fundraiser.</li>
+        <li><strong>DJ Night:</strong> Groove into the night! BR grants you access to the electrifying DJ Night on Day 3 of the Conference.</li>
       </ul>
     `,
       price_in: 'Rs1000',
