@@ -84,8 +84,8 @@ function EventsPage() {
 
   // Function to determine price based on location
   const getPriceByLocation = (workshop) => {
-    console.log(userLocation);
     if (userLocation === 'India') {
+      console.log(workshop.price_in);
       return workshop.price_in;
     } else {
       return workshop.price_us;
