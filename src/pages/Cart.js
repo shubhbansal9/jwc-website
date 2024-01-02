@@ -20,15 +20,42 @@ const CartPage = () => {
     transactionId: 'T' + Date.now(),
 }
 
-const handlePayment = (e)=>{
-    e.preventDefault();
-    axios.post('https://api.jwcmedicalolympics.com/api/payment', {...data}).then(res => {  
-    setTimeout(() => {}, 1500);
+const handlePayment = (e) => {
+  e.preventDefault();
+
+  // Log request data
+  console.log('Request Data:', data);
+
+  axios.post('https://api.jwcmedicalolympics.com/api/payment', { ...data })
+    .then(res => {
+      // Log successful response
+      console.log('Response Data:', res.data);
+
+      // Handle successful response
+      // For example, you can redirect or perform other actions
     })
     .catch(error => {
-        console.error(error);
-    });   
-}
+      // Log Axios error
+      console.error('Axios Error:', error);
+
+      // Log response data if available
+      if (error.response) {
+        console.error('Response Data:', error.response.data);
+      }
+
+      // Log request headers
+      if (error.config && error.config.headers) {
+        console.log('Request Headers:', error.config.headers);
+      }
+
+      // Log request data if available
+      if (error.config && error.config.data) {
+        console.log('Request Data:', JSON.parse(error.config.data));
+      }
+
+      // Handle error or take appropriate action
+    });
+};
   const fetchUserLocation = async (email) => {
     try {
       const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-location?email=${email}`);
