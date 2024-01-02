@@ -22,7 +22,7 @@ const CartPage = () => {
 
 const handlePayment = (e)=>{
     e.preventDefault();
-    axios.post('http://api.jwcmedicalolympics.com/api/payment', {...data}).then(res => {  
+    axios.post('https://api.jwcmedicalolympics.com/api/payment', {...data}).then(res => {  
     setTimeout(() => {}, 1500);
     })
     .catch(error => {
