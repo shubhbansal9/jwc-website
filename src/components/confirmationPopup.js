@@ -4,7 +4,7 @@ import './confirmationPopup.css';
 
 const ConfirmationPopup = ({ workshopDetails, onConfirmBooking, onClose }) => {
   const title = workshopDetails ? workshopDetails.title : '';
-  const price = workshopDetails && workshopDetails.price ? workshopDetails.price : '';
+  const price = workshopDetails && workshopDetails.price_in ? workshopDetails.price_in : '';
   return (
     <div className="popup-overlay">
       <div className="atc-popup">

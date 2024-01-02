@@ -130,6 +130,7 @@ const RegisterNowPage = () => {
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
                   <div className="price-rectangle">
                     <p className="price">{workshop.price_in}</p>
+                    
                   </div>
                 </div>
                 

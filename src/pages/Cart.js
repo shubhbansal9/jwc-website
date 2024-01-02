@@ -6,14 +6,29 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/footer';
 import '../components/footer.css';
 import { useAuth } from '../components/authContext';
-
+import axios from 'axios';
 const CartPage = () => {
   const { loggedIn, userProfile } = useAuth();
   const [eventsDetails, setEventsDetails] = useState([]);
   const [total, setTotal] = useState(0);
   const [isAMSAMember, setIsAMSAMember] = useState(false);
   const [membershipNumber, setMembershipNumber] = useState('');
+  const data ={
+    name: userProfile.name,
+    amount: total,
+    MUID: "MUID" + Date.now(),
+    transactionId: 'T' + Date.now(),
+}
 
+const handlePayment = (e)=>{
+    e.preventDefault();
+    axios.post('http://api.jwcmedicalolympics.com/api/payment', {...data}).then(res => {  
+    setTimeout(() => {}, 1500);
+    })
+    .catch(error => {
+        console.error(error);
+    });   
+}
   const fetchUserLocation = async (email) => {
     try {
       const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-location?email=${email}`);
@@ -92,8 +107,6 @@ const CartPage = () => {
   
     calculateTotal();
   }, [eventsDetails]);
-  
-  
   
 
   return (
@@ -175,7 +188,7 @@ const CartPage = () => {
       {total > 0 && (
         <div className="cart-total">
           <p className='item-total'>Total: {total}</p>
-          <button className="pay-button" onClick={() => alert("Payment functionality to be implemented")}>Pay Now</button>
+          <button className="pay-button" onClick={handlePayment}>Pay Now</button>
         </div>
       )}
      
