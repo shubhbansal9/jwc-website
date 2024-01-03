@@ -33,9 +33,15 @@ const handlePayment = (e) => {
 
       // Extract the payment gateway URL from the response
       const paymentGatewayUrl = res.data;
-      console.log("opening payment gateway");
+      console.log("Payment Gateway URL:", paymentGatewayUrl);
+
       // Redirect the user to the payment gateway
-      window.location.url = paymentGatewayUrl;
+      try {
+        console.log("Redirecting to the payment gateway");
+        window.location.href = paymentGatewayUrl;
+      } catch (redirectError) {
+        console.error('Error during redirection:', redirectError.message);
+      }
     })
     .catch(error => {
       // Log Axios error
@@ -57,8 +63,10 @@ const handlePayment = (e) => {
       }
 
       // Handle error or take appropriate action
+      console.log("Error during payment:", error.message);
     });
 };
+
   const fetchUserLocation = async (email) => {
     try {
       const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-location?email=${email}`);
