@@ -33,7 +33,7 @@ const handlePayment = (e) => {
 
       // Extract the payment gateway URL from the response
       const paymentGatewayUrl = res.data;
-
+      console.log("opening payment gateway");
       // Redirect the user to the payment gateway
       window.location.url = paymentGatewayUrl;
     })
