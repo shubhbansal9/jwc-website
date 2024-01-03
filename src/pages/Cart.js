@@ -31,8 +31,11 @@ const handlePayment = (e) => {
       // Log successful response
       console.log('Response Data:', res.data);
 
-      // Handle successful response
-      // For example, you can redirect or perform other actions
+      // Extract the payment gateway URL from the response
+      const paymentGatewayUrl = res.data;
+
+      // Redirect the user to the payment gateway
+      window.location.url = paymentGatewayUrl;
     })
     .catch(error => {
       // Log Axios error
