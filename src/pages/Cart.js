@@ -70,7 +70,23 @@ const handlePayment = (e) => {
       console.log("Error during payment:", error.message);
     });
 };
+const handleAMSAStatusUpdate = async () => {
+  try {
+    const newAMSAStatus = isAMSAMember ? 'yes' : 'no'; // Convert boolean to string
+    const response = await axios.post('https://api.jwcmedicalolympics.com/api/update-amsa-status', {
+      email: userProfile.email,
+      amsaMember: newAMSAStatus,
+    });
 
+    if (response.data.success) {
+      console.log(`AMSA member status updated successfully: ${newAMSAStatus}`);
+    } else {
+      console.log('Failed to update AMSA member status');
+    }
+  } catch (error) {
+    console.error('Error updating AMSA member status:', error);
+  }
+};
   const fetchUserLocation = async (email) => {
     try {
       const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-location?email=${email}`);
@@ -144,11 +160,15 @@ const handlePayment = (e) => {
   
         return sum + numericPrice;
       }, 0);
-      setTotal(totalPrice);
-    };
+      const discountedTotal = isAMSAMember ? totalPrice * 0.9 : totalPrice;
+
+    setTotal(discountedTotal);
+  };
+   
+    
   
     calculateTotal();
-  }, [eventsDetails]);
+  }, [eventsDetails, isAMSAMember]);
   
 
   return (
