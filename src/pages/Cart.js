@@ -23,10 +23,14 @@ const CartPage = () => {
 const handlePayment = (e) => {
   e.preventDefault();
 
-  // Log request data
-  console.log('Request Data:', data);
+  // Assuming userEmail is available
+  const userEmail = userProfile.email;
+  console.log(userEmail);
 
-  axios.post('https://api.jwcmedicalolympics.com/api/payment', { ...data })
+  // Log request data
+  console.log('Request Data:', { ...data, userEmail }); 
+
+  axios.post(`https://api.jwcmedicalolympics.com/api/payment/${userEmail}`, { ...data }) 
     .then(res => {
       // Log successful response
       console.log('Response Data:', res.data);

@@ -14,6 +14,8 @@ import cmcLogo from './assets/cmc-logo.svg';
 import { AuthProvider } from './components/authContext';
 import { useAuth } from './components/authContext';
 import RegisterNowPage from './pages/RegisterNow';
+import Success from './pages/Success';
+import Failure from './pages/Failure';
 function App() {
   return (
     <Router>
@@ -34,7 +36,9 @@ function App() {
             <Route path="/contact-us" element={<ContactUsPage />} />
             <Route path="/accommodation" element={<AccommodationPage />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/register" element={<RegisterNowPage/>}/>
+            <Route path="/register" element={<Failure/>}/>
+            <Route path="/success" element={<Success/>}/>
+            <Route path="/failure" element={<Failure/>}/>
           </Routes>
         </div>
       </CartProvider>
