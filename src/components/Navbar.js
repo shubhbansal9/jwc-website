@@ -223,7 +223,7 @@ function Navbar() {
           )}
             {showProfileMenu && (
               <div className='profile-dropdown' ref={popupRef}>
-                <Link to="/cart" className='nav-button'>My Bookings</Link>
+                {/* <Link to="/cart" className='nav-button'>My Bookings</Link> */}
                 <Link to="" className='nav-button' onClick={() => logout()}>Logout</Link>
 
               </div>
