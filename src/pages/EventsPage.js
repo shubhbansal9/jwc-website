@@ -141,7 +141,7 @@ function EventsPage() {
   // Function to render the total seats for an event
   const renderTotalSeats = (eventId) => {
     const seats = totalSeats[eventId];
-    return seats !== undefined ? `Total Seats: ${seats}` : 'Fetching...';
+    return seats !== undefined ? `Total Seats: ${seats}` : 'Fetching..';
   };
 
 
@@ -296,9 +296,10 @@ function EventsPage() {
                 )}
                 <div className='workshop-buttons'>
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
+                  
+                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
-                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   </div>
                 </div>
                 {showPopup && (
@@ -327,9 +328,10 @@ function EventsPage() {
                 )}
                 <div className='workshop-buttons'>
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
+                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
-                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
+                 
                   </div>
                 </div>
                 {showPopup && (
@@ -358,9 +360,9 @@ function EventsPage() {
                 )}
                 <div className='workshop-buttons'>
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
+                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
-                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   </div>
                 </div>
                 {showPopup && (
@@ -389,9 +391,9 @@ function EventsPage() {
                 )}
                 <div className='workshop-buttons'>
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
+                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
-                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   </div>
                 </div>
                 {showPopup && (
