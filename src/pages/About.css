@@ -65,9 +65,6 @@
   
 }
 
-.patron-image {
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
-}
 .dual-container {
   display: flex;
   justify-content: center; /* To separate the two containers */
@@ -85,9 +82,12 @@
   margin-top: 6%;
   text-align: center;
 }
+.patronimage{
+  max-width: 100%;
+}
 
 .patron-image {
-  max-width: 100%;
+  max-width: 200px;
 }
 @media screen and (max-width: 1000px) {
   .dual-container{
