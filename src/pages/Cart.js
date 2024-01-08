@@ -161,17 +161,30 @@ const handleAMSAStatusUpdate = async () => {
   
         return sum + numericPrice;
       }, 0);
-      const discountedTotal = isAMSAMember ? totalPrice * 0.9 : totalPrice;
-
-    setTotal(discountedTotal);
-  };
-   
-    
+      if(isAMSAMember){
+      // Check if events 27 and 28 are in the cart
+      const hasEvent27 = eventsDetails.some(item => item.eventId === 27);
+      const hasEvent28 = eventsDetails.some(item => item.eventId === 28);
+  
+      // Subtract discount based on the events in the cart
+      let discountedTotal = totalPrice;
+  
+      if (hasEvent27) {
+        discountedTotal -= 100;
+      }
+  
+      if (hasEvent28) {
+        discountedTotal -= 150;
+      }
+  
+  
+      setTotal(discountedTotal);
+    };
   
     calculateTotal();
+  }
   }, [eventsDetails, isAMSAMember]);
   
-
   return (
     <div className="cart-page">
       <h1 className='cart-header'>Your Cart</h1>

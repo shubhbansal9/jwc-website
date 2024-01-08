@@ -33,7 +33,7 @@ function EventsPage() {
   // Function to update user location
   const updateUserLocation = async (email, location) => {
     try {
-      await fetch('api.jwcmedicalolympics.com:3001/api/update-location', {
+      await fetch('https://api.jwcmedicalolympics.com/api/update-location', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -111,7 +111,38 @@ function EventsPage() {
 
     fetchBRStatus();
   }, [loggedIn, userProfile]);
+  const [totalSeats, setTotalSeats] = useState({}); // Object to store total seats for each eventId
 
+  useEffect(() => {
+    // Fetch total seats for each eventId
+    const fetchTotalSeats = async (eventId) => {
+      try {
+        const response = await fetch(`https://api.jwcmedicalolympics.com/api/total-seats/${eventId}`);
+        const data = await response.json();
+        if (data.success) {
+          setTotalSeats(prevTotalSeats => ({
+            ...prevTotalSeats,
+            [eventId]: data.totalSeats,
+          }));
+        } else {
+          console.error(`Failed to fetch total seats for eventId ${eventId}`);
+        }
+      } catch (error) {
+        console.error('Error fetching total seats:', error);
+      }
+    };
+
+    // Iterate over all events and fetch total seats
+    [...workshopsData, ...culturalData, ...academicsData, ...sportsData].forEach(workshop => {
+      fetchTotalSeats(workshop.eventId);
+    });
+  }, []); // Empty dependency array to run the effect only once on component mount
+
+  // Function to render the total seats for an event
+  const renderTotalSeats = (eventId) => {
+    const seats = totalSeats[eventId];
+    return seats !== undefined ? `Total Seats: ${seats}` : 'Fetching...';
+  };
 
 
   const handleWorkshopCardClick = (index) => {
@@ -249,8 +280,7 @@ function EventsPage() {
       {/* <EventDetails events={upcomingEvents} /> */}
       <img src={eventItinerary} alt="Medical Olympics Logo" className="event-itinerary" />
       <Link to="https://drive.google.com/file/d/1fzysBeCum2B2_4ZhPKGFkxf2JHlXbDra/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Academic events Brochure<br></br></Link>
-      {/* <Link to="https://drive.google.com/file/d/1g5HjWdyQHEAnY09zkkTocZuecr8DY_mO/view?usp=drivesdk" className="itinerarylink">Check out our Cultural events Brochure<br></br></Link> */}
-      
+      <Link to="https://drive.google.com/file/d/1nBTPQTI4yRwhZjo8LEFN42WHlultiEG1/view?usp=drivesdk" className="itinerarylink">Check out our Cultural events Brochure<br></br></Link>
       <Link to="https://drive.google.com/file/d/1fh3pF0fHK2Zat17-l2ScNb5GbCddx1Yx/view" className="itinerarylink">Check out our Sports events Brochure<br></br><br></br></Link>
       <div className='note'>Note: Only one of the members from the team requires to register for the GROUP EVENTS</div>
         <h1 className='workshop-headers'>WORKSHOPS</h1>
@@ -268,6 +298,7 @@ function EventsPage() {
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
+                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   </div>
                 </div>
                 {showPopup && (
@@ -298,6 +329,7 @@ function EventsPage() {
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
+                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   </div>
                 </div>
                 {showPopup && (
@@ -328,6 +360,7 @@ function EventsPage() {
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
+                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   </div>
                 </div>
                 {showPopup && (
@@ -358,6 +391,7 @@ function EventsPage() {
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
+                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
                   </div>
                 </div>
                 {showPopup && (
