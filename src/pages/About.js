@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import './About.css';
 import Footer from '../components/footer';
 import aboutPage from '../assets/about-page.svg';
-import chiefPatronImg from '../assets/chief-patron.png';
+import chiefPatronImg from '../assets/patron-image.jpeg';
 import patronImg from '../assets/patron.svg';
 import chairImg1 from '../assets/org-chair.svg';
 import chairImg2 from '../assets/org-chair2.svg';
@@ -86,7 +86,7 @@ and celebrate. We can't wait to see you here!<br></br><br></br>
       </p>
       <div className="dual-container">
       <div className="chairpersons-container">
-  <img src={chairImg1} alt="patron" className="patron-image" />
+  <img src={chairImg1} alt="patron" className="patronimage" />
     
     <div className="image-container">
     <div className="chairpersons-text">
@@ -96,7 +96,7 @@ Organizing Chairperson
       </div>
   </div>
   <div className="chairpersons-container">
-  <img src={chairImg2} alt="patron" className="patron-image" />
+  <img src={chairImg2} alt="patron" className="patronimage" />
     
     <div className="image-container">
     <div className="chairpersons-text">
@@ -106,7 +106,7 @@ Organizing Chairperson
       </div>
   </div>
   <div className="chairpersons-container">
-  <img src={vchair1} alt="patron" className="patron-image" />
+  <img src={vchair1} alt="patron" className="patronimage" />
     
     <div className="image-container">
     <div className="chairpersons-text">
@@ -116,7 +116,7 @@ Vice Organizing Chairperson
       </div>
   </div>
   <div className="chairpersons-container">
-  <img src={vchair2} alt="patron" className="patron-image" />
+  <img src={vchair2} alt="patron" className="patronimage" />
     <div className="image-container">
     <div className="chairpersons-text">
     Riya Mariam George<br></br>

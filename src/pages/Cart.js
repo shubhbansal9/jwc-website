@@ -73,6 +73,7 @@ const handlePayment = (e) => {
 const handleAMSAStatusUpdate = async () => {
   try {
     const newAMSAStatus = isAMSAMember ? 'yes' : 'no'; // Convert boolean to string
+    console.log(`Amsa membership: ${newAMSAStatus}`);
     const response = await axios.post('https://api.jwcmedicalolympics.com/api/update-amsa-status', {
       email: userProfile.email,
       amsaMember: newAMSAStatus,
