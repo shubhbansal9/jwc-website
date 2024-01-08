@@ -230,7 +230,10 @@ const handleAMSAStatusUpdate = async () => {
           type="checkbox"
           id="amsaMemberCheckbox"
           checked={isAMSAMember}
-          onChange={() => setIsAMSAMember(!isAMSAMember)}
+          onChange={() => {
+            setIsAMSAMember(!isAMSAMember)
+            handleAMSAStatusUpdate();
+          }}
         />
         <label htmlFor="amsaMemberCheckbox">Are you AMSA member?</label>
 
