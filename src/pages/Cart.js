@@ -179,7 +179,7 @@ const handleAMSAStatusUpdate = async () => {
   
     const checkEventInCart = async (eventId) => {
       try {
-        const response = await fetch(`https://your-api-domain/api/user-cart-has-event/${userEmail}/${eventId}`);
+        const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-cart-has-event/${userProfile.email}/${eventId}`);
         const data = await response.json();
   
         return data.success && data.hasEvent;
@@ -190,7 +190,7 @@ const handleAMSAStatusUpdate = async () => {
     };
   
     calculateTotal();
-  }, [eventsDetails, isAMSAMember, userEmail]);
+  }, [eventsDetails, isAMSAMember, userProfile.email]);
   
   return (
     <div className="cart-page">
