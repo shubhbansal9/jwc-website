@@ -185,8 +185,11 @@ if(isAMSAMember){
 console.log(discountedTotal);
 
   
-};
+}
+else{
+  
 setTotal(totalPrice);
+}
     }
     calculateTotal()
   }, [eventsDetails, isAMSAMember]);
