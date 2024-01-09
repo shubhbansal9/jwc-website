@@ -146,46 +146,51 @@ const handleAMSAStatusUpdate = async () => {
   }, [userProfile]);
 
   useEffect(() => {
-    const calculateTotal = () => {
-      const totalPrice = eventsDetails.reduce((sum, item) => {
-        const price = item.price || ''; // Assuming the price is stored in the 'price' property of the event object
-        let numericPrice = 0;
+    const calculateTotal = async () => {
+      try {
+        const totalPrice = eventsDetails.reduce((sum, item) => {
+          // Assuming the price is stored in the 'eventPrice_in' property of the event object
+          const price = item.eventPrice_in || 0;
+          return sum + price;
+        }, 0);
   
-        // Check if the price is a string
-        if (typeof price === 'string') {
-          const numericValue = parseInt(price.replace(/\D/g, ''), 10);
-          numericPrice = !isNaN(numericValue) ? numericValue : 0;
-        } else if (typeof price === 'number') {
-          numericPrice = price;
+        let discountedTotal = totalPrice;
+  
+        if (isAMSAMember) {
+          // Check if events 27 and 28 are in the cart
+          const hasEvent27 = await checkEventInCart("27");
+          const hasEvent28 = await checkEventInCart("28");
+  
+          // Subtract discount based on the events in the cart
+          if (hasEvent27) {
+            discountedTotal -= 100;
+          }
+  
+          if (hasEvent28) {
+            discountedTotal -= 150;
+          }
         }
   
-        return sum + numericPrice;
-      }, 0);
-  
-      let discountedTotal = totalPrice;
-  
-      if (isAMSAMember) {
-        // Check if events 27 and 28 are in the cart
-        const hasEvent27 = eventsDetails.some(item => item.eventId === 27);
-        console.log(hasEvent27);
-        const hasEvent28 = eventsDetails.some(item => item.eventId === 28);
-        console.log(hasEvent28);
-        // Subtract discount based on the events in the cart
-        if (hasEvent27) {
-          discountedTotal -= 100;
-        }
-  
-        if (hasEvent28) {
-          discountedTotal -= 150;
-        }
+        setTotal(discountedTotal);
+      } catch (error) {
+        console.error(error);
       }
+    };
   
-      setTotal(discountedTotal);
+    const checkEventInCart = async (eventId) => {
+      try {
+        const response = await fetch(`https://your-api-domain/api/user-cart-has-event/${userEmail}/${eventId}`);
+        const data = await response.json();
+  
+        return data.success && data.hasEvent;
+      } catch (error) {
+        console.error(error);
+        return false;
+      }
     };
   
     calculateTotal();
-  }, [eventsDetails, isAMSAMember]);
-  
+  }, [eventsDetails, isAMSAMember, userEmail]);
   
   return (
     <div className="cart-page">
