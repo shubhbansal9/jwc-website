@@ -159,40 +159,33 @@ const handleAMSAStatusUpdate = async () => {
           numericPrice = price;
         }
   
-      
-  //   console.log(totalPrice);
-  //   setTotal(totalPrice);
-  //   calculateTotal();
-  // }
-  return sum + numericPrice;
-}, 0);
-if(isAMSAMember){
-  // Check if events 27 and 28 are in the cart
-  const hasEvent27 = eventsDetails.some(item => item.eventId === 27);
-  const hasEvent28 = eventsDetails.some(item => item.eventId === 28);
-
-  // Subtract discount based on the events in the cart
-  let discountedTotal = totalPrice;
-
-  if (hasEvent27) {
-    discountedTotal -= 100;
-  }
-
-  if (hasEvent28) {
-    discountedTotal -= 150;
-  }
-  setTotal(discountedTotal);
-console.log(discountedTotal);
-
+        return sum + numericPrice;
+      }, 0);
   
-}
-else{
+      let discountedTotal = totalPrice;
   
-setTotal(totalPrice);
-}
-    }
-    calculateTotal()
+      if (isAMSAMember) {
+        // Check if events 27 and 28 are in the cart
+        const hasEvent27 = eventsDetails.some(item => item.eventId === 27);
+        console.log(hasEvent27);
+        const hasEvent28 = eventsDetails.some(item => item.eventId === 28);
+        console.log(hasEvent28);
+        // Subtract discount based on the events in the cart
+        if (hasEvent27) {
+          discountedTotal -= 100;
+        }
+  
+        if (hasEvent28) {
+          discountedTotal -= 150;
+        }
+      }
+  
+      setTotal(discountedTotal);
+    };
+  
+    calculateTotal();
   }, [eventsDetails, isAMSAMember]);
+  
   
   return (
     <div className="cart-page">
