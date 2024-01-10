@@ -287,7 +287,7 @@ const handleAMSAStatusUpdate = async () => {
   <p className='bank-details'>Account name: CHRISTIAN MEDICAL COLLEGE LUDIANA SOCIETY</p>
   <p className='bank-details'>Account Number: 99907999999990</p>
   <p className='bank-details'>IFSC Code: HDFC000000034</p>
-  <p className='bank-details'>Branch: THE MALL LUDIANA</p>
+  <p className='bank-details'>Branch: THE MALL LUDHIANA</p>
   <Link to="https://forms.gle/XjVLgCJfPTSW2kD37" className="form-link"><br></br><br></br>Fill this form after payment. (Only for International students)<br></br></Link>
 </div>
      
