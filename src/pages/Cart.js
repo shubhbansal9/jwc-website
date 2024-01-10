@@ -149,8 +149,7 @@ const handleAMSAStatusUpdate = async () => {
     const calculateTotal = async () => {
       try {
         const totalPrice = eventsDetails.reduce((sum, item) => {
-          // Assuming the price is stored in the 'eventPrice_in' property of the event object
-          const price = item.eventPrice_in || 0;
+          const price = item.price || 0;
           return sum + price;
         }, 0);
   
@@ -179,9 +178,9 @@ const handleAMSAStatusUpdate = async () => {
   
     const checkEventInCart = async (eventId) => {
       try {
-        const response = await fetch(`https://your-api-domain/api/user-cart-has-event/${userEmail}/${eventId}`);
+        const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-cart-has-event/${userProfile.email}/${eventId}`);
         const data = await response.json();
-  
+        console.log(data.success && data.hasEvent);
         return data.success && data.hasEvent;
       } catch (error) {
         console.error(error);
@@ -190,7 +189,7 @@ const handleAMSAStatusUpdate = async () => {
     };
   
     calculateTotal();
-  }, [eventsDetails, isAMSAMember, userEmail]);
+  }, [eventsDetails, isAMSAMember, userProfile.email]);
   
   return (
     <div className="cart-page">
