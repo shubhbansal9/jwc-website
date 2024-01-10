@@ -7,6 +7,9 @@ import Footer from '../components/footer';
 import '../components/footer.css';
 import { useAuth } from '../components/authContext';
 import axios from 'axios';
+import bank1 from "../assets/bank-1.jpg";
+import bank2 from "../assets/bank-2.jpg";
+import { Link } from 'react-router-dom';
 const CartPage = () => {
   const { loggedIn, userProfile } = useAuth();
   const [eventsDetails, setEventsDetails] = useState([]);
@@ -276,6 +279,17 @@ const handleAMSAStatusUpdate = async () => {
           <button className="pay-button" onClick={handlePayment}>Pay Now</button>
         </div>
       )}
+      <h2 className="international-header">For International Students:</h2>
+<div className="international-info">
+  {/* Add your bank details and images here */}
+  {/* Example: */}
+  <p className='bank-details'>Bank Name: HDFC BANK</p>
+  <p className='bank-details'>Account name: CHRISTIAN MEDICAL COLLEGE LUDIANA SOCIETY</p>
+  <p className='bank-details'>Account Number: 99907999999990</p>
+  <p className='bank-details'>IFSC Code: HDFC000000034</p>
+  <p className='bank-details'>Branch: THE MALL LUDIANA</p>
+  <Link to="https://drive.google.com/file/d/1fzysBeCum2B2_4ZhPKGFkxf2JHlXbDra/view?usp=drivesdk" className="form-link"><br></br><br></br>Fill this form after payment. (Only for International students)<br></br></Link>
+</div>
      
       </>
     )}
