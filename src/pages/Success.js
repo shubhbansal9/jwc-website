@@ -3,6 +3,7 @@ import './Success.css';
 import Footer from '../components/footer';
 const Success = () => {
     return (
+      <div className='success-page'>
         <div className="success-container">
           <div className="alert-row justify-content-center">
             <div className="col-md-6 text-center">
@@ -12,7 +13,9 @@ const Success = () => {
                 <a className="alert-home" href='/'>Back to Home</a>
             </div>
           </div>
-          <Footer/>
+          
+        </div>
+        <Footer/>
         </div>
       );
 }
