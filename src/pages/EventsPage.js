@@ -131,18 +131,19 @@ function EventsPage() {
         console.error('Error fetching total seats:', error);
       }
     };
-
+  
     // Iterate over all events and fetch total seats
     [...workshopsData, ...culturalData, ...academicsData, ...sportsData].forEach(workshop => {
       fetchTotalSeats(workshop.eventId);
     });
-  }, []); // Empty dependency array to run the effect only once on component mount
+  }, [totalSeats]); 
 
   // Function to render the total seats for an event
-  const renderTotalSeats = (eventId) => {
-    const seats = totalSeats[eventId];
-    return seats !== undefined ? `Total Seats: ${seats}` : 'Fetching..';
-  };
+const renderTotalSeats = (eventId) => {
+  const seats = totalSeats[eventId];
+  return seats !== undefined && seats !== null ? `Total Seats: ${seats}` : '';
+};
+
 
 
   const handleWorkshopCardClick = (index) => {
