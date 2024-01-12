@@ -12,7 +12,7 @@ import Footer from '../components/footer';
 import vid from '../assets/videos/JWC-MEDICAL-OLYPICS-2.mp4';
 import OurSponsors from '../components/OurSponsors';
 import eventItinerary from '../assets/event-itinerary.png';
-
+import { Link } from 'react-router-dom';
 function Homepage() {
   const targetTime = new Date('2024-01-01T00:00:00'); // Set your target date and time
 
@@ -32,9 +32,13 @@ function Homepage() {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="register-now-container">
-        <img src={registerNow} alt="Register Now" className="register-now" />
+      
+      <Link to="/register">
+      <div className='register-now-container'>
+      <img src={registerNow} alt="Register Now" className="register-now" />
       </div>
+    </Link>
+   
       <Countdown/>
 
 
