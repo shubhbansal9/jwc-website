@@ -109,13 +109,10 @@ function Navbar() {
     };
     const handleLocationConfirmation = (location) => {
       setShowLocationPopup(false);
-      console.log("called");
-
       if (loggedIn && userProfile && userProfile.email) {
         updateUserLocation(userProfile.email, location);
       
         fetchUserLocation(userProfile.email).then(() => {
-          console.log('yo', location);
           if (location === 'India') {
             setShowLocationPopup(false);
             navigate('/register');
@@ -128,7 +125,6 @@ function Navbar() {
         });
       }
       else{
-        console.log('yo', location);
         if (location === 'India') {
           setShowLocationPopup(false);
           navigate('/register');
