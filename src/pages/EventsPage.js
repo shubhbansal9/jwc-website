@@ -280,7 +280,7 @@ const renderTotalSeats = (eventId) => {
       <div className='workshop'>
       {/* <EventDetails events={upcomingEvents} /> */}
       <img src={eventItinerary} alt="Medical Olympics Logo" className="event-itinerary" />
-      <Link to="https://drive.google.com/file/d/1fzysBeCum2B2_4ZhPKGFkxf2JHlXbDra/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Academic events Brochure<br></br></Link>
+      <Link to="https://drive.google.com/file/d/1oETmea1FVEwWDaE636puZmu-g8aVp-2A/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Academic events Brochure<br></br></Link>
       <Link to="https://drive.google.com/file/d/1nBTPQTI4yRwhZjo8LEFN42WHlultiEG1/view?usp=drivesdk" className="itinerarylink">Check out our Cultural events Brochure<br></br></Link>
       <Link to="https://drive.google.com/file/d/1fh3pF0fHK2Zat17-l2ScNb5GbCddx1Yx/view" className="itinerarylink">Check out our Sports events Brochure<br></br><br></br></Link>
       <div className='note'>Note: Only one of the members from the team requires to register for the GROUP EVENTS</div>
