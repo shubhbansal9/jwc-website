@@ -77,7 +77,8 @@
   }
   .sponsor-first,
   .individual-sponsor {
-    width: 100%; /* Make each sponsor take the full width */
+    width: 100%;
+    margin-bottom: 15%;
   }
 
   .our-spons-title-left {
