@@ -114,6 +114,12 @@ const handleAMSAStatusUpdate = async () => {
               const eventResponse = await fetch(`https://api.jwcmedicalolympics.com/api/events/${eventId}`);
               const eventData = await eventResponse.json();
               console.log(eventData.price_in);
+              if (eventId === "29") {
+                eventData.price = 849;
+              } else if (eventId === "30") {
+                eventData.price = 1499;
+              }
+
               return eventData;
             });
 
