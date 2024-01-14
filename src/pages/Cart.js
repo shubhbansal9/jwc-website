@@ -169,7 +169,8 @@ const handleAMSAStatusUpdate = async () => {
           // Check if events 27 and 28 are in the cart
           const hasEvent27 = await checkEventInCart("27");
           const hasEvent28 = await checkEventInCart("28");
-  
+          const hasEvent29= await checkEventInCart("29");
+          const hasEvent30= await checkEventInCart("30");
           // Subtract discount based on the events in the cart
           if (hasEvent27) {
             discountedTotal -= 100;
@@ -177,6 +178,13 @@ const handleAMSAStatusUpdate = async () => {
   
           if (hasEvent28) {
             discountedTotal -= 150;
+          }
+          if(hasEvent29)
+          {
+            discountedTotal-= 100;
+          }
+          if(hasEvent30){
+            discountedTotal-=150;
           }
         }
   
