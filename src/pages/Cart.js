@@ -16,6 +16,7 @@ const CartPage = () => {
   const [total, setTotal] = useState(0);
   const [isAMSAMember, setIsAMSAMember] = useState(false);
   const [membershipNumber, setMembershipNumber] = useState('');
+  const [userLocation, setUserLocation] = useState(null);
   const data ={
     name: userProfile.name,
     amount: total,
@@ -95,6 +96,7 @@ const handleAMSAStatusUpdate = async () => {
     try {
       const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-location?email=${email}`);
       const data = await response.json();
+      setUserLocation(data.location);
       return data.location; // Assuming the response contains the user's location
     } catch (error) {
       console.error('Error fetching user location:', error);
