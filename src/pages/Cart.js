@@ -26,7 +26,8 @@ const CartPage = () => {
 
 const handlePayment = (e) => {
   e.preventDefault();
-
+  if (userLocation && userLocation.toLowerCase() === 'india') {
+ 
   // Assuming userEmail is available
   const userEmail = userProfile.email;
   console.log(userEmail);
@@ -73,6 +74,10 @@ const handlePayment = (e) => {
       // Handle error or take appropriate action
       console.log("Error during payment:", error.message);
     });
+  } else {
+    // Display a message or take appropriate action for users outside India
+    console.log('Use the bank details given below for international payments.');
+  }
 };
 const handleAMSAStatusUpdate = async () => {
   try {
