@@ -16,6 +16,7 @@ const CartPage = () => {
   const [total, setTotal] = useState(0);
   const [isAMSAMember, setIsAMSAMember] = useState(false);
   const [membershipNumber, setMembershipNumber] = useState('');
+  const [userLocation, setUserLocation] = useState(null);
   const data ={
     name: userProfile.name,
     amount: total,
@@ -95,6 +96,7 @@ const handleAMSAStatusUpdate = async () => {
     try {
       const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-location?email=${email}`);
       const data = await response.json();
+      setUserLocation(data.location);
       return data.location; // Assuming the response contains the user's location
     } catch (error) {
       console.error('Error fetching user location:', error);
@@ -206,7 +208,7 @@ const handleAMSAStatusUpdate = async () => {
           <li key={index} className="cart-item">
             <div className="cart-item-details">
               <p className='item'>{event.eventName}</p>
-              <p className='item'>Price: {event.price}</p>
+              <p className='item'>Price: {userLocation === 'India' ? event.price : `$${event.price}`}</p>
             </div>
             {/* Button for removing the item */}
             <button onClick={async () => {
