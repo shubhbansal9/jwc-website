@@ -129,6 +129,7 @@ const handleAMSAStatusUpdate = async () => {
             event.price = event.price_in;
           } else {
             event.price = event.price_us;
+            console.log(event.price_us);
           }
           console.log(`Event ID: ${event.eventId}, Updated Price: ${event.price}`);
           return event;
