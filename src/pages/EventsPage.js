@@ -43,7 +43,6 @@ function EventsPage() {
           location: location,
         }),
       });
-      console.log("updated location: ", location);
     } catch (error) {
       console.error('Error updating user location:', error);
     }
@@ -55,7 +54,6 @@ function EventsPage() {
       const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-location?email=${email}`);
       const data = await response.json();
       setUserLocation(data.location);
-      console.log("location fetched: ", data.location);
     } catch (error) {
       console.error('Error fetching user location:', error);
     }
@@ -85,7 +83,6 @@ function EventsPage() {
   // Function to determine price based on location
   const getPriceByLocation = (workshop) => {
     if (userLocation === 'India') {
-      console.log(workshop.price_in);
       return workshop.price_in;
     } else {
       return workshop.price_us;
@@ -98,7 +95,6 @@ function EventsPage() {
     // Fetch user's BR status
     const fetchBRStatus = async () => {
       try {
-        console.log("fetching user br status");
         if (loggedIn && userProfile && userProfile.email) {
           const response = await fetch(`https://api.jwcmedicalolympics.com/api/get-br-status/${userProfile.email}`);
           const data = await response.json();
@@ -136,7 +132,7 @@ function EventsPage() {
     [...workshopsData, ...culturalData, ...academicsData, ...sportsData].forEach(workshop => {
       fetchTotalSeats(workshop.eventId);
     });
-  }, [totalSeats]); 
+  }, []); 
 
   // Function to render the total seats for an event
 const renderTotalSeats = (eventId) => {
@@ -168,7 +164,6 @@ const renderTotalSeats = (eventId) => {
 
         if (cartData.success && cartData.cart) {
           const eventsInCart = cartData.cart.eventsInCart;
-          console.log(eventsInCart);
           const clashingEvents = [
             [4, 8, 6],
             [20, 24],
@@ -211,7 +206,6 @@ const renderTotalSeats = (eventId) => {
 
   // Check for clashing events
   const isClashing = await checkClashingEvents(eventId);
-  console.log(eventId);
   if (isClashing) {
     alert('This event clashes with another event in your cart. You cannot register for them together.');
     return;

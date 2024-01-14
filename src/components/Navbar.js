@@ -144,7 +144,8 @@ function Navbar() {
       } else {
         try {
           const updatedLocation = await fetchUserLocation(userProfile.email);
-          console.log(updatedLocation); // Updated userLocation value
+          console.log(updatedLocation);
+          setUserLocation(updatedLocation);
           if (updatedLocation === 'India') {
             setShowLocationPopup(false);
             navigate('/register');
