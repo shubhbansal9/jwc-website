@@ -206,7 +206,7 @@ const handleAMSAStatusUpdate = async () => {
           <li key={index} className="cart-item">
             <div className="cart-item-details">
               <p className='item'>{event.eventName}</p>
-              <p className='item'>Price: {event.price}</p>
+              <p className='item'>Price: {userLocation === 'India' ? event.price : `$${event.price}`}</p>
             </div>
             {/* Button for removing the item */}
             <button onClick={async () => {
