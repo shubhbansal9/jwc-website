@@ -134,11 +134,15 @@ function EventsPage() {
     });
   }, []); 
 
-  // Function to render the total seats for an event
 const renderTotalSeats = (eventId) => {
   const seats = totalSeats[eventId];
-  return seats !== undefined && seats !== null ? `Total Seats: ${seats}` : '';
+  if (eventId === 13) {
+    return seats !== undefined && seats !== null ? `Total Teams: ${seats}` : '';
+  } else {
+    return seats !== undefined && seats !== null ? `Total Seats: ${seats}` : '';
+  }
 };
+
 
 
 
