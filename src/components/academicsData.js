@@ -12,7 +12,7 @@ const academicsData = [
     {
       eventId:20,
       title: 'Murder Mystery - A Crime Scene Investigation',
-      description: 'As the time ticks out, the killer hides amongst you. Keep your eyes peeled out for clues before the next body found is you.',
+      description: 'As the time ticks out, the killer hides amongst you. Keep your eyes peeled out for clues before the next body found is you. (ONLY 1 ENTRY PER COLLEGE)',
       eventType:'[GROUP EVENT]',
       price_in: 'Rs180',
       price_us:'$3',
@@ -21,7 +21,7 @@ const academicsData = [
     {
       eventId:21,
         title: 'Effugium - An Escape Room',
-        description: 'Find your way out of a sticky situation by braving through bewildering clues. Prepare to be tested to the breadth of your knowledge in this exhilarating experience.',
+        description: 'Find your way out of a sticky situation by braving through bewildering clues. Prepare to be tested to the breadth of your knowledge in this exhilarating experience.(ONLY 1 ENTRY PER COLLEGE)',
         eventType:'[GROUP EVENT]',
         price_in: 'Rs200',
       price_us:'$3',
