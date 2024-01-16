@@ -38,11 +38,11 @@ const sportsData = [
     },
     {
       eventId:18,
-      title: 'Marathon',
+      title: 'Cycle Rally',
       description: '',
       price_in: 'Rs100',
       price_us:'$2',
-      image: require('../assets/sports5.png'), 
+      image: require('../assets/event-cycle.jpeg'), 
     },
     
   ];
