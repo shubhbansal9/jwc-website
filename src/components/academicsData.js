@@ -21,7 +21,7 @@ const academicsData = [
     {
       eventId:21,
         title: 'Effugium - An Escape Room',
-        description: 'Find your way out of a sticky situation by braving through bewildering clues. Prepare to be tested to the breadth of your knowledge in this exhilarating experience.(ONLY 1 ENTRY PER COLLEGE)',
+        description: 'Find your way out of a sticky situation by braving through bewildering clues. Prepare to be tested to the breadth of your knowledge in this exhilarating experience.<br></br>(ONLY 1 ENTRY PER COLLEGE)',
         eventType:'[GROUP EVENT]',
         price_in: 'Rs200',
       price_us:'$3',
