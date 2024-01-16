@@ -323,7 +323,7 @@ const renderTotalSeats = (eventId) => {
                 <div className='workshop-title'>{workshop.title}</div>
                 <div className='workshop-event-type'>{workshop.eventType}</div>
                 {expandedWorkshops[index] && (
-                  <p className='workshop-description'>{workshop.description}</p>
+                  <p className='workshop-description' dangerouslySetInnerHTML={{ __html: workshop.description }}></p>
                 )}
                 <div className='workshop-buttons'>
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
