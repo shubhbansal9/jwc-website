@@ -42,7 +42,7 @@ const sportsData = [
       description: '',
       price_in: 'Rs100',
       price_us:'$2',
-      image: require('../assets/event-cycle.jpeg'), 
+      image: require('../assets/cycle.png'), 
     },
     
   ];
