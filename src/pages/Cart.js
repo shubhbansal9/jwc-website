@@ -269,7 +269,7 @@ const handleAMSAStatusUpdate = async () => {
           id="amsaMemberCheckbox"
           checked={isAMSAMember}
           onChange={() => {
-            setIsAMSAMember(!isAMSAMember)
+            setIsAMSAMember(isAMSAMember)
             handleAMSAStatusUpdate();
           }}
         />
