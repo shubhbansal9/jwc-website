@@ -56,7 +56,7 @@ const workshopsData = [
     },
     {
       eventId:7,
-      title: 'Scientia Sanguinis - Mastering Hematological Oncology',
+      title: 'Scientia Sanguinis - Mastering Hematology',
       description: 'Join us for an exciting and informative journey into the captivating world of hematology. Embark on a journey as we go through the steps in bone marrow transplantation and become potential doners, learn about the pathological mutations in hematology and much more.',
       price_in: 'Rs1500',
       price_us:'$20',
