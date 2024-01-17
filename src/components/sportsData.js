@@ -39,7 +39,7 @@ const sportsData = [
     {
       eventId:18,
       title: 'Cycle Rally',
-      description: '',
+      description: "For every cyclist who participates, we'll plant one sampling, contributing to a greener, more sustainable future. It's a powerful way to combine fitness, environmental responsibility and community engagement",
       price_in: 'Rs100',
       price_us:'$2',
       image: require('../assets/cycle.png'), 
