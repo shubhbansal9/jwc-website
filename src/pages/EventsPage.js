@@ -195,32 +195,49 @@ const renderTotalSeats = (eventId) => {
     return false;
   };
   const handleRegisterClick = async (workshop) => {
-    if (!loggedIn) {
-      alert('Kindly login before registering.');
-      return;
-    }
+      if (!loggedIn) {
+        alert('Kindly login before registering.');
+        return;
+      }
     
-      
-    if (!userBRStatus || userBRStatus.brStatus === 0 || userBRStatus === false) {
-      alert('You are not eligible to register for Events. Complete the Basic Registration in Register Now page first');
-      return;
-    }
-  
-  const { eventId } = workshop;
-
-  // Check for clashing events
-  const isClashing = await checkClashingEvents(eventId);
-  if (isClashing) {
-    alert('This event clashes with another event in your cart. You cannot register for them together.');
-    return;
-  }
-  else{
-    console.log("no clash");
-  }
-
-  setSelectedWorkshop(workshop);
-  setShowPopup(true);
-};
+      if (userLocation === 'Other') {
+        // Fetch user cart details
+        try {
+          const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-cart/${userProfile.email}`);
+          const cartData = await response.json();
+    
+          if (cartData.success && cartData.cart && (cartData.cart.eventsInCart.includes(29) || cartData.cart.eventsInCart.includes(30))) {
+            // User can add any event to the cart without checking BR status
+            setSelectedWorkshop(workshop);
+            setShowPopup(true);
+            return;
+          }
+        } catch (error) {
+          console.error('Error fetching user cart details:', error);
+        }
+      }
+    
+      // Check BR status
+      if (!userBRStatus || userBRStatus.brStatus === 0 || userBRStatus === false) {
+        alert('You are not eligible to register for Events. Complete the Basic Registration in Register Now page first');
+        return;
+      }
+    
+      const { eventId } = workshop;
+    
+      // Check for clashing events
+      const isClashing = await checkClashingEvents(eventId);
+      if (isClashing) {
+        alert('This event clashes with another event in your cart. You cannot register for them together.');
+        return;
+      } else {
+        console.log("No clash");
+      }
+    
+      setSelectedWorkshop(workshop);
+      setShowPopup(true);
+    };
+    
   const [selectedWorkshop, setSelectedWorkshop] = useState(null);
   
   const handleClosePopup = () => {
