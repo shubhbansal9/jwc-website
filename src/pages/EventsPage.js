@@ -141,22 +141,19 @@ function EventsPage() {
     const intlSeatsDefined = intlSeats !== undefined && intlSeats !== null;
     const ntnlSeatsDefined = ntnlSeats !== undefined && ntnlSeats !== null;
   
-    if (eventId === 13) {
-      // Display only total teams, international, and national seats if available
-      const totalTeamsInfo = seats !== undefined && seats !== null ? `Total Teams: ${seats}<br />` : '';
+    if (intlSeatsDefined || ntnlSeatsDefined) {
+      // Display international and national seats only if available
       const intlSeatsInfo = intlSeatsDefined ? `Intl Seats: ${intlSeats}<br />` : '';
       const ntnlSeatsInfo = ntnlSeatsDefined ? `Ntnl Seats: ${ntnlSeats}` : '';
   
-      return totalTeamsInfo + intlSeatsInfo + ntnlSeatsInfo;
+      return intlSeatsInfo + ntnlSeatsInfo;
     } else {
-      // Display total seats, international, and national seats if available
+      // Display total seats if available
       const totalSeatsInfo = seats !== undefined && seats !== null ? `Total Seats: ${seats}<br />` : '';
-      const intlSeatsInfo = intlSeatsDefined ? `Intl Seats: ${intlSeats}<br />` : '';
-      const ntnlSeatsInfo = ntnlSeatsDefined ? `Ntnl Seats: ${ntnlSeats}` : '';
-  
-      return totalSeatsInfo + intlSeatsInfo + ntnlSeatsInfo;
+      return totalSeatsInfo;
     }
   };
+  
   
   
 
