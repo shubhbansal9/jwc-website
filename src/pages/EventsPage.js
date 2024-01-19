@@ -146,13 +146,14 @@ function EventsPage() {
       const intlSeatsInfo = intlSeatsDefined ? `Intl Seats: ${intlSeats}<br />` : '';
       const ntnlSeatsInfo = ntnlSeatsDefined ? `Ntnl Seats: ${ntnlSeats}` : '';
   
-      return intlSeatsInfo + ntnlSeatsInfo;
+      return (eventId === 13 ? `Total Teams: ${seats}<br />` : '') + intlSeatsInfo + ntnlSeatsInfo;
     } else {
       // Display total seats if available
-      const totalSeatsInfo = seats !== undefined && seats !== null ? `Total Seats: ${seats}<br />` : '';
+      const totalSeatsInfo = seats !== undefined && seats !== null ? (eventId === 13 ? `Total Teams: ${seats}<br />` : `Total Seats: ${seats}<br />`) : '';
       return totalSeatsInfo;
     }
   };
+  
   
   
   
