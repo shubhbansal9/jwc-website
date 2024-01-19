@@ -134,15 +134,15 @@ function EventsPage() {
     });
   }, []); 
 
-const renderTotalSeats = (eventId) => {
-  const seats = totalSeats[eventId];
-  if (eventId === 13) {
-    return seats !== undefined && seats !== null ? `Total Teams: ${seats}` : '';
-  } else {
-    return seats !== undefined && seats !== null ? `Total Seats: ${seats}` : '';
-  }
-};
-
+  const renderTotalSeats = (eventId, intlSeats, ntnlSeats) => {
+    const seats = totalSeats[eventId];
+    if (eventId === 13) {
+      return seats !== undefined && seats !== null ? `Total Teams: ${seats}<br />Intl Seats: ${intlSeats}<br />Ntnl Seats: ${ntnlSeats}` : '';
+    } else {
+      return seats !== undefined && seats !== null ? `Total Seats: ${seats}<br />Intl Seats: ${intlSeats}<br />Ntnl Seats: ${ntnlSeats}` : '';
+    }
+  };
+  
 
 
 
@@ -211,6 +211,9 @@ const renderTotalSeats = (eventId) => {
             setSelectedWorkshop(workshop);
             setShowPopup(true);
             return;
+          }
+          else{
+            alert("Add an International package from the 'International Delegates' page to the cart first.");
           }
         } catch (error) {
           console.error('Error fetching user cart details:', error);
@@ -295,9 +298,7 @@ const renderTotalSeats = (eventId) => {
       <div className='workshop'>
       {/* <EventDetails events={upcomingEvents} /> */}
       <img src={eventItinerary} alt="Medical Olympics Logo" className="event-itinerary" />
-      <Link to="https://drive.google.com/file/d/1oETmea1FVEwWDaE636puZmu-g8aVp-2A/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Academic events Brochure<br></br></Link>
-      <Link to="https://drive.google.com/file/d/1nBTPQTI4yRwhZjo8LEFN42WHlultiEG1/view?usp=drivesdk" className="itinerarylink">Check out our Cultural events Brochure<br></br></Link>
-      <Link to="https://drive.google.com/file/d/1pl_vmoBp6PBw5VHp0gADr0kND9PHUCM8/view?usp=drivesdk" className="itinerarylink">Check out our Sports events Brochure<br></br><br></br></Link>
+      <Link to="https://drive.google.com/file/d/1rBNNDoQDaU6bbyPNBuysd57n0UWWq6Qy/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Events Brochure<br></br></Link>
       <div className='note'>Note: Only one of the members from the team requires to register for the GROUP EVENTS</div>
         <h1 className='workshop-headers'>WORKSHOPS</h1>
         <div className="workshop-cards-container">
@@ -313,7 +314,7 @@ const renderTotalSeats = (eventId) => {
                 <div className='workshop-buttons'>
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
                   
-                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
+                  <p className="total-seats" dangerouslySetInnerHTML={{ __html: renderTotalSeats(workshop.eventId, workshop.intlSeats, workshop.ntnlSeats) }}></p>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
                   </div>
@@ -344,7 +345,7 @@ const renderTotalSeats = (eventId) => {
                 )}
                 <div className='workshop-buttons'>
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
-                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
+                  <p className="total-seats" dangerouslySetInnerHTML={{ __html: renderTotalSeats(workshop.eventId, workshop.intlSeats, workshop.ntnlSeats) }}></p>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
                  
@@ -376,7 +377,7 @@ const renderTotalSeats = (eventId) => {
                 )}
                 <div className='workshop-buttons'>
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
-                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
+                  <p className="total-seats" dangerouslySetInnerHTML={{ __html: renderTotalSeats(workshop.eventId, workshop.intlSeats, workshop.ntnlSeats) }}></p>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
                   </div>
@@ -407,7 +408,7 @@ const renderTotalSeats = (eventId) => {
                 )}
                 <div className='workshop-buttons'>
                   <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
-                  <p className="total-seats">{renderTotalSeats(workshop.eventId)}</p>
+                  <p className="total-seats" dangerouslySetInnerHTML={{ __html: renderTotalSeats(workshop.eventId, workshop.intlSeats, workshop.ntnlSeats) }}></p>
                   <div className="price-rectangle">
                   <p className="price">{getPriceByLocation(workshop)}</p>
                   </div>
