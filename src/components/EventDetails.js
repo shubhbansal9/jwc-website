@@ -4,6 +4,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './EventDetails.css';
 import arrowLeft from '../assets/arrow-left.svg';
 import arrowRight from '../assets/arrow-right.svg';
+
 const EventDetails = ({ events }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
