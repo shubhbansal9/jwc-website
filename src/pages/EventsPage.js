@@ -149,7 +149,7 @@ function EventsPage() {
       return (([13, 20, 21].includes(eventId)) ? `Total Teams: ${seats}<br />` : '') + intlSeatsInfo + ntnlSeatsInfo;
     } else {
       // Display total seats if available
-      const totalSeatsInfo = seats !== undefined && seats !== null ? (eventId === 13 ? `Total Teams: ${seats}<br />` : `Total Seats: ${seats}<br />`) : '';
+      const totalSeatsInfo = seats !== undefined && seats !== null ? (([13, 20, 21].includes(eventId)) ? `Total Teams: ${seats}<br />` : `Total Seats: ${seats}<br />`) : '';
       return totalSeatsInfo;
     }
   };
