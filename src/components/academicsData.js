@@ -16,6 +16,7 @@ const academicsData = [
       eventType:'[GROUP EVENT]',
       price_in: 'Rs1500',
       price_us:'$20',
+      totalSeats:10,
       image: require('../assets/acad2.png'), 
     },
     {
@@ -25,6 +26,7 @@ const academicsData = [
         eventType:'[GROUP EVENT]',
         price_in: 'Rs2000',
       price_us:'$25',
+      totalSeats:10,
         image: require('../assets/acad3.png'), 
       },
       {
@@ -43,6 +45,7 @@ const academicsData = [
        
         price_in: 'Rs500',
       price_us:'$7',
+      totalSeats: 25,
         image: require('../assets/acad5.png'), 
       },
       {

@@ -9,7 +9,7 @@ import upcomingEvents from '../components/eventData';
 import EventDetails from '../components/EventDetails';
 import SponsorSection from '../components/becomeSponsor';
 import Footer from '../components/footer';
-import vid from '../assets/videos/JWC-MEDICAL-OLYPICS-2.mp4';
+import vid from '../assets/videos/MEDICAL-OLYPICS.mp4';
 import OurSponsors from '../components/OurSponsors';
 import eventItinerary from '../assets/event-itinerary.png';
 import { Link } from 'react-router-dom';
