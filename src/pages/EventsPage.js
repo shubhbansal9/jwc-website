@@ -141,23 +141,18 @@ function EventsPage() {
     const intlSeatsDefined = intlSeats !== undefined && intlSeats !== null;
     const ntnlSeatsDefined = ntnlSeats !== undefined && ntnlSeats !== null;
   
-    if ([13, 20, 21].includes(eventId)) {
-      // Display only total teams, international, and national seats if available for specific event IDs
-      const totalTeamsInfo = seats !== undefined && seats !== null ? `Total Teams: ${seats}<br />` : '';
+    if (intlSeatsDefined || ntnlSeatsDefined) {
+      // Display international and national seats only if available
       const intlSeatsInfo = intlSeatsDefined ? `Intl Seats: ${intlSeats}<br />` : '';
       const ntnlSeatsInfo = ntnlSeatsDefined ? `Ntnl Seats: ${ntnlSeats}` : '';
   
-      return totalTeamsInfo + intlSeatsInfo + ntnlSeatsInfo;
+      return (([13, 20, 21].includes(eventId)) ? `Total Teams: ${seats}<br />` : '') + intlSeatsInfo + ntnlSeatsInfo;
     } else {
-      // Display total seats, international, and national seats if available for other event IDs
-      const totalSeatsInfo = seats !== undefined && seats !== null ? `Total Seats: ${seats}<br />` : '';
-      const intlSeatsInfo = intlSeatsDefined ? `Intl Seats: ${intlSeats}<br />` : '';
-      const ntnlSeatsInfo = ntnlSeatsDefined ? `Ntnl Seats: ${ntnlSeats}` : '';
-  
-      return totalSeatsInfo + intlSeatsInfo + ntnlSeatsInfo;
+      // Display total seats if available
+      const totalSeatsInfo = seats !== undefined && seats !== null ? (eventId === 13 ? `Total Teams: ${seats}<br />` : `Total Seats: ${seats}<br />`) : '';
+      return totalSeatsInfo;
     }
   };
-  
   
   
   
