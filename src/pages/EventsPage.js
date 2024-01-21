@@ -16,7 +16,7 @@ import ConfirmationPopup from '../components/confirmationPopup';
 import { useCart } from '../components/cart';
 import { useAuth } from '../components/authContext';
 import { useEffect } from 'react';
-import eventItinerary from '../assets/event-itinerary.jpeg';
+import eventItinerary from '../assets/event-itinerary.jpg';
 import { Link  } from 'react-router-dom';
 function EventsPage() {
   
@@ -312,7 +312,7 @@ function EventsPage() {
       <div className='workshop'>
       {/* <EventDetails events={upcomingEvents} /> */}
       <img src={eventItinerary} alt="Medical Olympics Logo" className="event-itinerary" />
-      <Link to="https://drive.google.com/file/d/1rBNNDoQDaU6bbyPNBuysd57n0UWWq6Qy/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Events Brochure<br></br></Link>
+      <Link to="https://drive.google.com/file/d/1sZAkjsB_0uyNBupp6OmrGu9P717zMKiZ/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Events Brochure<br></br></Link>
       <div className='note'>Note: Only one of the members from the team requires to register for the GROUP EVENTS</div>
         <h1 className='workshop-headers'>WORKSHOPS</h1>
         <div className="workshop-cards-container">

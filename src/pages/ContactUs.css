@@ -20,7 +20,7 @@
   
   .subheading {
     font-size: 25px;
-    color: white;
+    color: black;
     margin-bottom: 20px;
     justify-content: center;
     display: flex;
@@ -57,14 +57,14 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: black;
     
   }
   .member-name-bottom{
     display: flex;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: black;
     
   }
 .team-members-contact{

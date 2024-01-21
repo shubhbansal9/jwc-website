@@ -65,7 +65,7 @@
       width: 60%;
     }
     .note{
-      color: white;
+      color: black;
       font-size: medium ;
       margin-top: 1%;
       margin-bottom: 5%;
@@ -132,7 +132,7 @@
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
   }
   /* Style for the popup container */

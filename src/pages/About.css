@@ -19,12 +19,12 @@
     flex-direction: column;
 }
 .about-page {
-    color: white;
+    color: black;
   }
 
   h1 {
     font-size: 24px;
-    color: white;
+    color: black;
     text-align: center;
     font-weight: 900;
     font-family: 'Inter';

@@ -7,7 +7,7 @@ import './InternationalDelegates.css';
 import Footer from '../components/footer';
 import team22 from '../assets/team/team-22.png';
 import team23 from '../assets/team/team-23.png';
-import itinerary from '../assets/itinerary.png';
+import itinerary from '../assets/itinerary.jpg';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../components/authContext';
@@ -103,7 +103,7 @@ function InternationalDelegates() {
       <div className="line"></div>
     <div className="accommodation-page">
     <img className="itinerary" src={itinerary}></img>
-    <Link to="https://drive.google.com/file/d/1rkzu-FRu3eQnfzcvv85EZhcI-rmYw8wP/view?usp=drivesdk" className="itinerarylink">Check out our International Affairs Brochure</Link>
+    <Link to="https://drive.google.com/file/d/1rkzu-FRu3eQnfzcvv85EZhcI-rmYw8wP/view?usp=drivesdk" className="itinerarylink">Check out our International Delegates Brochure</Link>
       <header>
         <h1 className='acc-header'>INTERNATIONAL AFFAIRS</h1>
       </header>

@@ -20,7 +20,7 @@ const culturalData = [
     {
       eventId:10,
       title: 'FIFA Fever Showdown',
-      description: 'Get ready for a fusion of healing hearts and football artistry! FIFA Fever Showdown, invites you to discover a world where medical marvels take center stage on the virtual pitch.',
+      description: 'Get ready for a fusion of healing hearts and football artistry! FIFA Fever Showdown, invites you to discover a world where medical marvels take a center stage on the virtual pitch.',
       price: 'Rs200',
       price_in: 'Rs200',
       price_us:'$3',
@@ -39,7 +39,7 @@ const culturalData = [
     {
       eventId:12,
       title: 'Pop quiz',
-      description: 'It’s time to gather the brightest general knowledge buffs in the area because we’re having a pop quiz! We have curated a collection of exciting cultural quiz questions spanning various topics, from iconic books to chart-topping hits across multiple decades. Now lets get on with it and get our hearts pumping with adrenaline for this exhilarating quiz!',
+      description: 'It’s time to gather the brightest general knowledge buffs in the area because we are having a pop quiz! We have curated a collection of exciting cultural quiz questions spanning various topics, from iconic books to chart-topping hits across multiple decades. Now lets get on with it and get our hearts pumping with adrenaline for this exhilarating quiz!',
       price: 'Rs200',
       price_in: 'Rs200',
       price_us:'$3',
