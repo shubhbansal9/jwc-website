@@ -10,7 +10,16 @@ const sportsData = [
     },
     {
       eventId:15,
-      title: 'Basketball (Boys & Girls)',
+      title: 'Basketball (Boys)',
+      description: 'Basketball courts will echo with the sound of dribbles and swishing nets as the teams compete for glory. Fast-paced and action-packed !',
+      eventType:'[GROUP EVENT]',
+      price_in: 'Rs2000',
+      price_us:'$25',
+      image: require('../assets/sports2.png'), 
+    },
+    {
+      eventId:31,
+      title: 'Basketball (Girls)',
       description: 'Basketball courts will echo with the sound of dribbles and swishing nets as the teams compete for glory. Fast-paced and action-packed !',
       eventType:'[GROUP EVENT]',
       price_in: 'Rs2000',
@@ -19,7 +28,17 @@ const sportsData = [
     },
     {
       eventId:16,
-      title: 'Volleyball (Boys & Girls)',
+      title: 'Volleyball (Boys)',
+      eventType:'[GROUP EVENT]',
+      description: 'The sands of the volleyball courts will witness incredible spikes and blocks as the teams aim for victory. An electrifying spectacle!',
+      
+      price_in: 'Rs2000',
+      price_us:'$25',
+      image: require('../assets/sports3.png'), 
+    },
+    {
+      eventId:32,
+      title: 'Volleyball (Girls)',
       eventType:'[GROUP EVENT]',
       description: 'The sands of the volleyball courts will witness incredible spikes and blocks as the teams aim for victory. An electrifying spectacle!',
       
