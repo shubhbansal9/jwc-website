@@ -10,7 +10,7 @@
     font-family: "Anton", sans-serif;
   }
   .event-content {
-    color: white;
+    color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,7 +34,7 @@
   
   .event-navigation button {
     background-color: #F484A5;
-    color: white;
+    color: black;
     border: none;
     padding: 10px 20px;
     cursor: pointer;

@@ -3,7 +3,7 @@ const academicsData = [
       eventId:19,
       title: 'Dr Know it all - Mediquiz',
       eventType:'[GROUP EVENT]',
-      description: 'In the realm of knowledge, you’ll stand, Ready for questions, hand in hand. A quiz, a test, to prove your might,With answers swift, you’ll shine so bright.',
+      description: 'In the realm of knowledge, you’ll stand, Ready for questions, hand in hand. A quiz, a test, to prove your might. With answers swift, you’ll shine so bright.',
      
       price_in: 'Rs1000',
       price_us:'$12',
@@ -51,7 +51,7 @@ const academicsData = [
       {
         eventId:24,
         title: 'Medical Musical Chairs',
-        description: 'Websters defines Musical Chairs as a game in which players march to music around a row of chairs numbering one less than the players and scramble for seats. when the music stops. We decided to add a little twist.',
+        description: 'Websters defines Musical Chairs as a game in which players march to music around a row of chairs numbering one less than the players and scramble for seats when the music stops. We decided to add a little twist.',
      
         price_in: 'Rs300',
       price_us:'$4',

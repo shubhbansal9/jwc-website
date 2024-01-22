@@ -105,7 +105,7 @@ function ContactUsPage() {
           </div>
           <div className="team-member">
           <img src={team11} alt="Team Member 2" />
-           <p className='member-name'>Dr. Shantanu Bernard</p>
+           <p className='member-name'>Dr. Shantnu Bernard</p>
           </div>
           <div className="team-member">
           <img src={team12} alt="Team Member 2" />

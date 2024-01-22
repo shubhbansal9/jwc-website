@@ -25,7 +25,7 @@ const workshopsData = [
     {
       eventId:3,
       title: 'Scalpel to Stitches - The Art of Surgery',
-      description: 'Have you ever wondered what it felt like to do a laparoscopic operation? Well here’s you chance. We present to you a simulation beyond reality and a opportunity to refine your surgical skills.',
+      description: 'Have you ever wondered what it felt like to do a laparoscopic surgery? Well here’s your chance. We present to you a simulation beyond reality and an opportunity to refine your surgical skills.',
       price_in: 'Rs2000',
       price_us:'$25',
       totalSeats: 30,
@@ -36,7 +36,7 @@ const workshopsData = [
     {
       eventId:4,
       title: 'Beyond the Beat - Cardiology Unveiled',
-      description: 'Join us for an immersive journey into the intricate world of cardiology. Discover the beating heart of modern healthcare as we delve deep into the latest advancements, diagnostic and therapeutic techniques like pace maker insertion and coronary artery stenting.',
+      description: 'Finally a workshop where participants will have the opportunity to learn from experienced gynecologists and obstetricians. They will be exposed to the latest advancements in gynecology and obstetrics, including hands-on simulations of normal vaginal delivery/breech delivery, diagnostic techniques, surgical procedures, interactive drills and treatment options for various gynecological conditions.',
       price_in: 'Rs2000',
       price_us:'$25',
       totalSeats: 30,
@@ -69,7 +69,7 @@ const workshopsData = [
     {
       eventId:7,
       title: 'Scientia Sanguinis - Mastering Hematology',
-      description: 'Join us for an exciting and informative journey into the captivating world of hematology. Embark on a journey as we go through the steps in bone marrow transplantation and become potential doners, learn about the pathological mutations in hematology and much more.',
+      description: 'Join us for an exciting and informative journey into the captivating world of hematology. Embark on a journey as we go through the steps in bone marrow transplantation and become potential stem cell donors. Learn about the pathological mutations in hematology and much more.',
       price_in: 'Rs1500',
       price_us:'$20',
       totalSeats: 30,
@@ -80,7 +80,7 @@ const workshopsData = [
     {
       eventId:8,
       title: 'Transfuse Life - Mastering the Art of Blood Transfusion',
-      description: 'Heres a workshop for all the enthusiastic blood donors, that typically covers a wide range of topics related to blood transfusion, including blood grouping and cross-matching in an Immunohematology lab, donor phlebotomy, blood product preparation and storage, transfusion reactions and complications, donor selection and screening, and the appropriate use of blood products in different clinical scenarios.',
+      description: "Here's a workshop for all the enthusiastic blood donors, that typically covers a wide range of topics related to blood transfusion, including blood grouping and cross-matching in an immunohematology lab, donor phlebotomy, blood product preparation and storage, transfusion reactions and complications, donor selection and screening.",
       price_in: 'Rs800',
       price_us:'$10',
       totalSeats: 30,
@@ -91,7 +91,7 @@ const workshopsData = [
     {
       eventId:9,
       title: 'Safeguarding Lives - A Critical Care Workshop',
-      description: 'Welcome to a specialized training that offers a combination of hands-on landmark based central line insertion, basic life support, lectures, interactive discussions to enhance participants knowledge and skills in the field of anesthesia.',
+      description: 'Welcome to a specialized training that offers a combination of hands-on landmark based central line insertion, basic life support with interactive discussions to enhance participants knowledge and skills in the field of anesthesia.',
       price_in:'Rs1500',
       price_us:'$20',
       totalSeats: 30,
