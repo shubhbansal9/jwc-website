@@ -3,7 +3,7 @@ const academicsData = [
       eventId:19,
       title: 'Dr Know it all - Mediquiz',
       eventType:'[GROUP EVENT]',
-      description: 'In the realm of knowledge, you’ll stand, Ready for questions, hand in hand. A quiz, a test, to prove your might. With answers swift, you’ll shine so bright.',
+      description: 'In the realm of knowledge, you’ll stand, ready for questions, hand in hand. A quiz, a test, to prove your might. With answers swift, you’ll shine so bright.',
      
       price_in: 'Rs1000',
       price_us:'$12',

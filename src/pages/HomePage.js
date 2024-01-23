@@ -32,12 +32,9 @@ function Homepage() {
           Your browser does not support the video tag.
         </video>
       </div>
-      
-      <Link to="/register">
       <div className='register-now-container'>
       <img src={registerNow} alt="Register Now" className="register-now" />
       </div>
-    </Link>
    
       <Countdown/>
 
