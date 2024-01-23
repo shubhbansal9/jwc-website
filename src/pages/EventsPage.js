@@ -143,8 +143,8 @@ function EventsPage() {
   
     if (intlSeatsDefined || ntnlSeatsDefined) {
       // Display international and national seats only if available
-      const intlSeatsInfo = intlSeatsDefined ? `Intl Seats: ${intlSeats}<br />` : '';
-      const ntnlSeatsInfo = ntnlSeatsDefined ? `Ntnl Seats: ${ntnlSeats}` : '';
+      const intlSeatsInfo = intlSeatsDefined ? `International: ${intlSeats}<br />` : '';
+      const ntnlSeatsInfo = ntnlSeatsDefined ? `National: ${ntnlSeats}` : '';
   
       return (([13, 20, 21].includes(eventId)) ? `Total Teams: ${seats}<br />` : '') + intlSeatsInfo + ntnlSeatsInfo;
     } else {
@@ -312,7 +312,7 @@ function EventsPage() {
       <div className='workshop'>
       {/* <EventDetails events={upcomingEvents} /> */}
       <img src={eventItinerary} alt="Medical Olympics Logo" className="event-itinerary" />
-      <Link to="https://drive.google.com/file/d/1sZAkjsB_0uyNBupp6OmrGu9P717zMKiZ/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Events Brochure<br></br></Link>
+      <Link to="https://drive.google.com/file/d/1uCBrFTpA8ubR1pMEUKpg6tAJFFB8WnnH/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Events Brochure<br></br></Link>
       <div className='note'>Note: Only one of the members from the team requires to register for the GROUP EVENTS</div>
         <h1 className='workshop-headers'>WORKSHOPS</h1>
         <div className="workshop-cards-container">

@@ -47,7 +47,7 @@ const workshopsData = [
     {
       eventId:5,
       title: 'Birth & Beyond - Gynecological and Obstetrics Symposium',
-      description: 'Finally a workshop where participants will have the opportunity to learn from experienced gynecologists and renowned experts in the field. They will be exposed to the latest advancements in gynecology, including hands-on simulations of normal vaginal delivery/breech delivery, diagnostic techniques, surgical procedures, interactive drills and treatment options for various gynecological conditions.',
+      description: 'Finally a workshop where participants will have the opportunity to learn from experienced gynecologists and obstetricians. They will be exposed to the latest advancements in gynecology and obstetrics, including hands-on simulations of normal vaginal delivery/breech delivery, diagnostic techniques, surgical procedures, interactive drills and treatment options for various gynecological conditions.',
       price_in:'Rs1500',
       price_us:'$20',
       totalSeats: 30,
@@ -91,7 +91,7 @@ const workshopsData = [
     {
       eventId:9,
       title: 'Safeguarding Lives - A Critical Care Workshop',
-      description: 'Welcome to a specialized training that offers a combination of hands-on landmark based central line insertion, basic life support with interactive discussions to enhance participants knowledge and skills in the field of anesthesia.',
+      description: 'Welcome to a specialized training that offers a combination of hands-on landmark based central line insertion with interactive discussions to enhance participants knowledge and skills in the field of anesthesia.',
       price_in:'Rs1500',
       price_us:'$20',
       totalSeats: 30,
