@@ -18,7 +18,7 @@ const OurSponsors = () => {
         <div className='sponsor-first'>
           
         <div className="sponsor-group">
-          <img src={sponsor1} alt="Sponsor 1" className="sponsor-image-left" />
+          <img src={sponsor1} alt="Sponsor 1" className="sponsor-image-leftt" />
           <img src={sponsor2} alt="Sponsor 2" className="sponsor-image-left" />
           
         </div>

@@ -110,7 +110,7 @@ h2 {
 }
 @media screen and (max-width: 1000px) {
   .center-text{
-    font-size: 3.9vw;
+    font-size: 4.1vw;
     white-space: nowrap;
   }
   .header{
