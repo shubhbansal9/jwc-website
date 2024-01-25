@@ -16,6 +16,7 @@ import { useAuth } from './components/authContext';
 import RegisterNowPage from './pages/RegisterNow';
 import Success from './pages/Success';
 import Failure from './pages/Failure';
+import MyBookingsPage from './pages/MyBookingsPage';
 function App() {
   return (
     <Router>
@@ -39,6 +40,7 @@ function App() {
             <Route path="/register" element={<RegisterNowPage/>}/>
             <Route path="/success" element={<Success/>}/>
             <Route path="/failure" element={<Failure/>}/>
+            <Route path="/my-bookings" element={<MyBookingsPage />} />
           </Routes>
         </div>
       </CartProvider>
