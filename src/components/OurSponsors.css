@@ -61,7 +61,11 @@
 .title-sponsor{
   width: 70%;
 }
-
+.sponsor-image-leftt{
+  width: 250px;
+  margin-bottom: 10%;
+  margin-right: 10%;
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -79,6 +83,9 @@
   .individual-sponsor {
     width: 100%;
     margin-bottom: 15%;
+  }
+  .sponsor-image-leftt{
+    margin-right: 0;
   }
 
   .our-spons-title-left {
