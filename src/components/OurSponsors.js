@@ -1,7 +1,7 @@
 // OurSponsors.js
 
 import React from 'react';
-import sponsor1 from '../assets/sponsor1.png';
+import sponsor1 from '../assets/amsa-logo.jpg';
 import sponsor2 from '../assets/sponsor2.png';
 import sponsor3 from '../assets/sponsor3.png';
 import titleSponsor from '../assets/title-sponsor.jpeg';
