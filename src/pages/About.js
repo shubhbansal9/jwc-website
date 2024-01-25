@@ -91,7 +91,7 @@ Christian Medical College Ludhiana is all set to joyously celebrate its 130 year
 
 5 years ago, we splendidly hosted delegates from across the globe in a Congress of Undergraduates namely Junior World Congress. This year, we bring forth to you a bigger, better and stronger platform to showcase your plethora of talents across various formats.<br></br><br></br>
 
-The JWC - Medical Olympics 2024 is not just an event; it's an opportunity to grow, connect, and celebrate. We can't wait to see you here!The JWC - Medical Olympics 2024 is not just an event; it's an opportunity to grow, connect, and celebrate. Waiting to see you all here!<br></br><br></br>
+The JWC - Medical Olympics 2024 is not just an event; it's an opportunity to grow, connect, and celebrate. We can't wait to see you here!The JWC - Medical Olympics 2024 is not just an event; it's an opportunity to grow, connect, and celebrate.<br></br>Waiting to see you all here!<br></br><br></br>
       </p>
       <div className="dual-container">
       <div className="chairpersons-container">

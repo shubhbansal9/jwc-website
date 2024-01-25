@@ -151,13 +151,15 @@ const RegisterNowPage = () => {
 
 <ol className='terms-container'>
   <li className='terms-text'>Entry will not be provided into any workshop or event without Basic Registration (BR).</li>
-  <li className='terms-text'>A delegate can register for Workshops, Academic, Cultural or Sports Events only after completion of BR/PR. Payments received for Workshops before completion of Basic/Premium Registration shall be considered invalid. No refund requests shall be entertained for the same.</li>
-  <li className='terms-text'>A delegate can register for only one of the workshops per day. if payment is made for more than one workshop, one of the payments shall be deemed valid and remaining invalid at the discretion of the Organising Committee.</li>
+  <li className='terms-text'>A delegate can register for Workshops, Academic, Cultural, or Sports Events only after completion of BR/PR. Payments received for Workshops before completion of Basic/Premium Registration shall be considered invalid. No refund requests shall be entertained for the same.</li>
+  <li className='terms-text'>A delegate can register for only one of the workshops per day. If payment is made for more than one workshop, one of the payments shall be deemed valid and remaining invalid at the discretion of the Organising Committee.</li>
   <li className='terms-text'>The Organising Committee reserves the right to make changes to the event schedule if necessary.</li>
-  <li className='terms-text'>The delegate must always carry an ID proof (Aadhar card, DL, PAN card or college ID) with themselves during the conference. Entry into any event/workshop shall not be provided without these.</li>
-  <li className='terms-text'> The delegate must maintain professional and civil conduct throughout the conference. Any violation of the code of conduct shall lead to immediate expulsion from the event without refunds being issued later.  </li>
-  <li className='terms-text'>In the unfortunate event of the conference or Worksop(s) being cancelled due to unforeseen circumstances, only registration amounts for the Workshops, Academic, Cultural and Sports Events shall be refunded. BR/PR fee is a non-refundable amount.</li>
-  <li className='terms-text'>The Organising Committee holds the right to terminate the registration of any delegate that violates the above mentioned terms.</li></ol>
+  <li className='terms-text'>The delegate must always carry an ID proof (Aadhar card, DL, PAN card, or college ID) with themselves during the conference. Entry into any event/workshop shall not be provided without these.</li>
+  <li className='terms-text'>The delegate must maintain professional and civil conduct throughout the conference. Any violation of the code of conduct shall lead to immediate expulsion from the event without refunds being issued later.</li>
+  <li className='terms-text'>In the unfortunate event of the conference or Worksop(s) being cancelled due to unforeseen circumstances, only registration amounts for the Workshops, Academic, Cultural, and Sports Events shall be refunded. BR/PR fee is a non-refundable amount.</li>
+  <li className='terms-text'>The Organising Committee holds the right to terminate the registration of any delegate that violates the above mentioned terms.</li>
+</ol>
+
 <h1 className='terms-header'>FAQs:</h1>
 
   <p classname="faq-text" style={faqTextStyle}>
