@@ -67,7 +67,7 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: black;
-  font-family: 'Inter','sans-serif';
+  font-family: 'Times New Roman', Times, serif;
   font-size: large;
 }
 
@@ -75,7 +75,7 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: black;
-  font-family: 'Inter','sans-serif';
+  font-family: 'Times New Roman', Times, serif;
   margin-top: 4%;
 }
 
@@ -208,7 +208,7 @@
       font-weight: bold;
       margin-bottom: 10px;
       color: black;
-      font-family: 'Inter','sans-serif';
+      font-family: 'Times New Roman', Times, serif;
       font-size: x-small;
     }
     .itinerary{

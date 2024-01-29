@@ -3,7 +3,7 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   overflow-x: hidden;
   color: black;
 
@@ -98,7 +98,12 @@ h2 {
   border-top: 2px solid #A6113D; /* Add a top border to create a line */
   margin: 0 auto; /* Center the line horizontally */
 }
-
+.register-now-button{
+  align-items: center ;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7%;
+}
 
 @keyframes filmReel {
   0% {
@@ -110,7 +115,7 @@ h2 {
 }
 @media screen and (max-width: 1000px) {
   .center-text{
-    font-size: 4.1vw;
+    font-size: 4.5vw;
     white-space: nowrap;
   }
   .header{
