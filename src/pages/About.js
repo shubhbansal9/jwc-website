@@ -85,13 +85,10 @@ Christian Medical College & Hospital
 </div>
       <h3 className="left-header2">Message from the <span className="different-color-text">Chairpersons</span></h3>
       <p>
-      hristian Medical College Ludhiana is all set to joyously celebrate its 130 years of legacy in healing and innovation. On behalf of everyone at CMC, we would like to welcome you all to the JWC Medical Olympics 2024 , an International Undergraduate Medical Conference cum Fest that promises an unforgettable blend of knowledge, fun, and cultural enrichment. This year, we gather to explore the critical theme of "Climate Change and its impact on Health" while offering you a diverse array of experiences.<br></br><br></br>
+      Christian Medical College Ludhiana is all set to joyously celebrate its 130 years of legacy in healing and innovation. On behalf of everyone at CMC, we would like to welcome you all to the JWC Medical Olympics 2024 , an International Undergraduate Medical Conference cum Fest that promises an unforgettable blend of knowledge, fun, and cultural enrichment. This year, we gather to explore the critical theme of "Climate Change and its impact on Health" while offering you a diverse array of experiences.<br></br><br></br>
 
 Five years ago, we splendidly hosted delegates from across the globe in a Congress of Undergraduates namely Junior World Congress. This year, we bring to you a bigger, better and stronger platform to showcase your plethora of talents across various formats.<br></br><br></br>
 
-Christian Medical College Ludhiana is all set to joyously celebrate its 130 years of legacy in healing and innovation. On behalf of everyone at CMC, we would like to welcome you all to the JWC Medical Olympics 2024 , an International Undergraduate Medical Conference cum Fest that promises an unforgettable blend of knowledge, fun, and cultural enrichment. This year, we gather to explore the critical theme of "Climate Change and its impact on Health" while offering you a diverse array of experiences.<br></br><br></br>
-
-5 years ago, we splendidly hosted delegates from across the globe in a Congress of Undergraduates namely Junior World Congress. This year, we bring forth to you a bigger, better and stronger platform to showcase your plethora of talents across various formats.<br></br><br></br>
 
 The JWC - Medical Olympics 2024 is not just an event; it's an opportunity to grow, connect, and celebrate. We can't wait to see you here!The JWC - Medical Olympics 2024 is not just an event; it's an opportunity to grow, connect, and celebrate.<br></br>Waiting to see you all here!<br></br><br></br>
       </p>
