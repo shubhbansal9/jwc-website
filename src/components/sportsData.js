@@ -3,7 +3,7 @@ const sportsData = [
       eventId:14,
       title: 'Football (Boys)',
       description: 'Feel the adrenaline rush as the football teams face off in intense matches. Expect skill, teamwork, and unmatched passion on the field.',
-      eventType:'[GROUP EVENT]',
+      eventType:'[TEAM OF 7]',
       price_in: 'Rs2000',
       price_us:'$25',
       image: require('../assets/sports1.png'), 
