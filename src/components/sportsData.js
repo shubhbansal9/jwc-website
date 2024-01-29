@@ -12,7 +12,7 @@ const sportsData = [
       eventId:15,
       title: 'Basketball (Boys)',
       description: 'Basketball courts will echo with the sound of dribbles and swishing nets as the teams compete for glory. Fast-paced and action-packed !',
-      eventType:'[GROUP EVENT]',
+      eventType:'[TEAM OF 5]',
       price_in: 'Rs2000',
       price_us:'$25',
       image: require('../assets/sports2.png'), 
@@ -21,7 +21,7 @@ const sportsData = [
       eventId:31,
       title: 'Basketball (Girls)',
       description: 'Basketball courts will echo with the sound of dribbles and swishing nets as the teams compete for glory. Fast-paced and action-packed !',
-      eventType:'[GROUP EVENT]',
+      eventType:'[TEAM OF 5]',
       price_in: 'Rs2000',
       price_us:'$25',
       image: require('../assets/sports2.png'), 
@@ -29,7 +29,7 @@ const sportsData = [
     {
       eventId:16,
       title: 'Volleyball (Boys)',
-      eventType:'[GROUP EVENT]',
+      eventType:'[TEAM OF 6]',
       description: 'The sands of the volleyball courts will witness incredible spikes and blocks as the teams aim for victory. An electrifying spectacle!',
       
       price_in: 'Rs2000',
@@ -39,7 +39,7 @@ const sportsData = [
     {
       eventId:32,
       title: 'Volleyball (Girls)',
-      eventType:'[GROUP EVENT]',
+      eventType:'[TEAM OF 6]',
       description: 'The sands of the volleyball courts will witness incredible spikes and blocks as the teams aim for victory. An electrifying spectacle!',
       
       price_in: 'Rs2000',
@@ -49,7 +49,7 @@ const sportsData = [
     {
       eventId:17,
       title: 'Kho-Kho (Girls)',
-      eventType:'[GROUP EVENT]',
+      eventType:'[TEAM OF 9]',
       description: 'Kho-Kho is not just a sport, its a display of agility and strategy. Girls will compete with lightening-fast moves and teamwork.',
       price_in: 'Rs2000',
       price_us:'$25',
