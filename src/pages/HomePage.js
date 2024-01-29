@@ -144,7 +144,7 @@ function Homepage() {
    
       <Countdown/>
       <div className='register-now-button'>
-      <button className='nav-button-register' onClick={handleRegisterClick}>
+      <button className='nav-register' onClick={handleRegisterClick}>
             Register now
           </button>
           </div>

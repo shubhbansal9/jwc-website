@@ -104,6 +104,22 @@ h2 {
   justify-content: center;
   margin-bottom: 7%;
 }
+.nav-register{
+  background-color: #A6113D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  font-size: initial;
+  height: 100%;
+}
 
 @keyframes filmReel {
   0% {
