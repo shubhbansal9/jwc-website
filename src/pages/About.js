@@ -27,16 +27,18 @@ CMC Ludhiana has been recognized by NMC and has played a pivotal role in various
 <div className='CMC'>
 <img className='CMC-pic' src={aboutPage} alt="CMC-Ludiana" />
 </div>
-<h3 className="left-header">Our Achievements</h3>
-        <ul>
-          <li>The first study on family planning was done here in 1951.</li>
-          <li>The first department of Social and Preventive Medicine in the developing world was in CMC Ludhiana.</li>
-          <li>CMC Ludhiana is where the first ventilator in India was installed.</li>
-          <li>It's the place for the first open heart surgery in North India.</li>
-          <li>The first cadaveric renal transplant in North India was done here.</li>
-          <li>Thrombolysis in stroke was done for the first time in India here at CMC Ludhiana.</li>
-          <li>Conducted the world's first face and scalp re-implantation.</li>
-        </ul>
+<div className="achievements-box">
+          <h3 className="left-header">Our Achievements</h3>
+          <ul>
+            <li>The first study on family planning was done here in 1951.</li>
+            <li>The first department of Social and Preventive Medicine in the developing world was in CMC Ludhiana.</li>
+            <li>CMC Ludhiana is where the first ventilator in India was installed.</li>
+            <li>It's the place for the first open heart surgery in North India.</li>
+            <li>The first cadaveric renal transplant in North India was done here.</li>
+            <li>Thrombolysis in stroke was done for the first time in India here at CMC Ludhiana.</li>
+            <li>Conducted the world's first face and scalp re-implantation.</li>
+          </ul>
+        </div>
 <h3 className="left-header">What is <span className="different-color-text">Medical Olympics</span>?</h3>
       <p>
       Inspired from a combination of aspiration of Medicos & designed like the perseverance of Olympians, Medical Olympics is an International Medical Conference with a fun & sporty touch to it. It will be a three day long event which will be held in CMC, comprising of various workshops, competitive academic events, keynote lectures, fun-filled Cultural events and of course a few selected sports as well. Invites will be sent all across the Globe for undergraduate medical students to take part in the conference, have some leisure time beyond the scope of our medical curriculum and learn fruitfully in an innovative module. Rest assured, 'YOU'RE GONNA LOVE IT'  </p>
