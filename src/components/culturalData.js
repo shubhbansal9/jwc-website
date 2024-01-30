@@ -55,6 +55,15 @@ const culturalData = [
       totalSeats: 10,
       image: require('../assets/cultural7.png') , 
     },
+    {
+      eventId:33,
+      title: 'Introducing the future of music experience: Silent DJ',
+      description: 'Immerse yourself in the ultimate audio journey without disturbing others. With wireless headphones, dance to your beat while the world around stays serene. Elevate your events, parties, and gatherings with Silent DJ, where the sound speaks louder than words.',
+      totalSeats:150,
+      price_in: 'Rs300',
+      price_us:'$4',
+      image: require('../assets/culturals8.jpeg') , 
+    },
   
   ];
   export default culturalData;
