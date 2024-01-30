@@ -21,7 +21,6 @@ const culturalData = [
       eventId:10,
       title: 'FIFA Fever Showdown',
       description: 'Get ready for a fusion of healing hearts and football artistry! FIFA Fever Showdown, invites you to discover a world where medical marvels take a center stage on the virtual pitch.',
-      eventType:'[TEAM OF 7]',
       price_in: 'Rs200',
       price_us:'$3',
       image: require('../assets/cultural4.png'), 
