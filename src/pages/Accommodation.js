@@ -1,13 +1,73 @@
-import React from 'react';
+
 import medicalOlympicsImage from '../assets/medical-olympics.svg';
 import cmcLogo from '../assets/cmc-logo.svg';
 import Navbar from '../components/Navbar';
 import team17 from '../assets/team/team-17.png';
 import './Accommodation.css'; 
+import React, { useState } from 'react';
 import team18 from '../assets/team/team-18.png';
 import Footer from '../components/footer';
+import hotel1 from '../assets/hotel-tacksons.jpeg';
+import hotel2 from '../assets/hotel-city-lite.jpeg';
+import hotel3 from '../assets/hotel-k-classic.jpg';
 import { Link } from 'react-router-dom';
+function AccommodationCard({ hotelName, imageSrc, roomDetails }) {
+  const [showDetails, setShowDetails] = useState(false);
+
+  const handleCardClick = () => {
+    setShowDetails(!showDetails);
+  };
+
+  return (
+    <div className="accommodation-card" onClick={handleCardClick}>
+      <img className="acc-image-hotel" src={imageSrc} alt={hotelName} />
+      <div className="acc-name">{hotelName}</div>
+      {showDetails && (
+        <div className="hotel-details">
+          {roomDetails.map((detail, index) => (
+            <div key={index} className="room-detail">
+              <p>{detail.roomType}</p>
+              <p>{detail.price}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function AccommodationPage() {
+  
+  const hotelData = [
+    {
+      hotelName: 'Hotel Taksons (3 Star)',
+      imageSrc: hotel1,
+      roomDetails: [
+        { roomType: 'Single room', price: '1600rs' },
+        { roomType: 'Double occupancy per person', price: '900rs' },
+      ],
+    },
+    {
+      hotelName: 'Hotel K Classic (2 Star)',
+      imageSrc: hotel2,
+      roomDetails: [
+        { roomType: 'Single room', price: '900rs' },
+        { roomType: 'Double occupancy per person', price: '500rs' },
+        { roomType: 'Triple occupancy per person', price: '400rs' },
+        { roomType: 'Extra bedding', price: '200rs' },
+        { roomType: 'Check-in on 3rd April (6hrs rent)', price: '600rs' },
+      ],
+    },
+    {
+      hotelName: 'Hotel City Light (2 Star)',
+      imageSrc: hotel3, // You may want to replace this with the actual image
+      roomDetails: [
+        { roomType: 'Single', price: '1300 per person' },
+        { roomType: 'Super deluxe Double', price: '800 per person' },
+        { roomType: 'Deluxe Double', price: '700 per person' },
+      ],
+    },
+  ];
   return (
     <div className="accommodation">
      
@@ -47,6 +107,13 @@ function AccommodationPage() {
           <img className="acc-image" src={team18} alt="Image 2" />
           <div className="acc-name">Dr. Ayana K Alex<br></br>Accommodation Head</div>
         </div>
+      </div>
+      <h2>ACCOMMODATION ALTERNATIVES</h2>
+      <div className="container">
+        
+        {hotelData.map((hotel, index) => (
+          <AccommodationCard key={index} {...hotel} />
+        ))}
       </div>
     </div>
     <Footer/>
