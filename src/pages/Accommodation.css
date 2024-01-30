@@ -82,6 +82,52 @@
 .acc-image{
   height: 50%;
 }
+/* Add these styles to your Accommodation.css file or your preferred CSS file */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.accommodation-card {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .acc-image-hotel {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .acc-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .hotel-details {
+    margin-top: 10px;
+
+    .room-detail {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+
+
+    }
+  }
+}
+
 
 @media screen and (max-width: 1000px) {
   .column-left{
