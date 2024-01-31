@@ -108,7 +108,7 @@ function AccommodationPage() {
           <div className="acc-name">Dr. Ayana K Alex<br></br>Accommodation Head</div>
         </div>
       </div>
-      <h2>ACCOMMODATION ALTERNATIVES</h2>
+      <h2 className='acc-header'> ACCOMMODATION FOR NATIONAL DELEGATES</h2>
       <div className="container">
         
         {hotelData.map((hotel, index) => (
