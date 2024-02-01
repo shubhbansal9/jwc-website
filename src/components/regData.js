@@ -9,7 +9,7 @@ const regData = [
       <li><strong>Spectator Access:</strong> Be everywhere! Witness all campus events, excluding the exclusive Gala Night and Charity event - Hearts United for Special Needs.</li>
       <li><strong>DJ Night:</strong> Groove into the night! BR grants you access to the electrifying DJ Night on Day 3 of the Conference.</li>
     </ul>`,
-      price_in: 'Rs1000',
+      price_in: 'Rs1250',
       image: require('../assets/register-basic.png'), 
     },
     {
@@ -24,7 +24,7 @@ const regData = [
   <li><strong>Meal Coupons:</strong> Your discretion, your choice! You receive meal coupons to be used as per your preferences throughout the event.</li>
 </ul>`
 ,
-      price_in: 'Rs1500',
+      price_in: 'Rs1750',
       image: require('../assets/register-prem.png'), 
     },
     
