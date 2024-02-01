@@ -25,7 +25,9 @@
     font-size: 16px;
     margin: 10px 0;
   }
-  
+  .email-hyperlink{
+    color:#F484A5;
+  }
   /* Adjust the styling for the footer-left, footer-middle, and footer-right elements as needed */
   .footer-left,
   .footer-middle,
