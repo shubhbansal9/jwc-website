@@ -53,7 +53,8 @@ const Footer = () => {
          <div className="footer-right">
         <img className='logo-right' src={cmcLogo} alt="Medical Olympics Logo" />
         <a className='terms-link' href="https://www.jwcmedicalolympics.com/register#terms-and-conditions">Terms and Conditions</a>
-        <p>Email: medicalolympicscmcl@gmail.com</p>
+        <a className='email-hyperlink' href="mailto:medicalolympicscmcl@gmail.com">Email: medicalolympicscmcl@gmail.com</a>
+
         
 
       </div>

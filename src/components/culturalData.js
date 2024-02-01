@@ -57,7 +57,7 @@ const culturalData = [
     {
       eventId:33,
       title: 'Introducing the future of music experience: Silent DJ',
-      description: 'Immerse yourself in the ultimate audio journey without disturbing others. With wireless headphones, dance to your beat while the world around stays serene. Elevate your events, parties, and gatherings with Silent DJ, where the sound speaks louder than words.',
+      description: 'Immerse yourself in the unique experience of a Silent DJ on our campus. Let the beats resonate through wireless headphones creating a vibrant atmosphere, a platform for you to display your grooves while the world around stays serene.',
       totalSeats:150,
       price_in: 'Rs300',
       price_us:'$4',
