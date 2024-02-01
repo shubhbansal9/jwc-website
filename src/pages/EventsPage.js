@@ -312,7 +312,7 @@ function EventsPage() {
       <div className='workshop'>
       {/* <EventDetails events={upcomingEvents} /> */}
       <img src={eventItinerary} alt="Medical Olympics Logo" className="event-itinerary" />
-      <Link to="https://drive.google.com/file/d/1-Pfn4X6wPhBroDHu-ChQHOitb7_i-ESp/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Events Brochure<br></br></Link>
+      <Link to="https://drive.google.com/file/d/1wSnToy0x7Ho8h-LyV1e_jdr1ldkxHEwk/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Events Brochure<br></br></Link>
       <div className='note'>Note: Only one of the members from the team requires to register for the GROUP EVENTS</div>
         <h1 className='workshop-headers'>WORKSHOPS</h1>
         <div className="workshop-cards-container">
