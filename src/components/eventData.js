@@ -1,7 +1,12 @@
 const upcomingEvents = [
     {
       title: '',
-      imageUrl: require('../assets/reels-poster.jpg'),
+      imageUrl: require('../assets/upcoming-events1.jpg'),
+    },
+    
+    {
+      title: '',
+      imageUrl: require('../assets/upcoming-events2.jpg'),
     },
   ];
   
