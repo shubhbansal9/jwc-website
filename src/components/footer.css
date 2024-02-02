@@ -27,7 +27,7 @@
   }
   .email-hyperlink{
     color:#F484A5;
-    font-size: small;
+    font-size: x-small;
     white-space: nowrap;
   }
   /* Adjust the styling for the footer-left, footer-middle, and footer-right elements as needed */
@@ -154,7 +154,7 @@
     }
     .terms-link{
       font-size: x-small;
-      margin-top: 15%;
+      margin-top: 5%;
     }
     .logo-right{
       height: 50%;
