@@ -12,7 +12,7 @@ const regData = [
       <li><strong>Cultural Events :</strong> For leisure time away from all competitive events, we've got you covered with Human Tic Tac Toe and Splash Pong.</li>
       <li><strong>Keynote Lectures :</strong> Gain insights into the most exhilarating and engaging talks specially decked up for you.</li>
       <br></br>
-      <li>* If you opt for a workshop, you'll be eligible for a meal coupon, which can be redeemed as per your discretion.</li>
+      * If you opt for a workshop, you'll be eligible for a meal coupon, which can be redeemed as per your discretion.
 
 
     </ul>`,
@@ -31,13 +31,26 @@ const regData = [
   <li><strong>Cultural Event :</strong> For leisure time away from all competitive events, we've got you covered with Human Tic Tac Toe and Splash Pong. </li>
   <li><strong>Keynote Lectures :</strong> Gain insights into the most exhilarating and engaging talks specially decked up for you.</li>
   <br></br>
-  <li>*If you opt for a workshop, you'll be eligible for meal coupon, which can be redeemed as per your discretion.</li>
+  *If you opt for a workshop, you'll be eligible for meal coupon, which can be redeemed as per your discretion.
 </ul>`
 ,
       price_in: 'Rs1750',
       image: require('../assets/register-prem.png'), 
     },
-    
+    {
+      eventId:34,
+      title: 'Pack for Indian Foreign Medical Students.',
+      description: `<ul>
+      Includes:<br></br>
+  <li>PR</li>
+  <li>Peripheral centre visit</li>
+  <li>Hospital Clinical Posting</li>
+  <li>A workshop of choice</li>
+</ul>`
+,
+      price_in: 'Rs5000',
+      image: require('../assets/register-prem.png'), 
+    },
     
   ];
   export default regData;
