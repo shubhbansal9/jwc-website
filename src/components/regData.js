@@ -8,6 +8,13 @@ const regData = [
       <li><strong>Showcase Your Talent:</strong> BR opens the door for you to submit your outstanding abstracts and documentaries post respective registration.</li>
       <li><strong>Spectator Access:</strong> Be everywhere! Witness all campus events, excluding the exclusive Gala Night and Charity event - Hearts United for Special Needs.</li>
       <li><strong>DJ Night:</strong> Groove into the night! BR grants you access to the electrifying DJ Night on Day 3 of the Conference.</li>
+      <li><strong>Breakfast Inclusions :</strong> Fuel your mornings ! Enjoy a complimentary breakfast for all three days, setting the tone for each exciting event</li>
+      <li><strong>Cultural Events :</strong> For leisure time away from all competitive events, we've got you covered with Human Tic Tac Toe and Splash Pong.</li>
+      <li><strong>Keynote Lectures :</strong> Gain insights into the most exhilarating and engaging talks specially decked up for you.</li>
+      <br></br>
+      <li>* If you opt for a workshop, you'll be eligible for a meal coupon, which can be redeemed as per your discretion.</li>
+
+
     </ul>`,
       price_in: 'Rs1250',
       image: require('../assets/register-basic.png'), 
@@ -21,7 +28,10 @@ const regData = [
   <li><strong>Gala Night Dinner:</strong> Savour the moment! Your premium package includes an exquisite gala night dinner, a feast for both the senses and the soul.</li>
   <li><strong>Hearts United for Special Needs:</strong> Invitation to embrace the extraordinary. Join our collective effort to illuminate the path for children with special needs. Your support is the beacon lighting their way to a brighter future!</li>
   <li><strong>Breakfast Inclusions:</strong> Fuel your mornings! Enjoy a complimentary breakfast for all three days, setting the tone for each exciting event.</li>
-  <li><strong>Meal Coupons:</strong> Your discretion, your choice! You receive meal coupons to be used as per your preferences throughout the event.</li>
+  <li><strong>Cultural Event :</strong> For leisure time away from all competitive events, we've got you covered with Human Tic Tac Toe and Splash Pong. </li>
+  <li><strong>Keynote Lectures :</strong> Gain insights into the most exhilarating and engaging talks specially decked up for you.</li>
+  <br></br>
+  <li>*If you opt for a workshop, you'll be eligible for meal coupon, which can be redeemed as per your discretion.</li>
 </ul>`
 ,
       price_in: 'Rs1750',

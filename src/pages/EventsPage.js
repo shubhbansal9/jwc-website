@@ -298,7 +298,7 @@ function EventsPage() {
          {showLocationPopup && (userLocation === "none" || userLocation === null) &&(
         <div className="popup-container">
           <div className="popup-content">
-            <p>Are you studying in India?</p>
+            <p>Are you an Indian?</p>
             <button className="popup-button" onClick={() => handleLocationConfirmation('India')}>
               Yes
             </button>
