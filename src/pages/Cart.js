@@ -234,7 +234,7 @@ const handleAMSAStatusUpdate = async () => {
                 console.log(parseInt(event.eventId));
                 const data = await response.json();
                 console.log(event.eventId);
-                if (data.success && (event.eventId === "27" || event.eventId === "28")) {
+                if (data.success && (event.eventId === "27" || event.eventId === "28" || event.eventId=="34")) {
                   console.log("updating");
                   await fetch('https://api.jwcmedicalolympics.com/api/update-br-status', {
                     method: 'POST',

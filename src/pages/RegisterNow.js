@@ -101,6 +101,19 @@ const RegisterNowPage = () => {
           }),
         });
       }
+      if (selectedWorkshop.eventId === 34) {
+        // Make a request to update BR status to 1
+        await fetch('https://api.jwcmedicalolympics.com/api/update-br-status', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email: userProfile.email,
+            brStatus: 5,
+          }),
+        });
+      }
       setShowPopup(false);
     } catch (error) {
       console.error('Error adding item to cart:', error);
