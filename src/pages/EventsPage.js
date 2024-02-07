@@ -236,6 +236,7 @@ function EventsPage() {
     
       // Check BR status
       if (!userBRStatus || userBRStatus.brStatus === 0 || userBRStatus === false) {
+        console.log(userBRStatus);
         alert('You are not eligible to register for Events. Complete the Basic Registration in Register Now page first');
         return;
       }
