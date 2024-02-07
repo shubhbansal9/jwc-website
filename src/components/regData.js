@@ -42,7 +42,7 @@ const regData = [
       title: 'Pack for Indian Foreign Medical Students.',
       description: `<ul>
       Includes:<br></br>
-  <li>PR</li>
+  <li>All perks of PR.</li>
   <li>Peripheral centre visit</li>
   <li>Hospital Clinical Posting</li>
   <li>A workshop of choice</li>
