@@ -40,7 +40,7 @@ function AccommodationPage() {
   
   const hotelData = [
     {
-      hotelName: 'Hotel Taksons (3 Star)',
+      hotelName: 'Hotel Taksonz (3 Star)',
       imageSrc: hotel1,
       roomDetails: [
         { roomType: 'Single room', price: '1600rs' },
