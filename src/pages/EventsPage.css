@@ -72,7 +72,7 @@
     }
     .workshop-card img {
       max-width: 100%;
-      border-radius: 10px 10px 0 0; /* Rounded edges only at the top */
+      border-radius: 10px 10px 10px 10px; /* Rounded edges only at the top */
     }
     
     .workshop-card h2 {

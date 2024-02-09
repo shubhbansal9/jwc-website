@@ -22,13 +22,6 @@ import cart from '../assets/cart-icon.png';
 import { useNavigate } from 'react-router-dom';
 
 
-
-
-
-
-
-
-
 function Homepage() {
   const { loggedIn, login, logout, userProfile, updateUserProfile } = useAuth();
   const targetTime = new Date('2024-01-01T00:00:00'); // Set your target date and time
