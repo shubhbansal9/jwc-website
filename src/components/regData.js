@@ -17,7 +17,7 @@ const regData = [
 
     </ul>`,
       price_in: 'Rs1250',
-      image: require('../assets/register-basic.png'), 
+      image: require('../assets/register-basic.jpg'), 
     },
     {
       eventId:28,
@@ -35,7 +35,7 @@ const regData = [
 </ul>`
 ,
       price_in: 'Rs1750',
-      image: require('../assets/register-prem.png'), 
+      image: require('../assets/register-prem.jpg'), 
     },
     {
       eventId:34,
@@ -49,7 +49,7 @@ const regData = [
 </ul>`
 ,
       price_in: 'Rs5000',
-      image: require('../assets/register-prem.png'), 
+      image: require('../assets/register-ifms.jpg'), 
     },
     
   ];
