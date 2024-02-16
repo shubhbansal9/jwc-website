@@ -6,7 +6,7 @@ const regData = [
       <li><strong>Conference Access:</strong> Your ticket to the heart of the action – the Conference!</li>
       <li><strong>Unique BR ID:</strong> Your golden key! Unlock a world of possibilities by registering for workshops, academic sessions, cultural extravaganzas, and sports showdowns.</li>
       <li><strong>Showcase Your Talent:</strong> BR opens the door for you to submit your outstanding abstracts and documentaries post respective registration.</li>
-      <li><strong>Spectator Access:tribevibe </strong> Be everywhere! Witness all campus events, excluding the exclusive Gala Night and Charity event - Hearts United for Special Needs.</li>
+      <li><strong>Spectator Access:</strong> Be everywhere! Witness all campus events, excluding the exclusive Gala Night and Charity event - Hearts United for Special Needs.</li>
       <li><strong>Sunburn Campus & Tribevibe Night:</strong> Groove into the night! BR grants you access to the electrifying DJ Night on Day 3 of the Conference.</li>
       <li><strong>Breakfast Inclusions :</strong> Fuel your mornings ! Enjoy a complimentary breakfast for all three days, setting the tone for each exciting event</li>
       <li><strong>Cultural Events :</strong> For leisure time away from all competitive events, we've got you covered with Human Tic Tac Toe and Splash Pong.</li>
