@@ -209,6 +209,10 @@ function EventsPage() {
     return false;
   };
   const handleRegisterClick = async (workshop) => {
+       if (workshop.eventId === 2) {
+        alert('Registrations for this event are closed.');
+        return;
+  }
       if (!loggedIn) {
         alert('Kindly login before registering.');
         return;

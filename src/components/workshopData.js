@@ -18,8 +18,8 @@ const workshopsData = [
 
       price_us:'$25',
       totalSeats: 20,
-      intlSeats:2,
-      ntnlSeats:5,
+      intlSeats:0,
+      ntnlSeats:0,
       image: require('../assets/event-2.png'),
     },
     {
