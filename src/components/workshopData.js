@@ -10,18 +10,7 @@ const workshopsData = [
     ntnlSeats: 17,
       image: require('../assets/event-1.png'),
     },
-    {
-      eventId:2,
-      title: 'NeuroNexus - Dive into the world of Neurology',
-      description: 'Delve into the intricacies of the human mind and be guided through the secrets of interventional stroke management along with hands on simulation of mechanical thrombectomy.',
-      price_in: 'Rs2000',
-
-      price_us:'$25',
-      totalSeats: 20,
-      intlSeats:2,
-      ntnlSeats:5,
-      image: require('../assets/event-2.png'),
-    },
+    
     {
       eventId:3,
       title: 'Scalpel to Stitches - The Art of Surgery',
