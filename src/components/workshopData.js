@@ -29,8 +29,8 @@ const workshopsData = [
       price_in: 'Rs2000',
       price_us:'$25',
       totalSeats: 30,
-      intlSeats:3,
-      ntnlSeats:10,
+      intlSeats:1,
+      ntnlSeats:8,
       image: require('../assets/event-3.png'),
     },
     {
@@ -41,7 +41,7 @@ const workshopsData = [
       price_us:'$25',
       totalSeats: 30,
       intlSeats:3,
-      ntnlSeats:14,
+      ntnlSeats:13,
       image: require('../assets/event-4.png'),
     },
     {
@@ -63,7 +63,7 @@ const workshopsData = [
       price_us:'$4',
       totalSeats: 60,
       intlSeats:5,
-      ntnlSeats:29,
+      ntnlSeats:23,
       image: require('../assets/event-6.png'),
     },
     {
@@ -74,7 +74,7 @@ const workshopsData = [
       price_us:'$20',
       totalSeats: 30,
       intlSeats: 3,
-      ntnlSeats:16,
+      ntnlSeats:15,
       image: require('../assets/event-7.png'),
     },
     {
@@ -85,7 +85,7 @@ const workshopsData = [
       price_us:'$10',
       totalSeats: 30,
       intlSeats: 3,
-      ntnlSeats:17,
+      ntnlSeats:13,
       image: require('../assets/event-8.png'),
     },
     {
@@ -96,7 +96,7 @@ const workshopsData = [
       price_us:'$20',
       totalSeats: 30,
       intlSeats:3,
-      ntnlSeats:16,
+      ntnlSeats:14,
       image: require('../assets/event-9.png'),
     },
   ];
