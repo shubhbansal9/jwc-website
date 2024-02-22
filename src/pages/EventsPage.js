@@ -16,6 +16,7 @@ import ConfirmationPopup from '../components/confirmationPopup';
 import { useCart } from '../components/cart';
 import { useAuth } from '../components/authContext';
 import { useEffect } from 'react';
+import comboData from '../components/comboData';
 import eventItinerary from '../assets/event-itinerary.jpg';
 import { Link  } from 'react-router-dom';
 function EventsPage() {
@@ -421,6 +422,37 @@ function EventsPage() {
               <div className={`workshop-card ${expandedWorkshops[index] ? 'expanded' : ''}`} key={index} onClick={() => handleWorkshopCardClick(index)}>
                 <img src={workshop.image} alt={workshop.title} />
                 <div className='workshop-title'>{workshop.title}</div>
+                <div className='workshop-event-type'>{workshop.eventType}</div>
+                {expandedWorkshops[index] && (
+                  <p className='workshop-description'>{workshop.description}</p>
+                )}
+                <div className='workshop-buttons'>
+                  <button className='workshop-button' onClick={() => handleRegisterClick(workshop)}>Register</button>
+                  <p className="total-seats" dangerouslySetInnerHTML={{ __html: renderTotalSeats(workshop.eventId, workshop.intlSeats, workshop.ntnlSeats) }}></p>
+                  <div className="price-rectangle">
+                  <p className="price">{getPriceByLocation(workshop)}</p>
+                  </div>
+                </div>
+                {showPopup && (
+        <ConfirmationPopup workshopDetails={selectedWorkshop} onConfirmBooking={handleConfirmBooking} onClose={handleClosePopup}>
+          {/* Customize the content of your popup here */}
+          <p>ARE YOU SURE YOU WANT TO ADD THIS EVENT TO THE CART?</p>
+        </ConfirmationPopup>
+      )}
+
+              </div>
+            ))}
+      </div>
+      </div>
+      </div>
+      <div className='workshop'>
+        <h1 className='workshop-headers'>COMBOS</h1>
+        <div className="workshop-cards-container">
+          <div className="workshop-cards">
+            {comboData.map((workshop, index) => (
+              <div className={`workshop-card ${expandedWorkshops[index] ? 'expanded' : ''}`} key={index} onClick={() => handleWorkshopCardClick(index)}>
+              
+                <div className=''>{workshop.title}</div>
                 <div className='workshop-event-type'>{workshop.eventType}</div>
                 {expandedWorkshops[index] && (
                   <p className='workshop-description'>{workshop.description}</p>

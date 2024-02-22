@@ -70,8 +70,8 @@ const academicsData = [
         title: 'PlanetFlicks - Lights, Camera, Change!',
         description: 'Are you ready to embark on a journey through the unexplored realms of medical significance in climate change? PlanetFlicks is a documentary competition that invites filmmakers from around the world to capture and unveil the untold stories that shape our diverse and dynamic planet.',
         eventType:'[MAX 8 PER TEAM]',
-        price_in: 'Rs1000',
-        price_us:'$15',
+        price_in: 'Rs500',
+        price_us:'$8',
         image: require('../assets/acad8.png'), 
       },
       
