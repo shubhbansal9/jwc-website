@@ -16,7 +16,7 @@ const regData = [
 
 
     </ul>`,
-      price_in: 'Rs1250',
+      price_in: 'Rs1500',
       image: require('../assets/register-basic.jpg'), 
     },
     {
@@ -34,7 +34,7 @@ const regData = [
   *If you opt for a workshop, you'll be eligible for meal coupon, which can be redeemed as per your discretion.
 </ul>`
 ,
-      price_in: 'Rs1750',
+      price_in: 'Rs2000',
       image: require('../assets/register-prem.jpg'), 
     },
     {
