@@ -103,7 +103,7 @@ function InternationalDelegates() {
       <div className="line"></div>
     <div className="accommodation-page">
     <img className="itinerary" src={itinerary}></img>
-    <Link to="https://drive.google.com/file/d/1zT3QRNlinSK63RmQyigN14VFDxa8mqWb/view?usp=drivesdk" className="itinerarylink">Check out our International Delegates Brochure</Link>
+    <Link to="https://drive.google.com/file/d/1DizQakFHf7rim5xxoxmDWYMmmM6PznGW/view?usp=drivesdk" className="itinerarylink">Check out our International Delegates Brochure</Link>
       <header>
         <h1 className='acc-header'>INTERNATIONAL AFFAIRS</h1>
       </header>
