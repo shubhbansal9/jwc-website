@@ -17,14 +17,13 @@ const Countdown = () => {
   }, []);
 
   const difference = differenceInMilliseconds(targetDate, currentTime);
-  const { months, days, hours, minutes, seconds } = intervalToDuration({ start: 0, end: difference });
+  const { days, hours, minutes, seconds } = intervalToDuration({ start: 0, end: difference });
 
   return (
     <div className="container-countdown">
       <div className="global-style" />
       <h2 className='heading-countdown'>COUNTDOWN</h2>
       <div className="main">
-        <Card currentNumber={months} nextNumber={months - 1} title="months" />
         <Card currentNumber={days} nextNumber={days - 1} title="days" />
         <Card currentNumber={hours} nextNumber={hours - 1} title="hours" />
         <Card currentNumber={minutes} nextNumber={minutes - 1} title="minutes" />
