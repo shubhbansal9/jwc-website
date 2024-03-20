@@ -171,7 +171,17 @@ const RegisterNowPage = () => {
   <li className='terms-text'>The delegate must maintain professional and civil conduct throughout the conference. Any violation of the code of conduct shall lead to immediate expulsion from the event without refunds being issued later.</li>
   <li className='terms-text'>In the unfortunate event of the conference or workshop(s) being cancelled due to unforeseen circumstances, only registration amounts for the workshops, academic, cultural and sports events shall be refunded. BR/PR fee is a non-refundable amount.</li>
   <li className='terms-text'>The Organising Committee holds the right to terminate the registration of any delegate that violates the above mentioned terms.</li>
+  <p>Refund for other events (Workshops/Academic/Cultural/Sports Events) will be subject to decision of the organising committee based on the time left prior to start of the event.</p>
+
+<p>Refund will be as follows :-<br></br></p>
+<p>75% :- If initiated between 1st - 12th March, 2024.<br></br></p>
+<p>50% :- if initiated between 13th - 24th March, 2024.<br></br></p>
+<p>25% :- if initiated between 25th March - 31st March, 2024.<br></br></p>
+<p>No refund will be initiated after 31st March 2024.</p><br></br>
 </ol>
+
+
+
 
 
 <h1 className='terms-header'>FAQs:</h1>
