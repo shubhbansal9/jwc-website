@@ -36,7 +36,7 @@ const workshopsData = [
     {
       eventId:4,
       title: 'Beyond the Beat - Cardiology Unveiled',
-      description: 'Finally a workshop where participants will have the opportunity to learn from experienced gynecologists and obstetricians. They will be exposed to the latest advancements in gynecology and obstetrics, including hands-on simulations of normal vaginal delivery/breech delivery, diagnostic techniques, surgical procedures, interactive drills and treatment options for various gynecological conditions.',
+      description: 'Join us for an immersive journey into the intricate world of cardiology. Discover the beating heart of modern healthcare as we delve deep into the latest advancements, diagnostic and therapeutic techniques like pace maker insertion and coronary artery stenting',
       price_in: 'Rs2000',
       price_us:'$25',
       totalSeats: 30,
