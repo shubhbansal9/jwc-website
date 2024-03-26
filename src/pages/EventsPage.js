@@ -214,6 +214,10 @@ function EventsPage() {
         alert('Registrations for this event are closed.');
         return;
   }
+  if (workshop.eventId === 22) {
+    alert('Registrations for this event are closed.');
+    return;
+}
       if (!loggedIn) {
         alert('Kindly login before registering.');
         return;
