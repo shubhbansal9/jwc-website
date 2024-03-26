@@ -5,8 +5,8 @@ const academicsData = [
       eventType:'[TEAM OF 4]',
       description: 'In the realm of knowledge, you’ll stand, ready for questions, hand in hand. A quiz, a test, to prove your might. With answers swift, you’ll shine so bright.',
      
-      price_in: 'Rs1000',
-      price_us:'$12',
+      price_in: 'Rs500',
+      price_us:'$6',
       image: require('../assets/acad1.png'), 
     },
     {
