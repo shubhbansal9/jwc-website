@@ -210,59 +210,61 @@ function EventsPage() {
     return false;
   };
   const handleRegisterClick = async (workshop) => {
-       if (workshop.eventId === 2) {
-        alert('Registrations for this event are closed.');
-        return;
-  }
-  if (workshop.eventId === 22) {
-    alert('Registrations for this event are closed.');
+    alert('Registrations are closed.');
     return;
-}
-      if (!loggedIn) {
-        alert('Kindly login before registering.');
-        return;
-      }
+//        if (workshop.eventId === 2) {
+//         alert('Registrations for this event are closed.');
+//         return;
+//   }
+//   if (workshop.eventId === 22) {
+//     alert('Registrations for this event are closed.');
+//     return;
+// }
+//       if (!loggedIn) {
+//         alert('Kindly login before registering.');
+//         return;
+//       }
     
-      if (userLocation === 'Other') {
-        // Fetch user cart details
-        try {
-          const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-cart/${userProfile.email}`);
-          const cartData = await response.json();
+//       if (userLocation === 'Other') {
+//         // Fetch user cart details
+//         try {
+//           const response = await fetch(`https://api.jwcmedicalolympics.com/api/user-cart/${userProfile.email}`);
+//           const cartData = await response.json();
     
-          if (cartData.success && cartData.cart && (cartData.cart.eventsInCart.includes(29) || cartData.cart.eventsInCart.includes(30))) {
-            // User can add any event to the cart without checking BR status
-            setSelectedWorkshop(workshop);
-            setShowPopup(true);
-            return;
-          }
-          else{
-            alert("Add an International package from the 'International Delegates' page to the cart first.");
-          }
-        } catch (error) {
-          console.error('Error fetching user cart details:', error);
-        }
-      }
+//           if (cartData.success && cartData.cart && (cartData.cart.eventsInCart.includes(29) || cartData.cart.eventsInCart.includes(30))) {
+//             // User can add any event to the cart without checking BR status
+//             setSelectedWorkshop(workshop);
+//             setShowPopup(true);
+//             return;
+//           }
+//           else{
+//             alert("Add an International package from the 'International Delegates' page to the cart first.");
+//           }
+//         } catch (error) {
+//           console.error('Error fetching user cart details:', error);
+//         }
+//       }
     
-      // Check BR status
-      if (!userBRStatus || userBRStatus.brStatus === 0 || userBRStatus === false) {
-        console.log(userBRStatus);
-        alert('You are not eligible to register for Events. Complete the Basic Registration in Register Now page first');
-        return;
-      }
+//       // Check BR status
+//       if (!userBRStatus || userBRStatus.brStatus === 0 || userBRStatus === false) {
+//         console.log(userBRStatus);
+//         alert('You are not eligible to register for Events. Complete the Basic Registration in Register Now page first');
+//         return;
+//       }
     
-      const { eventId } = workshop;
+//       const { eventId } = workshop;
     
-      // Check for clashing events
-      const isClashing = await checkClashingEvents(eventId);
-      if (isClashing) {
-        alert('This event clashes with another event in your cart. You cannot register for them together.');
-        return;
-      } else {
-        console.log("No clash");
-      }
+//       // Check for clashing events
+//       const isClashing = await checkClashingEvents(eventId);
+//       if (isClashing) {
+//         alert('This event clashes with another event in your cart. You cannot register for them together.');
+//         return;
+//       } else {
+//         console.log("No clash");
+//       }
     
-      setSelectedWorkshop(workshop);
-      setShowPopup(true);
+//       setSelectedWorkshop(workshop);
+//       setShowPopup(true);
     };
     
   const [selectedWorkshop, setSelectedWorkshop] = useState(null);
@@ -323,7 +325,7 @@ function EventsPage() {
       {/* <EventDetails events={upcomingEvents} /> */}
       <img src={eventItinerary} alt="Medical Olympics Logo" className="event-itinerary" />
       <Link to="https://drive.google.com/file/d/1wSnToy0x7Ho8h-LyV1e_jdr1ldkxHEwk/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Events Brochure<br></br></Link>
-      <div className='note'>Note: Only one of the members from the team requires to register for the GROUP EVENTS</div>
+      <div className='note'>Attention: Online registrations are now closed. Looking forward to see you all at the event.</div>
         <h1 className='workshop-headers'>WORKSHOPS</h1>
         <div className="workshop-cards-container">
           <div className="workshop-cards">
