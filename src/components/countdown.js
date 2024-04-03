@@ -24,7 +24,6 @@ const Countdown = () => {
       <div className="global-style" />
       <h2 className='heading-countdown'>COUNTDOWN</h2>
       <div className="main">
-        <Card currentNumber={days} nextNumber={days - 1} title="days" />
         <Card currentNumber={hours} nextNumber={hours - 1} title="hours" />
         <Card currentNumber={minutes} nextNumber={minutes - 1} title="minutes" />
         <Card currentNumber={seconds} nextNumber={seconds - 1} title="seconds" />
