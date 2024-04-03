@@ -325,7 +325,7 @@ function EventsPage() {
       {/* <EventDetails events={upcomingEvents} /> */}
       <img src={eventItinerary} alt="Medical Olympics Logo" className="event-itinerary" />
       <Link to="https://drive.google.com/file/d/1wSnToy0x7Ho8h-LyV1e_jdr1ldkxHEwk/view?usp=drivesdk" className="itinerarylink"><br></br><br></br>Check out our Events Brochure<br></br></Link>
-      <div className='note'>Attention: Online registrations are now closed. Looking forward to see you all at the event.</div>
+      <div className='note'>Attention - Online Registrations are now closed. Delegates interested in registering can directly message Dr. Malika Gupta +91 8782077890/ Dr. Carol Clarence +91 9634608297. Looking forward to seeing you all at the event.</div>
         <h1 className='workshop-headers'>WORKSHOPS</h1>
         <div className="workshop-cards-container">
           <div className="workshop-cards">
