@@ -20,7 +20,7 @@ import { jwtDecode } from "jwt-decode";
 import { useAuth } from '../components/authContext';
 import cart from '../assets/cart-icon.png';
 import { useNavigate } from 'react-router-dom';
-
+import leaderboard from '../assets/leaderboard.jpg';
 
 function Homepage() {
   const { loggedIn, login, logout, userProfile, updateUserProfile } = useAuth();
@@ -157,6 +157,7 @@ function Homepage() {
 
       <EventDetails events={upcomingEvents} />
       <OurSponsors/>
+      <img src={leaderboard} alt="Register Now" className="leaderboard" />
       <SponsorSection/>
       
       <Footer/>
