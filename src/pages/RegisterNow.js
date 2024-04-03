@@ -31,12 +31,14 @@ const RegisterNowPage = () => {
   };
   const [popupOpen, setPopupOpen] = useState(false);
   const handleRegisterClick = (workshop) => {
-    if (!loggedIn) {
-      alert('Kindly login before registering.');
-      return;
-    }
-    setSelectedWorkshop(workshop);
-    setShowPopup(true);
+    alert("Registrations are closed.");
+    return;
+    // if (!loggedIn) {
+    //   alert('Kindly login before registering.');
+    //   return;
+    // }
+    // setSelectedWorkshop(workshop);
+    // setShowPopup(true);
   };
   const [selectedWorkshop, setSelectedWorkshop] = useState(null);
   const faqTextStyle = {
@@ -53,6 +55,8 @@ const RegisterNowPage = () => {
   };
 
   const handleConfirmBooking = async () => {
+    alert("Registrations are closed.");
+    return;
     if (!selectedWorkshop) {
       console.error('No selected workshop to add to cart.');
       return;
