@@ -6,7 +6,7 @@ const { Double } = require('mongodb');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-mongoose.connect("mongodb+srv://shubhbansal44:mRdPJkyew7QiQwh2@jwc-events.t1x2tjr.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("", { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => console.log('Connected to MongoDB'));
